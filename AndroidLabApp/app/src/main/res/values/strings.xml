@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="new_game">new_game</string>
+    <string name="help">help</string>
+    <string name="Help">Help</string>
+    <string name="About">About</string>
+    <string name="Login" />
+    <string name="username" />
+    <string name="password" />
+</resources>
