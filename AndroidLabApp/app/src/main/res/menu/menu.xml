@@ -9,4 +9,7 @@
     <item
         android:id="@+id/Help"
         android:title="@string/Help" />
+    <item
+        android:id="@+id/extract_credits"
+        android:title="Extract Credidentials"/>
 </menu>

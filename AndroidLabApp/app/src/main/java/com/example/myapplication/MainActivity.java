@@ -21,6 +21,11 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 
@@ -96,6 +101,25 @@ public class MainActivity extends AppCompatActivity implements LogInDialog.LogIn
                 LogInDialog logInDialog = new LogInDialog();
                 logInDialog.show(getSupportFragmentManager(),"example dialog");
                 break;
+            case R.id.extract_credits:
+                FileInputStream fis;
+                try {
+                    fis = openFileInput("credidentials.txt");
+                    InputStreamReader isr = new InputStreamReader(fis);
+                    BufferedReader br = new BufferedReader(isr);
+                    StringBuilder sb = new StringBuilder();
+                    String text;
+
+                    while ((text = br.readLine()) != null) {
+                        sb.append(text).append("\n");
+                    }
+                    Toast.makeText(getApplicationContext(), sb.toString(), Toast.LENGTH_SHORT).show();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                break;
         }
         return true;
     }
@@ -119,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements LogInDialog.LogIn
 
     @Override
     public void applyTexts(String username, String password) {
-        //Toast.makeText(MainActivity.this, "The username is:" + username, Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "The username is:" + username, Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "The password is:" + password, Toast.LENGTH_SHORT).show();
     }
 }
