@@ -1,0 +1,40 @@
+footer {
+    width: 90vw;
+    margin: 3% auto auto auto;
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+footer .footer_container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    color: white;
+    padding: 0 10%;
+}
+
+.footer_container .image {
+    content:url("../Images/superman_PNG25.png");
+    height: 200px;
+    width: 150px;
+}
+
+
+.footer_container ul{
+    list-style-type: none;
+}
+
+.footer_browse h1{
+    color: rgb(255, 255, 255);
+    
+}
+
+.footer_browse ul li {
+    color: yellow;
+}
+
+footer .footer_find_us {
+    color: white;
+}
+
