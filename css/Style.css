@@ -1,0 +1,40 @@
+html, body {
+    color: white;
+    font-family: 'Times New Roman';
+    font-weight: 2 vw;
+    font-size: max(30vw, 30px) height: 1px;
+    margin: 0;
+}
+			
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .content {
+                font-weight: 20 px;
+                font-size: 10 px; 
+                text-align: center;
+}
+
+
+            .links > a {
+                color: black;
+                padding: 0 25px;
+                font-size: 2px;
+                font-weight: 200;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+			
+
+footer{
+	text-align: center;
+	padding-bottom: 10px;
+}
