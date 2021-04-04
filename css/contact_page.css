@@ -1,14 +1,24 @@
 body {
-    background: repeat-x center url("https://64.media.tumblr.com/695a3e0c3c3211c54ed231d206996678/tumblr_nmpaffO0uq1ushyv6o1_1280.png"), center url("../Images/29262.jpg");
+    background: repeat-x center url("../Images/header_SUH1.png"), center url("../Images/29262.jpg");
     background-attachment: fixed;
     height: 12px;
 }
 
-
+h1 {
+    font-family: 'Brush Script MT';
+    color: coral;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 40px;
+}
+/*css pentru elementele de nivel h1*/
 main {
     margin: 100px 150px;
     font-size: 25px;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     border: 10px solid rgb(255, 69, 2);
@@ -18,10 +28,19 @@ p {
     display: flex;
     color: white;
     font-size: 25px;
-    height: 200px;
+    height: 5%;
+    text-align: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
-h2 {
+.suh-column {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    height: 5%;
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+h4 {
     display: flex;
     color: white;
     font-size: 25px;
