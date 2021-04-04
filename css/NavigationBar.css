@@ -1,65 +1,92 @@
 /* Add a black background color to the top navigation */
 .topnav {
-background-color: rgb(34, 96, 124);
-overflow: hidden;
-display: flex;
-justify-content: center;
-width: 90vw;
-margin: 3% auto auto auto;
-border-radius: 5px;
-font-family: cursive;
+    background-color: rgb(34, 96, 124);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 3% auto auto auto;
+    border-radius: 5px;
+    font-family: cursive;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 20px;
-font-weight: bold;
-flex: 1 1 auto;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1 1 auto;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-background-color: rgb(10, 92, 146);
-color: black;
+    background-color: rgb(11, 126, 202);
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-background-color: #fa5c01;
-color: white;
-font-size: large;
-font-style: oblique;
+    background-color: #fa5c01;
+    color: white;
+    font-size: large;
+    font-style: oblique;
 }
 
 .topnav .icon {
+    content:url("../Images/the-flash-icon.png");
     display: none;
+    background-color: rgb(219, 4, 4);
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-.topnav a:not(:first-child) {display: none;}
-.topnav a.icon {
-    float: left;
-    display: block;
+
+@media screen and (max-width: 670px) {
+    .topnav a{
+        font-size: 12px;
+        /* display: block; */
+    }
+
+    .topnav{
+        height:50px;
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-.topnav.responsive {display: block; position: right;}
-.topnav.responsive a.icon {
-    position: left;
-    right: 0;
-    top: 0;
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 520px) {
+    .topnav a:not(.active) {display: none;}
+    .topnav a.icon {
+        float:right;
+        display: block;
+        height: 25px;
+        width: 30px;
+        }
+    
+    .topnav {
+        display: block;
+        height: auto;
+    }
+
+    /* .topnav a{
+        font-size: 12px;
+        display: block;
+    } */
 }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 520px) {
+    .topnav.responsive {display: block; position: right; }
+    .topnav.responsive a.icon {
+        position: inherit; 
+        right: 0;
+        top: 0;
+    }
+
 .topnav.responsive a {
     float: none;
-    display: flex;
+    display: block;
     text-align: left;
     }
 }
