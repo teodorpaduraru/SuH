@@ -1,25 +1,41 @@
 footer {
-    width: 90vw;
-    margin: 3% auto auto auto;
-    background-color: rgb(0, 0, 0, .5);
+    
     border-radius: 5px;
     font-family: cursive;
+    bottom: 0;
+
 }
 
 footer .footer_container {
-    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     color: white;
-    padding: 0 10%;
+    /*justify-content: center; */
+    width: 90vw;
+    margin: 0 5%;
+    background-color: rgb(0, 0, 0, .5);
 }
 
-.footer_container .image {
-    content:url("../Images/superman_PNG25.png");
+.footer_container .image_quick_links {
+    content:url("../Images/Footer_SuperMan.png");
+    max-height: 200px;
+    max-width: 150px;
+    align-self: center;
+}
+
+.footer_container .image_find_us {
+    content:url("../Images/Footer_The_Flash.png");
     height: 200px;
     width: 150px;
+    align-self: center;
 }
 
+.footer_container .image_misc {
+    content:url("../Images/Footer_Professor_X.png");
+    height: 200px;
+    width: 150px;
+    align-self: center;
+}
 
 .footer_container ul{
     list-style-type: none;
@@ -38,3 +54,20 @@ footer .footer_find_us {
     color: white;
 }
 
+.footer_browse ul li a{
+    color:red;
+}
+@media screen and (max-width: 1180px) {
+    footer {
+        font-size: 13px;
+    }
+    .footer_headers
+    {
+        font-size: 16px;
+    }
+
+    .footer_container #footer_image {
+        height: 150px;
+        width: 100px;
+    }
+}

@@ -5,65 +5,87 @@
         <title>Play! | SuH</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/NavigationBar.css">
+        <link rel="stylesheet" href="./css/general.css">
         <link rel="stylesheet" href="./css/game_page.css">
+        <link rel="stylesheet" href="./css/NavigationBar.css">
         <link rel="stylesheet" href="./css/footer.css">
     </head>
 
     <body>
-        <header>
-            <div class="topnav" id="navbar">
-                <a href="./home_page.html">Home</a>
-                <a href="./login_page.html">LogIn</a>
-                <a class="active" href="#play">Play!</a>
-                <a href="./gallery_page.html">Gallery</a>
-                <a href="./ranking_page.html">Ranking</a>
-                <a href="./contact_page.html">Contact</a>
-                <a href="./about_page.html">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                </a>
-            </div>
-            <script src="./scripts/game_page.js"></script>
-        </header>
-        
-        <main>
-            <p>Under Construction!</p>
-        </main>
-
-        <footer>
-            <div class="footer_container">
-                <div class = "image">
-                    <p>asd</p>
+        <div id = "root">
+            <div class="page_wrapper">
+                <div class = "topnav" id="navbar">
+                    <a href="./home_page.html">Home</a>
+                    <a href="./login_page.html">LogIn</a>
+                    <a class="active"href="#play">Play!</a>
+                    <a href="./gallery_page.html">Gallery</a>
+                    <a href="./ranking_page.html">Ranking</a>
+                    <a href="./contact_page.html">Contact</a>
+                    <a href="./about_page.html">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                    </a>
                 </div>
-
-                <div class = "footer_browse">
-                    <h1>Quick links</h1>
-                    <ul>
-                        <li><a href="#">Home </a></li>
-                        <li><a href="#">Gallery </a></li>
-                        <li><a href="#">Ranking </a></li>
-                        <li><a href="#">Contact </a></li>
-                        <li><a href="#">About </a></li>
-                    </ul>
-                </div>
+                <script src="./scripts/game_page.js"></script>
                 
-                <div class = "footer_find_us">
-                    <h2> Find us </h2>
-                    <ul>
-                        <li>user@address.com</li>
-                        <li>phonenumber</li>
-                        <li>facebook_page</li>
-                    </ul>
+                <main class ="quiz_container">
+                    <div class="quiz_title">
+                        <h1 class="quiz_title_header"> How much do you know your SuperHeroes? </h1>
+                    </div>
+                    <p id="question_text"> Does Superman have an 6-pack or 8-pack abdomen? </p>
+                    <form action="submission.html" method="POST">
+                        <section class ="answers">
+                            <div class ="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">  
+                                <label id="label" for="answer1">6-pack</label><br>
+                            </div>
+                            <div class ="options">
+                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">  
+                                <label id="label" for="answer2">8-pack</label><br>
+                            </div>
+                            <div class ="options">
+                                <input type=radio name="option" id="answer1" value="answer1"  class="radio_button">  
+                                <label id="label" for="answer1">10-pack</label>
+                            </div>
+                        </section>
+                        
+                        <section class="submit_answer">
+                            <input type="submit" value="Submit">
+                        </section>                    
+                    </form>
+                </main>
+            </div>        
+            <footer>
+                <div class="footer_container">
+                    <div id = "footer_image" class = "image_quick_links"></div>
+                    <div class = "footer_browse">
+                        <h1 class="footer_headers">Quick links</h1>
+                        <ul>
+                            <li><a href="./home_page.html">Home </a></li>
+                            <li><a href="./gallery_page.html">Gallery</a></li>
+                            <li><a href="./ranking_page.html">Ranking</a></li>
+                            <li><a href="./contact_page.html">Contact</a></li>
+                            <li><a href="./about_page.html">About </a></li>
+                        </ul>
+                    </div>
+                    <div id = "footer_image" class = "image_find_us"></div>
+                    <div class = "footer_find_us">
+                        <h2 class="footer_headers"> Find us </h2>
+                        <ul>
+                            <li>user@address.com</li>
+                            <li>phonenumber</li>
+                            <li>facebook_page</li>
+                        </ul>
+                    </div>
+                    <div id = "footer_image" class = "image_misc"></div>
+                    <div class = "footer_misc">
+                        <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
+                        <ul>
+                            <li>Web Tehnologies - SuH</li>
+                            <li>Faculty of Informatics - Iasi</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class = "footer_misc">
-                    <h3> Copyright © 2021, Faculty of Informatics Iasi</h3>
-                    <ul>
-                        <li>Web Tehnologies - SuH</li>
-                        <li>Faculty of Informatics - Iasi</li>
-                    </ul>
-                </div>
+            </footer>
             </div>
-        </footer>
     </body>
 </html>
