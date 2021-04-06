@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/NavigationBar.css">
-    <link rel="stylesheet" href="./css/contact_page.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title>Contact | SuH</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/NavigationBar.css">
+        <link rel="stylesheet" href="./css/contact_page.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <title>Contact | SuH</title>
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <div class="topnav" id="navbar">
-            <a href="./home_page.html">Home</a>
-            <a href="./login_page.html">LogIn</a>
-            <a href="./game_page.html">Play!</a>
-            <a href="./gallery_page.html">Gallery</a>
-            <a href="./ranking_page.html">Ranking</a>
-            <a class="active" href="./contact_page.html">Contact</a>
-            <a href="./about_page.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <body>
+        <div id="root">
+            <div class="page_wrapper">
+                <div class="topnav" id="navbar">
+                    <a href="./home_page.html">Home</a>
+                    <a href="./login_page.html">LogIn</a>
+                    <a href="./game_page.html">Play!</a>
+                    <a href="./gallery_page.html">Gallery</a>
+                    <a href="./ranking_page.html">Ranking</a>
+                    <a class="active" href="./contact_page.html">Contact</a>
+                    <a href="./about_page.html">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <script src="./scripts/game_page.js"></script>
+                </div>
+                <main>
+                    <p>
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                        <div style='overflow:hidden;height:380px;width:100%'>
+                            <div id='gmap_canvas' style='height:380px;width:100%;'></div>
+                            
+                        </div>
+                    
+                    <p>
+                    <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script></p>
+                    
+                    <div class="suh-columns">
+                        <p style="text-align: center">
+
+                            Telefon: (+40) 744 741 398
+                        </p>
+                        <p>Mail to: &nbsp;<a href="mailto:our-mail@mail.com"> our-mail@mail.com</a></p>
+                        <p>
+                            Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
+                            <br />În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
+
+                            <br />  Program lucru operatori:
+                            Luni - Vineri: 9 AM - 5 PM<br>
+                            Sâmbătă: 10 AM - 2 PM<br>
+                            Duminică: Închis
+                        </p>
+
+                    </div>
+                </main>
+            </div>
+            <footer>
+                <div class="footer_container">
+                    <div id="footer_image" class="image_quick_links"></div>
+                    <div class="footer_browse">
+                        <h1 class="footer_headers">Quick links</h1>
+                        <ul>
+                            <li><a href="./home_page.html">Home </a></li>
+                            <li><a href="./gallery_page.html">Gallery</a></li>
+                            <li><a href="./ranking_page.html">Ranking</a></li>
+                            <li><a href="./contact_page.html">Contact</a></li>
+                            <li><a href="./about_page.html">About </a></li>
+                        </ul>
+                    </div>
+                    <div id="footer_image" class="image_find_us"></div>
+                    <div class="footer_find_us">
+                        <h2 class="footer_headers"> Find us </h2>
+                        <ul>
+                            <li>user@address.com</li>
+                            <li>phonenumber</li>
+                            <li>facebook_page</li>
+                        </ul>
+                    </div>
+                    <div id="footer_image" class="image_misc"></div>
+                    <div class="footer_misc">
+                        <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
+                        <ul>
+                            <li>Web Tehnologies - SuH</li>
+                            <li>Faculty of Informatics - Iasi</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <script src="./scripts/game_page.js"></script>
-    </header>
-    <main>
-        <p>
-            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-            <div style='overflow:hidden;height:380px;width:100%'>
-                <div id='gmap_canvas' style='height:380px;width:100%;'></div>
-                
-            </div>
-        
-        <p>
-        <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script></p>
-        
-        <div class="suh-columns">
-            <p style="text-align: center">
-
-                Telefon: (+40) 744 741 398
-            </p>
-            <p>Mail to: &nbsp;<a href="mailto:our-mail@mail.com"> our-mail@mail.com</a></p>
-            <p>
-                Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
-                <br />În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
-
-                <br />  Program lucru operatori:
-                Luni - Vineri: 9 AM - 5 PM<br>
-                Sâmbătă: 10 AM - 2 PM<br>
-                Duminică: Închis
-            </p>
-
-        </div>
-    </main>
-    <footer>
-        <div class="footer_container">
-            <div id="footer_image" class="image_quick_links"></div>
-            <div class="footer_browse">
-                <h1 class="footer_headers">Quick links</h1>
-                <ul>
-                    <li><a href="./home_page.html">Home </a></li>
-                    <li><a href="./gallery_page.html">Gallery</a></li>
-                    <li><a href="./ranking_page.html">Ranking</a></li>
-                    <li><a href="./contact_page.html">Contact</a></li>
-                    <li><a href="./about_page.html">About </a></li>
-                </ul>
-            </div>
-            <div id="footer_image" class="image_find_us"></div>
-            <div class="footer_find_us">
-                <h2 class="footer_headers"> Find us </h2>
-                <ul>
-                    <li>user@address.com</li>
-                    <li>phonenumber</li>
-                    <li>facebook_page</li>
-                </ul>
-            </div>
-            <div id="footer_image" class="image_misc"></div>
-            <div class="footer_misc">
-                <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
-                <ul>
-                    <li>Web Tehnologies - SuH</li>
-                    <li>Faculty of Informatics - Iasi</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+    </body>
 </html>
