@@ -39,7 +39,8 @@
 .topnav .icon {
     content:url("../Images/the-flash-icon.png");
     display: none;
-    background-color: rgb(219, 4, 4,0.2);
+    background-color: rgb(219, 4, 4);
+    box-sizing: unset;
 }
 
 @media screen and (max-width: 800px) {
