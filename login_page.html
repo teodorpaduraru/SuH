@@ -3,67 +3,94 @@
 <html lang="en">
     <head>
         <title>LogIn | SuH</title>
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/general.css">
         <link rel="stylesheet" href="./css/NavigationBar.css">
-        <link rel="stylesheet" href="./css/game_page.css">
+        <link rel="stylesheet" href="./css/login_page.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <title>LogIn | SuH</title>
-        <meta charset="utf-8"/>
     </head>
 
     <body>
-        <header>
-            <div class = "topnav" id="navbar">
-                <a href="./home_page.html">Home</a>
-                <a class="active"href="./login_page.html">LogIn</a>
-                <a href="./game_page.html">Play!</a>
-                <a href="./gallery_page.html">Gallery</a>
-                <a href="./ranking_page.html">Ranking</a>
-                <a href="./contact_page.html">Contact</a>
-                <a href="./about_page.html">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <script src="./scripts/game_page.js"></script>
-        </header>
-        
-        <main>
-            <p>Under Construction!</p>
-        </main>
+        <div id = "root">
+            <div class="page_wrapper">
+                <div class = "topnav" id="navbar">
+                    <a href="./home_page.html">Home</a>
+                    <a class="active" href="./login_page.html">LogIn</a>
+                    <a href="./game_page.html">Play!</a>
+                    <a href="./gallery_page.html">Gallery</a>
+                    <a href="./ranking_page.html">Ranking</a>
+                    <a href="./contact_page.html">Contact</a>
+                    <a href="./about_page.html">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                    </a>
+                </div>
+                <main class = "login_container">
+                    <div class="root_login">
+                        
+                        <h1>Register and join your Superheroes!</h1>
+                        <div class = "login_form">
+                            <h2>LogIn</h2>
+                            <form action = "submision.html" method="GET">
+                                <label for="username">Username:</label>
+                                <br>
+                                <input id="username" name="username" type="text">
+                                <br>
+                                <label for="password">Password:</label>
+                                <br>
+                                <input id="password" name="password" required minlength="8">
+                                <br>
+                                <input id="submit" type="submit" value="LogIn">
+                            </form>
+                        </div>
+                        
+                        <div class="login_register">
+                            <a id = "login_register_create" href="#create">Create an account</a>
+                            <a id = "login_register_forgot" href="#forgot">Forgot Password?</a>
+                        </div>
+                        <br>
+                        <div class="alternative_register">
+                            <p>Or register and LogIn with:</p>
+                            <a class="icon" href="#link_facebook"><img src="./Images/LogIn_Facebook_icon.png"></a>
+                            <a class="icon" href="#link_facebook"><img src="./Images/LogIn_Google_icon.png"></a>
+                        </div>
+                    </div>
 
-        <footer>
-            <div class="footer_container">
-                <div id="footer_image" class="image_quick_links"></div>
-                <div class="footer_browse">
-                    <h1 class="footer_headers">Quick links</h1>
-                    <ul>
-                        <li><a href="./home_page.html">Home </a></li>
-                        <li><a href="./gallery_page.html">Gallery</a></li>
-                        <li><a href="./ranking_page.html">Ranking</a></li>
-                        <li><a href="./contact_page.html">Contact</a></li>
-                        <li><a href="./about_page.html">About </a></li>
-                    </ul>
-                </div>
-                <div id="footer_image" class="image_find_us"></div>
-                <div class="footer_find_us">
-                    <h2 class="footer_headers"> Find us </h2>
-                    <ul>
-                        <li>user@address.com</li>
-                        <li>phonenumber</li>
-                        <li>facebook_page</li>
-                    </ul>
-                </div>
-                <div id="footer_image" class="image_misc"></div>
-                <div class="footer_misc">
-                    <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
-                    <ul>
-                        <li>Web Tehnologies - SuH</li>
-                        <li>Faculty of Informatics - Iasi</li>
-                    </ul>
-                </div>
-            </div>>  
-        </footer>
+                    <div class="login_info_display"> </div>
+                </main>
+            </div>
+            <footer>
+                <div class="footer_container">
+                    <div id="footer_image" class="image_quick_links"></div>
+                    <div class="footer_browse">
+                        <h1 class="footer_headers">Quick links</h1>
+                        <ul>
+                            <li><a href="./home_page.html">Home </a></li>
+                            <li><a href="./gallery_page.html">Gallery</a></li>
+                            <li><a href="./ranking_page.html">Ranking</a></li>
+                            <li><a href="./contact_page.html">Contact</a></li>
+                            <li><a href="./about_page.html">About </a></li>
+                        </ul>
+                    </div>
+                    <div id="footer_image" class="image_find_us"></div>
+                    <div class="footer_find_us">
+                        <h2 class="footer_headers"> Find us </h2>
+                        <ul>
+                            <li>user@address.com</li>
+                            <li>phonenumber</li>
+                            <li>facebook_page</li>
+                        </ul>
+                    </div>
+                    <div id="footer_image" class="image_misc"></div>
+                    <div class="footer_misc">
+                        <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
+                        <ul>
+                            <li>Web Tehnologies - SuH</li>
+                            <li>Faculty of Informatics - Iasi</li>
+                        </ul>
+                    </div>
+                </div>>  
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,9 +1,3 @@
-body {
-    background: repeat-x center url("../Images/header_SUH1.png"), center url("../Images/29262.jpg");
-    background-attachment: fixed;
-    /*height: 12px;*/
-}
-
 h1 {
     font-family: 'Brush Script MT';
     color: coral;

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    font-family: cursive;
 }
 
 .page_wrapper {
@@ -10,8 +10,6 @@
 }
 
 body {
-    background: repeat-x center url("https://64.media.tumblr.com/695a3e0c3c3211c54ed231d206996678/tumblr_nmpaffO0uq1ushyv6o1_1280.png"),
-                center url("../Images/29262.jpg");
+    background: repeat-x center url("../Images/header_SUH1.png"), center url("../Images/29262.jpg");
     background-attachment: fixed;
-    /*height: 50px; */
 }

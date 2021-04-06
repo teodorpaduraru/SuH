@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(34, 96, 124, 0.8);
+    background-color: rgb(34, 96, 124, 0.9);
     overflow: hidden;
     display: flex;
     justify-content: center;
