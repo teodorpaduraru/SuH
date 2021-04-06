@@ -2,6 +2,7 @@ footer {
     
     border-radius: 5px;
     font-family: cursive;
+    display: flex;
     bottom: 0;
 
 }
@@ -67,7 +68,7 @@ footer .footer_find_us {
     }
 
     .footer_container #footer_image {
-        height: 150px;
+        height: 100px;
         width: 100px;
     }
 }

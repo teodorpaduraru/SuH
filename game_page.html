@@ -14,14 +14,16 @@
     <body>
         <div id = "root">
             <div class="page_wrapper">
-                <div class = "topnav" id="navbar">
+                <div class="topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
                     <a href="./login_page.html">LogIn</a>
-                    <a class="active"href="#play">Play!</a>
+                    <a class="active" href="#play">Play!</a>
                     <a href="./gallery_page.html">Gallery</a>
                     <a href="./ranking_page.html">Ranking</a>
+                    <a href="./profile_page.html">Profile</a>
                     <a href="./contact_page.html">Contact</a>
                     <a href="./about_page.html">About</a>
+                    <a href="./rules_page.html">Rules</a>
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
                     </a>
                 </div>
@@ -31,28 +33,68 @@
                     <div class="quiz_title">
                         <h1 class="quiz_title_header"> How much do you know your SuperHeroes? </h1>
                     </div>
-                    <p id="question_text"> Does Superman have an 6-pack or 8-pack abdomen? </p>
+                    <p id="question_text"> Ce culoare are costumul lui Spider Man? </p>
                     <form action="submission.html" method="POST">
-                        <section class ="answers">
-                            <div class ="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">  
-                                <label id="label" for="answer1">6-pack</label><br>
+                        <section class="answers">
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer1">Roșu</label><br>
                             </div>
-                            <div class ="options">
-                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">  
-                                <label id="label" for="answer2">8-pack</label><br>
+                            <div class="options">
+                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
+                                <label id="label" for="answer2">Gri</label><br>
                             </div>
-                            <div class ="options">
-                                <input type=radio name="option" id="answer1" value="answer1"  class="radio_button">  
-                                <label id="label" for="answer1">10-pack</label>
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer1">Galben</label>
                             </div>
                         </section>
-                        
-                        <section class="submit_answer">
-                            <input type="submit" value="Submit">
-                        </section>                    
                     </form>
-                </main>
+                        <p id="question_text"> Ce oraș este apărat de Batman? </p>
+                        <form action="submission.html" method="POST">
+                            <section class="answers">
+                                <div class="options">
+                                    <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                    <label id="label" for="answer1">New York</label><br>
+                                </div>
+                                <div class="options">
+                                    <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
+                                    <label id="label" for="answer2">Las Vegas</label><br>
+                                </div>
+                                <div class="options">
+                                    <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                    <label id="label" for="answer1">Gotham City</label>
+                                </div>
+                            </section>
+                        </form>
+                            <p id="question_text"> Cu cine se aseamănă Venom? </p>
+                            <form action="submission.html" method="POST">
+                                <section class="answers">
+                                    <div class="options">
+                                        <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                        <label id="label" for="answer1">Thor</label><br>
+                                    </div>
+                                    <div class="options">
+                                        <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
+                                        <label id="label" for="answer2">Spider Man</label><br>
+                                    </div>
+                                    <div class="options">
+                                        <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                        <label id="label" for="answer3">Capitan America</label>
+                                    </div>
+                                </section>
+
+                                <section class="buttons">
+                                    <p>&nbsp;</p>
+                                    <input type="button" value="Prev">
+                                    &nbsp;
+                                    <input type="submit" value="Submit">
+                                    &nbsp;
+                                    <input type="button" value="Next">
+                                    <p>&nbsp;</p>
+                                </section>
+                            </form>
+</main>
             </div>        
             <footer>
                 <div class="footer_container">

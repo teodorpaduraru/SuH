@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>LogIn | SuH</title>
+        <title>SignUp | SuH</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/general.css">
@@ -16,7 +16,7 @@
             <div class="page_wrapper">
                 <div class = "topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
-                    <a class="active" href="./login_page.html">LogIn</a>
+                    <a class="active" href="./signup_page.html">SignUp</a>
                     <a href="./game_page.html">Play!</a>
                     <a href="./gallery_page.html">Gallery</a>
                     <a href="./ranking_page.html">Ranking</a>
@@ -24,15 +24,18 @@
                     <a href="./about_page.html">About</a>
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
                     </a>
-                    <script src="./scripts/game_page.js"></script>
                 </div>
                 <main class = "login_container">
                     <div class="root_login">
                         
                         <h1>Register and join your Superheroes!</h1>
                         <div class = "login_form">
-                            <h2>LogIn</h2>
-                            <form action = "home_page.html" method="post">
+                            <h2>SignUp</h2>
+                            <form action="home_page.html" method="post">
+                                <label for="email">Email:</label>
+                                <br>
+                                <input id="email" name="email" type="text">
+                                <br>
                                 <label for="username">Username:</label>
                                 <br>
                                 <input id="username" name="username" type="text">
@@ -41,12 +44,12 @@
                                 <br>
                                 <input id="password" name="password" type="password" required minlength="8">
                                 <br>
-                                <input id="submit" type="submit" value="LogIn">
+                                <input id="submit" type="submit" value="SignUp">
                             </form>
                         </div>
                         
                         <div class="login_register">
-                            <a id = "login_register_create" href="signup_page.html">Create an account</a>
+                            <a id = "login_register_create" href="login_page.html">Already have an account</a>
                             <a id = "login_register_forgot" href="#forgot">Forgot Password?</a>
                         </div>
                         <br>

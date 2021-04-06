@@ -1,3 +1,13 @@
+.contact_container {
+    margin: 7% 15%;
+    border: 10px solid rgb(255, 69, 2, 0.8);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: no-repeat center url("../Images/LogIn_Spidey.jpg");
+    background-size: cover;
+    height: 500px
+}
 h1 {
     font-family: 'Brush Script MT';
     color: coral;
@@ -12,14 +22,14 @@ h1 {
 main {
     margin: 100px 150px;
     font-size: 25px;
-    height: 400px;
+    height: 410px;
     display: flex;
     justify-content: center;
     border: 10px solid rgb(255, 69, 2);
+    background-color: rgb(0, 0, 0, .8);
     color: white;
 }
 p {
-    display: flex;
     color: white;
     font-size: 25px;
     height: 5%;
@@ -30,7 +40,7 @@ p {
     display: flex;
     color: white;
     font-size: 25px;
-    height: 5%;
+    height: 6%;
     text-align: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
@@ -40,4 +50,24 @@ h4 {
     font-size: 25px;
     height: 100px;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+@media only screen and (max-width: auto) {
+    /* For mobile phones: */
+    main {
+        width: auto;
+        height: auto;
+    }
+    p {
+        width: auto;
+        height: auto;
+    }
+    .suh-column {
+        width: auto;
+        height: auto;
+    }
+    .contact-container {
+        width: auto;
+        height: auto;
+    }
 }

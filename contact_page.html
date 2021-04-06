@@ -12,6 +12,51 @@
 
     </head>
 
+<<<<<<< HEAD
+<body>
+    <header>
+        <div class="topnav" id="navbar">
+            <a href="./home_page.html">Home</a>
+            <a href="./login_page.html">LogIn</a>
+            <a href="./game_page.html">Play!</a>
+            <a href="./gallery_page.html">Gallery</a>
+            <a href="./ranking_page.html">Ranking</a>
+            <a href="./profile_page.html">Profile</a>
+            <a class="active" href="./contact_page.html">Contact</a>
+            <a href="./about_page.html">About</a>
+            <a href="./rules_page.html">Rules</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script src="./scripts/game_page.js"></script>
+    </header>
+    <main class="contact-container">
+        <p>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:390px;width:100%; display: flex;'>
+                <div id='gmap_canvas' style='height:390px;width:100%;'></div>
+                
+            </div>
+        
+        <p>
+        <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script></p>
+        
+        <div class="suh-columns">
+            <p style="text-align: center">
+                Telefon: (+40) 744 741 398
+            </p>
+            <p>Mail to: &nbsp;<a href="mailto:our-mail@mail.com" style="color: white;
+        text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;"> our-mail@mail.com</a></p>
+            <p>
+                Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
+                <br />În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
+                <br/>  Program lucru operatori:
+                Luni - Vineri: 9 AM - 5 PM<br>
+                Sâmbătă: 10 AM - 2 PM<br>
+                Duminică: Închis
+            </p>
+=======
     <body>
         <div id="root">
             <div class="page_wrapper">
@@ -54,6 +99,7 @@
                             Sâmbătă: 10 AM - 2 PM<br>
                             Duminică: Închis
                         </p>
+>>>>>>> a7eda8c1ad93ec74c97b8ed9edaf8070ca6fd2b1
 
                     </div>
                 </main>

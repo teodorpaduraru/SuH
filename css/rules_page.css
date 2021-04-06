@@ -1,7 +1,7 @@
 main {
     margin: 100px 150px;
     font-size: 25px;
-    height: 380px;
+    height: 325px;
     display: flex;
     justify-content: center;
     border: 10px solid rgb(255, 69, 2);
@@ -9,16 +9,16 @@ main {
     color: white;
 }
 
-h1 {
+/*h1 {
     font-family: 'Brush Script MT';
-    color: coral;
-    font-weight: 200;
+    color: white;
+    font-weight: 100;
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
     line-height: 1.4;
     font-size: 40px;
-}
+}*/
 /*css pentru elementele de nivel h1*/
 
 p {
@@ -26,16 +26,28 @@ p {
     color: white;
     font-size: 25px;
     font-weight: bold;
-    height: 200px;
-    text-align: center;
+    height: 10px;
+    text-align: left;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
-/*.content > h2 {
+
+.regulament {
     display: flex;
     color: white;
     font-size: 25px;
     font-weight: bold;
-    height: 200px;
+    height: 10px;
     text-align: center;
+    justify-content: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}*/ /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
+}
+.content > h2 {
+    font-family: 'Brush Script MT';
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 40px;
+} /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
