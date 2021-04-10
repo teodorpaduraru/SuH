@@ -52,17 +52,3 @@ p {
     font-size: 40px;
 } /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
 
-
-  @media screen and (min-device-width: 325px) {
-    
-    main {
-        display: block;
-        width:304px;
-        height: 891px;
-    }
-    h1 {
-        display: block;
-        width: 304px;
-        height: 891px;
-    }
-}
