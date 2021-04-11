@@ -1,9 +1,14 @@
 .quiz_container {
     margin: 7% 15%;
     border: 10px solid rgb(255, 69, 2, 0.8);
-    color:yellow;
+    border-radius: 5px; /*Inceput pentru colturi rotunjite*/
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; /*Final pentru colturi rotunjite*/
+    color: yellow;
     background-color: rgb(0, 0, 0, .8);
-    display:grid;
+    display: grid;
 }
 
 .quiz_title{
@@ -28,6 +33,7 @@
     border: 2px white;
     border-style: solid;
 }
-.buttons{
-    text-align:center;
+.buttons {
+    text-align: center;
+    
 }

@@ -1,7 +1,12 @@
 .login_container {
     margin: 7% 15%;
     border: 10px solid rgb(255, 69, 2, 0.8);
-    color:white;
+    border-radius: 5px; /*Inceput pentru colturi rotunjite*/
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; /*Final pentru colturi rotunjite*/
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: no-repeat center url("../Images/LogIn_Spidey.jpg");

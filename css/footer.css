@@ -1,21 +1,23 @@
 footer {
-    
     border-radius: 5px;
     font-family: cursive;
     display: flex;
     bottom: 0;
-
 }
 
-footer .footer_container {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    color: white;
-    /*justify-content: center; */
-    width: 90vw;
-    margin: 0 5%;
-    background-color: rgb(0, 0, 0, .5);
-}
+    footer .footer_container {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        color: white;
+        /*justify-content: center; */
+        width: 90vw;
+        margin: 0 5%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: rgb(0, 0, 0, .5);
+    }
 
 .footer_container .image_quick_links {
     content:url("../Images/Footer_SuperMan.png");

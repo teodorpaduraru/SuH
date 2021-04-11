@@ -26,6 +26,11 @@ main {
     display: flex;
     justify-content: center;
     border: 10px solid rgb(255, 69, 2);
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: rgb(0, 0, 0, .8);
     color: white;
 }
