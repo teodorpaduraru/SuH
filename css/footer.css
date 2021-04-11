@@ -1,8 +1,7 @@
 footer {
-    
     font-family: cursive;
-    display: flex;
-    bottom: 0;
+    /* display: flex; */
+    margin-bottom: 0;
 }
 
 footer .footer_container {

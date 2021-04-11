@@ -1,11 +1,7 @@
 .quiz_container {
     margin: 7% 15%;
     border: 10px solid rgb(255, 69, 2, 0.8);
-    border-radius: 5px; /*Inceput pentru colturi rotunjite*/
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px; /*Final pentru colturi rotunjite*/
+    border-radius: 30px;
     color: yellow;
     background-color: rgb(0, 0, 0, .8);
     display: grid;
@@ -17,7 +13,6 @@
 
 .quiz_title_header {
     text-align: center;
-    
 }
 
 #question_text {
@@ -33,7 +28,46 @@
     border: 2px white;
     border-style: solid;
 }
+
 .buttons {
     text-align: center;
     
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .quiz_title_header {
+        font-size:25px;
+    }
+
+    #question_text {
+        font-size: 20px;
+    }
+
+    .answers {
+        font-size: 14px;
+    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .quiz_container {
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quiz_title_header {
+        font-size:18px;
+    }
+
+    #question_text {
+        font-size: 13px;
+    }
+
+    .answers {
+        font-size: 8px;
+    
+    }
 }
