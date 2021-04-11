@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     font-family: 'Brush Script MT'; 
     color: coral; 
     font-weight: 200; 
@@ -7,25 +7,27 @@ h1 {
     margin-top: 0; 
     line-height: 1.4;
     font-size: 40px;
-}/*css pentru elementele de nivel h1*/
+ } css pentru elementele de nivel h1 */
 
-main {
+/* main {
     margin: 100px 250px;
     font-size: 25px;
     height: 325px;
     display: flex;
     justify-content: center;
     border: 10px solid rgb(255, 69, 2);
-    border-radius: 5px; /*Inceput pentru colturi rotunjite*/
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px; /*Final pentru colturi rotunjite*/
+    border-radius:30px;
     background-color: rgb(0, 0, 0, .8);
     color: white;
-}
+} */
 
-content {
+/* main {
+    font-size: 25px;
+    text-align: center;
+    margin: 10%;
+} */
+
+.content {
     justify-content: center;
     display: flex;
     color: white;
