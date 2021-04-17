@@ -27,11 +27,21 @@
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
                     </a>
                 </div>
-                <main class = "login_container">
+                <div class="international">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+                        }
+                    </script>
+
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+                <main class="login_container">
                     <div class="root_login">
-                        
+
                         <h1>Register and join your Superheroes!</h1>
-                        <div class = "login_form">
+                        <div class="login_form">
                             <h2>SignUp</h2>
                             <form action="home_page.html" method="post">
                                 <label for="email">Email:</label>
@@ -49,13 +59,14 @@
                                 <input id="submit" type="submit" value="SignUp">
                             </form>
                         </div>
-                        
+
                         <div class="login_register">
-                            <a id = "login_register_create" href="login_page.html">Already have an account</a>
-                            <a id = "login_register_forgot" href="forgot_password.html">Forgot Password?</a>
+                            <a id="login_register_create" href="login_page.html">Already have an account</a>
+                            <a id="login_register_forgot" href="forgot_password.html">Forgot Password?</a>
                         </div>
                         <br>
-                        <div class="alternative_register"> <!-- Conectare alternativa pe pagina jocului-->
+                        <div class="alternative_register">
+                            <!-- Conectare alternativa pe pagina jocului-->
                             <p>Or register and LogIn with:</p>
                             <a class="icon" href="https://www.facebook.com/"><img src="./Images/LogIn_Facebook_icon.png"></a>
                             <a class="icon" href="https://accounts.google.com/ServiceLogin/identifier?hl=ro&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="./Images/LogIn_Google_icon.png"></a>
@@ -92,7 +103,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        </ul>
+                        
                     </div>
                 </div>
             </footer>

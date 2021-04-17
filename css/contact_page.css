@@ -25,6 +25,15 @@ main {
     line-height: 1.4;
     font-size: 40px;
 } */
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 
 p {
     color: white;

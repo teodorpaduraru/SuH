@@ -27,6 +27,15 @@
     margin: 10%;
 } */
 
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 .content {
     justify-content: center;
     display: flex;

@@ -28,6 +28,15 @@ main {
     color: white;
 }
 
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 @media screen and (min-height: 800px)
 {
     .page_wrapper {

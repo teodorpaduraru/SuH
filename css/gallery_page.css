@@ -16,6 +16,15 @@ main {
     color: yellow;
 }
 
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 p {
     color: white;
     font-size: 25px;

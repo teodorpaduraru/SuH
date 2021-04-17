@@ -22,7 +22,15 @@
     margin: auto;
     background-color: rgb(0, 0, 0, 0.2);
 }
-
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 #submit {
     margin-top: 3px;
 }

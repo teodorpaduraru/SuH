@@ -9,7 +9,15 @@ h1 {
     font-size: 40px;
 }
 /*css pentru elementele de nivel h1*/
-
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
  main {
     font-size: 25px;
     display: flex;

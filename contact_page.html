@@ -22,7 +22,7 @@
                     <a href="./gallery_page.html">Gallery</a>
                     <a href="./ranking_page.html">Ranking</a>
                     <a href="./profile_page.html">Profile</a>
-                    <a class="active"href="./contact_page.html">Contact</a>
+                    <a class="active" href="./contact_page.html">Contact</a>
                     <a href="./about_page.html">About</a>
                     <a href="./rules_page.html">Rules</a>
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
@@ -30,15 +30,21 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
+                <div class="international">
+                    <div id="google_translate_element"></div>
+                    <script src="./scripts/traducere.js"></script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
                 <main>
                     <!-- Afisare locatie pe harta-->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
                     <div style='width:90%;'>
                         <div id='gmap_canvas' style='height:100%;width:100%;border-radius: 20px;'></div>
                     </div>
-                    <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script></p>
+                    <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 
-                    <div class="suh-columns"><!-- Detalii de contact-->
+                    <div class="suh-columns">
+                        <!-- Detalii de contact-->
                         <p style="text-align: center">
 
                             Telefon: (+40) 744 741 398
@@ -84,7 +90,6 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        </ul>
                     </div>
                 </div>
             </footer>

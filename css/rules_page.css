@@ -14,6 +14,15 @@ main {
 }*/
 /*css pentru elementele de nivel h1*/
 
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
 p {
     /*display: flex; */
     color: white;

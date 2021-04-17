@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
+<html lang="ro">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,10 @@
     </head>
 
     <body>
-        <div id ="root">
-            <div class = "page_wrapper">
+        
+        <div id="root">
+            
+            <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a class="active" href="./home_page.html">Home</a>
                     <a href="./login_page.html">LogIn</a>
@@ -30,9 +32,24 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
+                <div class="international"> <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                    <div id="google_translate_element"></div>
+                    <script src="./scripts/traducere.js">
+                    </script>
+
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+                <div class="buttons">
+                    <button id="play"></button>
+                    &nbsp;
+                    <button id=pause></button> &nbsp;
+                    <button id=stop></button>
+                </div>
                 <main>
+
                     <div class="content">
-                        <p>SuperHeroes Web Game: joc Web educativ destinat adolescenților.
+                        <p>
+                            SuperHeroes Web Game: joc Web educativ destinat adolescenților.
                             <br />
                             <br />Scenariul, miza și condițiile de victorie/înfrângere sunt deja prestabilite.
                             <br />
@@ -71,7 +88,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        </ul>
+
                     </div>
                 </div>
             </footer>

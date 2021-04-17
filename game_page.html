@@ -26,12 +26,22 @@
                     <a href="./rules_page.html">Rules</a>
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
                     </a>
+                    <script src="./scripts/game_page.js"></script>
                 </div>
-                <script src="./scripts/game_page.js"></script>
                 
+                <div class="international">
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+                        }
+                    </script>
+
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
                 <main class ="quiz_container">
                     <div class="quiz_title">
-                        <h1 class="quiz_title_header"> How much do you know your SuperHeroes? </h1>
+                        <h1 class="quiz_title_header"> Cât de multe știi despre SuperHeroes? </h1>
                     </div>
                     <p id="question_text"> Ce culoare are costumul lui Spider Man? </p>
                     <form action="submission.html" method="POST">
@@ -123,7 +133,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        </ul>
+                    
                     </div>
                 </div>
             </footer>
