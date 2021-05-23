@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en-x-mtform-ro">
+<html lang="ro">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,26 @@
     </head>
 
     <body>
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
         <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
@@ -30,29 +50,32 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                <div class="international">
-                    <div id="google_translate_element"></div>
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
-                        }
-                    </script>
 
-                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
                 <main>
                     <div class="content">
                         <p>
                             SuperHeroes Web Game (pe scurt: SuH) este un joc Web educativ destinat adolescenților.
-                            <br>Jocul conține un scenariu, o miză și condițiile de victorie/înfrângere prestabilite pentru fiecare rundă.
-                            <br> Pentru o interacțiune mai plăcută și mult mai atractivă, toate partidele jucate vor fi de tipul trivia (conquistador).
-                            <br>Vă mulțumim că ați ales jocul nostru și vă dorim o experiență inedită!
-                            <br>
-                            <br>Echipa: Teodor Păduraru și Eugen Gavrilovici
+                            <br />Jocul conține un scenariu, o miză și condițiile de victorie/înfrângere prestabilite pentru fiecare rundă.
+                            <br /> Pentru o interacțiune mai plăcută și mult mai atractivă, toate partidele jucate vor fi de tipul trivia (conquistador).
+                            <br />Vă mulțumim că ați ales jocul nostru și vă dorim o experiență inedită!
+                            <br />
+                            <br />Echipa: Teodor Păduraru și Eugen Gavrilovici
                         </p>
                     </div>
                 </main>
             </div>
+
+            <div class="international">
+                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+
             <footer>
                 <div class="footer_container">
                     <div id="footer_image" class="image_quick_links"></div>
@@ -80,7 +103,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        
+
                     </div>
                 </div>
             </footer>

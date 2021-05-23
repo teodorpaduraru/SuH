@@ -30,11 +30,7 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                <div class="international">
-                    <div id="google_translate_element"></div>
-                    <script src="./scripts/traducere.js"></script>
-                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
+                
                 <main>
                     <!-- Afisare locatie pe harta-->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
@@ -49,7 +45,7 @@
 
                             Telefon: (+40) 744 741 398
                         </p>
-                        <p>Mail to: &nbsp;<a href="mailto:our-mail@mail.com" style="color: white"> our-mail@mail.com</a></p>
+                        <p>Trimiteți un e-mail la: &nbsp;<a href="mailto:our-mail@mail.com" style="color: white"> our-mail@mail.com</a></p>
                         <p>
                             Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
                             <br />În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
@@ -63,6 +59,18 @@
                     </div>
                 </main>
             </div>
+
+            <div class="international">
+                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,ro' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+
             <footer>
                 <div class="footer_container">
                     <div id="footer_image" class="image_quick_links"></div>

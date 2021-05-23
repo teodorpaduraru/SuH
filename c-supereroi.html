@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/cpanel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="navigare">
+        <div class="text-bara">
+            <span class="text_bara">Supereroi</span>
+        </div>
+        <ul class="nav-links">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="./cpanel.html">
+                    <span class="text_bara">Administratori</span>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="./c-useri.html">
+                    <span class="text_bara">Useri</span>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="./c-supereroi.html" class="active">
+                    <span class="text_bara">Supereroi</span>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="./c-clasament.html">
+                    <span class="text_bara">Clasament</span>
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="log_out">
+                <a href="./home_page.html">
+                    <span class="text_bara">Iesire</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="home">
+        <nav>
+            <div class="navigare-buton">
+                <span class="casete">Administratori</span>
+            </div>
+            <div class="cautare">
+                <input type="text" placeholder="Cautare...">
+            </div>
+            <div class="profil">
+                <img src="./images/Teodor.jpg" alt="">
+                <span class="administrator">Teodor Paduraru</span>
+            </div>
+            <div class="profil">
+                <img src="./images/Eugen.jpg" alt="">
+                <span class="administrator">Eugen Gavrilovici</span>
+            </div>
+
+        </nav>
+
+        <div class="setari">
+            <div class="casete">
+                <div class="box">
+                    <div class="titlu">
+                        <div class="drepturi">
+                            <div class="titlu">Superman </div>
+                            <p><div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox"></p>
+                            <p><div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox"></p>
+                            <p><div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="setari2">
+            <div class="casete">
+                <div class="box">
+                    <div class="titlu">
+                        <div class="drepturi">
+                            <div class="titlu">Hulk</div>
+                            <p><div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox"></p>
+                            <p><div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox"></p>
+                            <p><div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        let navigare = document.querySelector(".navigare");
+        let navigareBtn = document.querySelector(".navigareBtn");
+        navigareBtn.onclick = function () {
+            navigare.classList.toggle("active");
+            if (navigare.classList.contains("active")) {
+                navigareBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                navigareBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+</html>
+

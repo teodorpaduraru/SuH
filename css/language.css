@@ -1,0 +1,12 @@
+body {
+    font-family: cursive;
+    /* display: flex; */
+    margin-bottom: 0;
+}
+.en:before {
+    background-image: url(./Images/32.png);
+}
+.ro:before {
+    background-image: url(./Images/64.png);
+}
+
