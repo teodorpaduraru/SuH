@@ -13,6 +13,26 @@
 </head>
 
 <body>
+    <div class="international">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+            <span class="language"></span>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#en" style="color: greenyellow">
+                        <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ro" style="color: greenyellow">
+                        <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                    </a>
+                </li>
+            </ul>
+            <script src="./scripts/intern.js"></script>
+            <script type="text/javascript" src="./scripts/testlimba.js"></script>
+        </div>
+    </div>
     <div id="root">
         <div class="page_wrapper">
             <div class="topnav" id="navbar">
@@ -30,26 +50,15 @@
                 </a>
                 <script src="./scripts/game_page.js"></script>
             </div>
-
-            <div class="international">
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
-                    }
-                </script>
-
-                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
             <main>
                 <div class="rules_content">
-                    <h1>Reguli</h1>
-                    <h2>
+                    <h1 style="color: gold">Reguli</h1>
+                    <h2 style="color: gold">
                         Regulamentul complet și ghidul de utilizare îl puteți citi aici:
-                        <a href="under_construction.html" style="color: white" ;>PDF</a> sau <a href="under_construction.html" style="color: white" ;>HTML</a>
+                        <a href="under_construction.html" style="color: gold" ;>PDF</a> sau <a href="under_construction.html" style="color: gold" ;>HTML</a>
                     </h2>
                     <div class="rules_container">
-                        <ol>
+                        <ol style="color: gold">
                             <li>Toate întrebările quiz-urilor sunt obligatorii.</li>
                             <li>Fiecare răspuns corect valorează 5 puncte.</li>
                             <li>Răspunsurile greșite sunt penalizate cu -3 puncte.</li>
@@ -61,6 +70,16 @@
                 </div>
 
             </main>
+        </div>
+        <div class="international">
+            <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
         <footer>
             <div class="footer_container">
@@ -89,7 +108,7 @@
                     <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                     <p>Web Tehnologies - SuH</p>
                     <p>Faculty of Informatics - Iasi</p>
-                    
+
                 </div>
             </div>
         </footer>

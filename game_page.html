@@ -12,7 +12,27 @@
     </head>
 
     <body>
-        <div id = "root">
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
+        <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
@@ -28,7 +48,7 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                
+
                 <div class="international">
                     <div id="google_translate_element"></div>
                     <script type="text/javascript">
@@ -39,7 +59,7 @@
 
                     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                 </div>
-                <main class ="quiz_container">
+                <main class="quiz_container" style="color: gold">
                     <div class="quiz_title">
                         <h1 class="quiz_title_header"> Cât de multe știi despre SuperHeroes? </h1>
                     </div>
@@ -60,52 +80,52 @@
                             </div>
                         </section>
                     </form>
-                        <p id="question_text"> Ce oraș este apărat de Batman? </p>
-                        <form action="submission.html" method="POST">
-                            <section class="answers">
-                                <div class="options">
-                                    <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                    <label id="label" for="answer1">New York</label><br>
-                                </div>
-                                <div class="options">
-                                    <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
-                                    <label id="label" for="answer2">Las Vegas</label><br>
-                                </div>
-                                <div class="options">
-                                    <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                    <label id="label" for="answer1">Gotham City</label>
-                                </div>
-                            </section>
-                        </form>
-                            <p id="question_text"> Cu cine se aseamănă Venom? </p>
-                            <form action="submission.html" method="POST">
-                                <section class="answers">
-                                    <div class="options">
-                                        <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                        <label id="label" for="answer1">Thor</label><br>
-                                    </div>
-                                    <div class="options">
-                                        <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
-                                        <label id="label" for="answer2">Spider Man</label><br>
-                                    </div>
-                                    <div class="options">
-                                        <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                        <label id="label" for="answer3">Capitan America</label>
-                                    </div>
-                                </section>
+                    <p id="question_text"> Ce oraș este apărat de Batman? </p>
+                    <form action="submission.html" method="POST">
+                        <section class="answers">
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer1">New York</label><br>
+                            </div>
+                            <div class="options">
+                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
+                                <label id="label" for="answer2">Las Vegas</label><br>
+                            </div>
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer1">Gotham City</label>
+                            </div>
+                        </section>
+                    </form>
+                    <p id="question_text"> Cu cine se aseamănă Venom? </p>
+                    <form action="submission.html" method="POST">
+                        <section class="answers">
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer1">Thor</label><br>
+                            </div>
+                            <div class="options">
+                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
+                                <label id="label" for="answer2">Spider Man</label><br>
+                            </div>
+                            <div class="options">
+                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
+                                <label id="label" for="answer3">Capitan America</label>
+                            </div>
+                        </section>
 
-                                <section class="buttons">
-                                    <p>&nbsp;</p>
-                                    <a href="under_construction.html"><input type="button" value="Prev"></a>
-                                    &nbsp;
-                                    <a href="under_construction.html"><input type="submit" value="Submit"></a>
-                                    &nbsp;
-                                    <a href="under_construction.html"><input type="button" value="Next"></a>
-                                    <p>&nbsp;</p>
-                                </section>
-                            </form>
-</main>
-            </div>        
+                        <section class="buttons">
+                            <p>&nbsp;</p>
+                            <a href="under_construction.html"><input type="button" value="Prev"></a>
+                            &nbsp;
+                            <a href="under_construction.html"><input type="submit" value="Submit"></a>
+                            &nbsp;
+                            <a href="under_construction.html"><input type="button" value="Next"></a>
+                            <p>&nbsp;</p>
+                        </section>
+                    </form>
+                </main>
+            </div>
             <footer>
                 <div class="footer_container">
                     <div id="footer_image" class="image_quick_links"></div>
@@ -133,10 +153,10 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                    
+
                     </div>
                 </div>
             </footer>
-            </div>
+        </div>
     </body>
 </html>

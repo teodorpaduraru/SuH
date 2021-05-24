@@ -13,6 +13,26 @@
     </head>
 
     <body>
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
         <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
@@ -30,7 +50,7 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                
+
                 <main>
                     <!-- Afisare locatie pe harta-->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
@@ -39,14 +59,14 @@
                     </div>
                     <script>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(47.173620, 27.574710), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.173620, 27.574710) }); infowindow = new google.maps.InfoWindow({ content: '<strong>FII</strong><br />Facultatea de Informatica Iasi<br />' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 
-                    <div class="suh-columns">
+                    <div class="suh-columns" style="color: gold">
                         <!-- Detalii de contact-->
-                        <p style="text-align: center">
+                        <p style="text-align: center; color: gold">
 
                             Telefon: (+40) 744 741 398
                         </p>
-                        <p>Trimiteți un e-mail la: &nbsp;<a href="mailto:our-mail@mail.com" style="color: white"> our-mail@mail.com</a></p>
-                        <p>
+                        <p style="color: gold">Trimiteți un e-mail la: &nbsp;<a href="mailto:our-mail@mail.com" style="color: gold"> our-mail@mail.com</a></pstyle="color:>
+                        <p style="color: gold">
                             Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
                             <br />În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
 

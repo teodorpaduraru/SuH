@@ -12,7 +12,27 @@
     </head>
 
     <body>
-        <div id = "root">
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
+        <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
@@ -37,7 +57,7 @@
 
                     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                 </div>
-                <main class="signin_container">
+                <main class="signin_container" style="color: gold">
                     <div class="root_signin">
 
                         <h1>Register and join your Superheroes!</h1>
@@ -60,12 +80,12 @@
                             </form>
                         </div>
 
-                        <div class="login_register">
+                        <div class="login_register" style="color: gold">
                             <a id="login_register_create" href="login_page.html">Already have an account</a>
                             <a id="login_register_forgot" href="forgot_password.html">Forgot Password?</a>
                         </div>
                         <br>
-                        <div class="alternative_register">
+                        <div class="alternative_register" style="color: gold">
                             <!-- Conectare alternativa pe pagina jocului-->
                             <p>Or register and LogIn with:</p>
                             <a class="icon" href="https://www.facebook.com/"><img src="./Images/LogIn_Facebook_icon.png"></a>
@@ -75,6 +95,16 @@
 
                     <div class="login_info_display"> </div>
                 </main>
+            </div>
+            <div class="international">
+                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
             <footer>
                 <div class="footer_container">
@@ -103,7 +133,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        
+
                     </div>
                 </div>
             </footer>

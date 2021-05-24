@@ -12,7 +12,27 @@
     </head>
 
     <body>
-        <div id = "root">
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
+        <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
@@ -28,22 +48,12 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                <div class="international">
-                    <div id="google_translate_element"></div>
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
-                        }
-                    </script>
-
-                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
-                <main class = "login_container">
+                <main class="login_container" style="color: gold">
                     <div class="root_login">
                         <h1>Register and join your Superheroes!</h1>
-                        <div class = "login_form">
+                        <div class="login_form">
                             <h2>LogIn</h2>
-                            <form action = "home_page.html" method="post">
+                            <form action="home_page.html" method="post">
                                 <label for="username">Username:</label>
                                 <br>
                                 <input id="username" name="username" type="text">
@@ -55,21 +65,31 @@
                                 <input id="submit" type="submit" value="LogIn">
                             </form>
                         </div>
-                        
-                        <div class="login_register">
-                            <a id = "login_register_create" href="signup_page.html">Create an account</a>
-                            <a id = "login_register_forgot" href="forgot_password.html">Forgot Password?</a>
+
+                        <div class="login_register" style="color: gold">
+                            <a id="login_register_create" href="signup_page.html">Create an account</a>
+                            <a id="login_register_forgot" href="forgot_password.html">Forgot Password?</a>
                         </div>
                         <br>
-                        <div class="alternative_register">
+                        <div class="alternative_register" style="color: gold">
                             <p>Or register and LogIn with:</p>
-                            <a label = "facebook_login" class="icon" href="https://www.facebook.com/"><img src="./Images/LogIn_Facebook_icon.png"></a>
+                            <a label="facebook_login" class="icon" href="https://www.facebook.com/"><img src="./Images/LogIn_Facebook_icon.png"></a>
                             <a class="icon" href="https://accounts.google.com/ServiceLogin/identifier?hl=ro&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="./Images/LogIn_Google_icon.png"></a>
                         </div>
                     </div>
 
                     <div class="login_info_display"> </div>
                 </main>
+            </div>
+            <div class="international">
+                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
             <footer>
                 <div class="footer_container">
@@ -98,7 +118,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        
+
                     </div>
                 </div>
             </footer>

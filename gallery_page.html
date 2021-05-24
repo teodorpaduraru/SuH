@@ -13,7 +13,27 @@
     </head>
 
     <body>
-        <div id = "root">
+        <div class="international">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
+                <span class="language"></span>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#en" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ro" style="color: greenyellow">
+                            <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
+                        </a>
+                    </li>
+                </ul>
+                <script src="./scripts/intern.js"></script>
+                <script type="text/javascript" src="./scripts/testlimba.js"></script>
+            </div>
+        </div>
+        <div id="root">
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a href="./home_page.html">Home</a>
@@ -30,35 +50,25 @@
                     </a>
                     <script src="./scripts/game_page.js"></script>
                 </div>
-                <div class="international">
-                    <div id="google_translate_element"></div>
-                    <script type="text/javascript">
-                        function googleTranslateElementInit() {
-                            new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
-                        }
-                    </script>
-
-                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
-                <main>
-                    <div class="flex-container">
+                <main style="color: gold">
+                    <div class="flex-container" style="color: gold">
                         <table>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p>Aquamen</p>
+                                        <p style="color: gold">Aquamen</p>
                                         <img src="./Images/aquamen.jpg" width="150" height="150" alt="Aquamen">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Spider-Man</p>
+                                        <p style="color: gold">Spider-Man</p>
                                         <img src="./Images/spiderman.png" width="150" height="150" alt="Spider-Man">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Hulk</p>
+                                        <p style="color: gold">Hulk</p>
                                         <img src="./Images/hulk.jpg" width="150" height="150" alt="Hulk">
                                     </td>
                                 </tr>
@@ -69,19 +79,19 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p>Superman</p>
+                                        <p style="color: gold">Superman</p>
                                         <img src="./Images/superman.jpg" width="150" height="150" alt="Superman">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Batman</p>
+                                        <p style="color: gold">Batman</p>
                                         <img src="./Images/batman.jpg" width="150" height="150" alt="Batman">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Wonder <br />Woman</p>
+                                        <p style="color: gold">Wonder <br />Woman</p>
 
                                         <img src="./Images/wonder_woman.jpg" width="150" height="150" alt="Wonder Woman">
                                     </td>
@@ -93,25 +103,35 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <p>Iron Man</p>
+                                        <p style="color: gold">Iron Man</p>
                                         <img src="./Images/ironman.jpg" width="150" height="150" alt="Iron Man">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Thor</p>
+                                        <p style="color: gold">Thor</p>
                                         <img src="./Images/thor.jpg" width="150" height="150" alt="Thor">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Flash</p>
+                                        <p style="color: gold">Flash</p>
                                         <img src="./Images/flash.jpg" width="150" height="150" alt="Flash">
                                     </td>
                                 </tr>
                         </table>
                     </div>
                 </main>
+            </div>
+            <div class="international">
+                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
             <footer>
                 <div class="footer_container">
@@ -140,7 +160,7 @@
                         <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
                         <p>Web Tehnologies - SuH</p>
                         <p>Faculty of Informatics - Iasi</p>
-                        
+
                     </div>
                 </div>
             </footer>
