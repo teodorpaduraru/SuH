@@ -1,16 +1,13 @@
 ﻿var intern = {
 
-
     'topnav': {
         'en': '<p>Home<\p><p>LogIn<\p><p>Play!<\p><p>Gallery<\p><p>Ranking<\p><p>Profile<\p><p>Contact<\p><p>About<\p><p>Rules<\p>',
         'ro': '<p>Acasă<\p><p>Logare<\p><p>Joaca!<\p><p>Galerie<\p><p>Clasament<\p><p>Profil<\p>p>Contact<\p><p>Despre<\p><p>Reguli<\p>',
     },
 
-
-
     'home_page': {
-        'en': '<p>SuperHeroes Web Game: Educational web game for teenagers.<\p><p>The scenario, stake and conditions of victory / defeat are already predetermined.<\p><p>All games will take place in a trivia system (conquistador).<\p><p>Thanks and good luck to all!<\p>',
         'ro': '<p>SuperHeroes Web Game: joc Web educativ destinat adolescenților.<\p><p>Scenariul, miza și condițiile de victorie/înfrângere sunt deja prestabilite.<\p><p>Toate partidele se vor desfășura în sistem trivia (conquistador).<\p><p>Mulțumim și succes tuturor!<\p>',
+        'en': '<p>SuperHeroes Web Game: Educational web game for teenagers.<\p><p>The scenario, stake and conditions of victory / defeat are already predetermined.<\p><p>All games will take place in a trivia system (conquistador).<\p><p>Thanks and good luck to all!<\p>',
     },
 
     'login_page': {

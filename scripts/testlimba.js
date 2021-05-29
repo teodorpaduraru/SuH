@@ -11,8 +11,9 @@ var mlCodes = [
 
 var MLstrings = [
 	{
-		English: "Language selector",
 		Romana: "Selecteaza limba",
+		English: "Language selector",
+		
 	},
 ];
 
