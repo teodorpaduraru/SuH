@@ -35,13 +35,13 @@ main {
     text-align: center;
 }
 
-p {
+/*p {
     color: white;
     font-size: 25px;
     height: 5%;
     text-align: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}
+}*/
 .suh-column {
     display: flex;
     color: white;

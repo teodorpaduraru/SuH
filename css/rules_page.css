@@ -23,15 +23,15 @@ main {
     height: 2%;
     text-align: center;
 }
-p {
-    /*display: flex; */
+/*p {
+    display: flex;
     color: white;
     font-size: 25px;
     font-weight: bold;
     height: 10px;
     text-align: left;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}
+}*/
 
 .content > h2 {
     /* display: flex; */
@@ -55,6 +55,18 @@ p {
     line-height: 1.4;
     font-size: 40px;
 } /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
+
+
+.content, .description1, .description2, .description3, .description4 {
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 2%;
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
 
 .rules_container {
     padding-left: 10%;

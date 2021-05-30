@@ -1,4 +1,5 @@
-﻿var intern = {
+﻿
+var intern = {
 
     'topnav': {
         'en': '<p>Home<\p><p>LogIn<\p><p>Play!<\p><p>Gallery<\p><p>Ranking<\p><p>Profile<\p><p>Contact<\p><p>About<\p><p>Rules<\p>',

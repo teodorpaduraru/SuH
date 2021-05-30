@@ -12,6 +12,7 @@
 
 /*css pentru elementele de nivel h1*/
 
+
 .international {
     justify-content: center;
     display: flex;
@@ -21,12 +22,13 @@
     height: 2%;
     text-align: center;
 }
-.content > p {
+.content, .description1, .description2, .description3, .description4, .description5 {
+    justify-content: center;
     display: flex;
     color: white;
     font-size: 25px;
     font-weight: bold;
-    /* height: 200px; */
+    height: 2%;
     text-align: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,49 +13,36 @@
 </head>
 
 <body>
-    <div class="international">
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Language Option</button>
-            <span class="language"></span>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="#en" style="color: greenyellow">
-                        <script src="./scripts/intern.js"></script> English&nbsp<img src="./Images/32.png" style=height:35px>
-                    </a>
-                </li>
-                <li>
-                    <a href="#ro" style="color: greenyellow">
-                        <script src="./scripts/intern.js"></script> Romana&nbsp<img src="./Images/64.png" style=height:35px>
-                    </a>
-                </li>
-            </ul>
-            <script src="./scripts/intern.js"></script>
-            <script type="text/javascript" src="./scripts/testlimba.js"></script>
-        </div>
-    </div>
     <div id="root">
         <div class="page_wrapper">
             <div class="topnav" id="navbar">
-                <a href="./home_page.html">Home</a>
-                <a href="./login_page.html">LogIn</a>
-                <a href="./game_page.html">Play!</a>
-                <a href="./gallery_page.html">Gallery</a>
-                <a href="./ranking_page.html">Ranking</a>
-                <a class="active" href="./profile_page.html">Profile</a>
-                <a href="./contact_page.html">Contact</a>
-                <a href="./about_page.html">About</a>
-                <a href="./rules_page.html">Rules</a>
+                <a class="topnav1" href="./index.html">Acasă</a>
+                <a class="topnav2" href="./login_page.html">Logare</a>
+                <a class="topnav3" href="./game_page.html">Joacă!</a>
+                <a class="topnav4" href="./gallery_page.html">Galerie</a>
+                <a class="topnav5" href="./ranking_page.html">Clasament</a>
+                <a class="active" href="./profile_page.html">Profil</a>
+                <a class="topnav6" href="./contact_page.html">Contact</a>
+                <a class="topnav7" href="./about_page.html">Despre</a>
+                <a class="topnav8" href="./rules_page.html">Reguli</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <script src="./scripts/game_page.js"></script>
                 <script src="./scripts/profile.js"></script>
             </div>
+            <div class="langWrap">
+                <center>
+                    <p style="color:ghostwhite">Language option</p>
+                    <a href="#" language='romanian' style="color:greenyellow" class="active">RO</a>
+                    <a href="#" language='english' style="color:greenyellow">EN</a>
+                </center>
+            </div>
             <main class="abstract" style="color: gold">
                 <div class="row">
                     <div class="column">
                         <h1><a class="icon"><img src="./Images/red1.png"></a> </h1>
-                        <p>
+                        <p class="description1">
                             Username:
                             <br />Elementary King
                         </p>
@@ -63,14 +50,14 @@
                 </div>
                 <div class="row" style="color: gold">
                     <div class="column">
-                        <h2 style="text-align:center">Profile details</h2>
-                        <p>
+                        <h2 class="description2" style="text-align:center">Profile details</h2>
+                        <p class="description3">
                             Nivel: 4
-                            <br />Experiență: 450/2000
-                            <br />Victorii/Înfrângeri: 20/35
-                            <br />Țară: România
-                            <br />Localitate: Iași
                         </p>
+                        <p class="description4">Experiență: 450/2000</p>
+                        <p class="description5">Victorii/Înfrângeri: 20/35</p>
+                        <p class="description6">Țară: România</p>
+                        <p class="description7">Localitate: Iași</p>
                     </div>
                 </div>
             </main>
@@ -85,33 +72,122 @@
             </script>
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
+        <script>
+            const langEl = document.querySelector('.langWrap');
+            const link = document.querySelectorAll('a');
+            const descrEl1 = document.querySelector('.description1');
+            const descrEl2 = document.querySelector('.description2');
+            const descrEl3 = document.querySelector('.description3');
+            const descrEl4 = document.querySelector('.description4');
+            const descrEl5 = document.querySelector('.description5');
+            const descrEl6 = document.querySelector('.description6');
+            const descrEl7 = document.querySelector('.description7');
+            const descrEl8 = document.querySelector('.topnav1');
+            const descrEl9 = document.querySelector('.active');
+            const descrEl10 = document.querySelector('.topnav2');
+            const descrEl11 = document.querySelector('.topnav3');
+            const descrEl12 = document.querySelector('.topnav4');
+            const descrEl13 = document.querySelector('.topnav5');
+            const descrEl14 = document.querySelector('.topnav6');
+            const descrEl15 = document.querySelector('.topnav7');
+            const descrEl16 = document.querySelector('.topnav8');
+
+            link.forEach(el => {
+                el.addEventListener('click', () => {
+                    langEl.querySelector('.active').classList.remove('active');
+                    el.classList.add('active');
+
+                    const attr = el.getAttribute('language');
+
+
+                    descrEl1.textContent = data[attr].description1;
+                    descrEl2.textContent = data[attr].description2;
+                    descrEl3.textContent = data[attr].description3;
+                    descrEl4.textContent = data[attr].description4;
+                    descrEl5.textContent = data[attr].description5;
+                    descrEl6.textContent = data[attr].description6;
+                    descrEl7.textContent = data[attr].description7;
+                    descrEl8.textContent = data[attr].topnav1;
+                    descrEl9.textContent = data[attr].active;
+                    descrEl10.textContent = data[attr].topnav2;
+                    descrEl11.textContent = data[attr].topnav3;
+                    descrEl12.textContent = data[attr].topnav4;
+                    descrEl13.textContent = data[attr].topnav5;
+                    descrEl14.textContent = data[attr].topnav6;
+                    descrEl15.textContent = data[attr].topnav7;
+                    descrEl16.textContent = data[attr].topnav8;
+                });
+            });
+
+            var data = {
+
+                "romanian":
+                {
+                    "description1": "Nume de utilizator:",
+                    "description2": "Detalii profil",
+                    "description3": "Nivel",
+                    "description4": "Experiență:",
+                    "description5": "Victorii/Înfrângeri:",
+                    "description6": "Țară:",
+                    "description7": "Localitate:",
+                    "topnav1": "Acasă",
+                    "topnav2": "Logare",
+                    "topnav3": "Joacă!",
+                    "topnav4": "Galerie",
+                    "topnav5": "Clasament",
+                    "active": "Profil",
+                    "topnav6": "Contact",
+                    "topnav7": "Despre",
+                    "topnav8": "Reguli",
+                },
+                "english":
+                {
+                    "description1": "Username:",
+                    "description2": "Profile details",
+                    "description3": "Level:",
+                    "description4": "Experience:",
+                    "description5": "Victories / Defeats:",
+                    "description6": "Country:",
+                    "description7": "City:",
+                    "topnav1": "Home",
+                    "topnav2": "LogIn",
+                    "topnav3": "Play!",
+                    "topnav4": "Gallery",
+                    "topnav5": "Ranking",
+                    "active": "Profile",
+                    "topnav6": "Contact",
+                    "topnav7": "About",
+                    "topnav8": "Rules",
+                }
+            }
+        </script>
         <footer>
             <div class="footer_container">
                 <div id="footer_image" class="image_quick_links"></div>
                 <div class="footer_browse">
-                    <h1 class="footer_headers">Quick links</h1>
-                    <a href="./home_page.html">Home </a>
+                    <h1 class="footer_headers">Linkuri rapide</h1>
+                    <a href="./index.html">Acasă </a>
                     <br>
-                    <a href="./gallery_page.html">Gallery</a>
+                    <a href="./gallery_page.html">Galerie</a>
                     <br>
-                    <a href="./ranking_page.html">Ranking</a>
+                    <a href="./ranking_page.html">Clasament</a>
                     <br>
                     <a href="./contact_page.html">Contact</a>
                     <br>
-                    <a href="./about_page.html">About </a>
+                    <a href="./about_page.html">Despre</a>
                 </div>
                 <div id="footer_image" class="image_find_us"></div>
                 <div class="footer_find_us">
-                    <h2 class="footer_headers"> Find us </h2>
+                    <h2 class="footer_headers"> Unde ne găsești </h2>
                     <p>user@address.com</p>
-                    <p>phonenumber</p>
-                    <p>facebook_page</p>
+                    <p>Număr de telefon</p>
+                    <p>Pagina de facebook</p>
                 </div>
                 <div id="footer_image" class="image_misc"></div>
                 <div class="footer_misc">
-                    <h3 class="footer_headers"> Copyright © 2021, Faculty of Informatics Iasi</h3>
-                    <p>Web Tehnologies - SuH</p>
-                    <p>Faculty of Informatics - Iasi</p>
+                    <h3 class="footer_headers"> Copyright © 2021, Facultatea de Informatică Iasi</h3>
+                    <p>Tehnologii Web - SuH</p>
+                    <p>Facultatea de Informatică - Iasi</p>
 
                 </div>
             </div>
