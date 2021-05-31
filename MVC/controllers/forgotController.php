@@ -2,7 +2,7 @@
 
 require_once("../models/database.php");
 
-class LoginController{
+class forgotController{
 
 	private $db;
 
@@ -26,31 +26,29 @@ class LoginController{
 		}
 	}
 
-	public function login(){
-		if(isset($_POST['userType']) && isset($_POST['username']) && isset($_POST['password'])){
-			$userType = $_POST['userType'];
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-			if($this->db->login($userType, $username, $password)){
+	public function forgot(){
+		if(isset($_POST['email'])){
+			$email = $_POST['email'];
+			//de setat trimiterea mailului la user
+			if($this->db->l($email)){
 				session_start();
 				$_SESSION["username"] = $username;
+				$_SESSION["password"] = $password;
 			}
 			else $this->view(true);
 		}
 		else $this->view(true);
 	}
 
-	public function view($redirect = false, $location = "Login"){
+	public function view($redirect = false, $location = "forgot"){
 		if($redirect){
 			header("Location:" . $location . "Controller.php");
 		}
-		else require_once("../views/login/logIn.php");
+		else require_once("../view/forgot/forgot.php");
 	}
 
 }
-
-
-$loginController = new LoginController();
+$loginController = new loginController();
 
 if(isset($_REQUEST['op'])){
 	$op = $_REQUEST['op'];

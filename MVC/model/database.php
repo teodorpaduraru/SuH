@@ -39,7 +39,7 @@ class Database{
 
 		$pass = sha1($pass);
 
-	  	// pregatim comanda SQL parametrizata
+	  	// pregatim comanda SQL cu parametru
 	  	if($type === "admin")
 	  		$sql = $this->pdo->prepare ('SELECT username, password FROM admin WHERE username=? and password=?');
 	  	else 
@@ -58,7 +58,7 @@ class Database{
 
 		$pass = sha1($pass);
 
-	  	// pregatim comanda SQL parametrizata
+	  	// pregatim comanda SQL cu parametru
 	  	if($type === "admin")
 	  		$sql = $this->pdo->prepare ('SELECT count(*) as total FROM admin WHERE username=? or email=?');
 	  	else 
@@ -68,7 +68,7 @@ class Database{
 		if ($sql->execute ([$user, $email])) 
 			if($row = $sql->fetch())
 				if($row['total'] === "0"){
-					// pregatim comanda SQL parametrizata
+					// pregatim comanda SQL cu parametru
 				  	if($type === "admin"){
 				  		$sql = $this->pdo->prepare ('SELECT max(id) as max FROM admin');
 				  		if ($sql->execute()) 

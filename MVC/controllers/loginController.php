@@ -2,7 +2,7 @@
 
 require_once("../models/database.php");
 
-class SignupController{
+class loginController{
 
 	private $db;
 
@@ -12,9 +12,8 @@ class SignupController{
 
 	public function select($op){
 		switch ($op) {
-
-			case 'Sign up':
-				$this->signup();
+			case 'Log in':
+				$this->login();
 				break;
 			
 			case 'First':
@@ -27,36 +26,37 @@ class SignupController{
 		}
 	}
 
-	public function signup(){
-		if(isset($_POST['userType']) && isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])){
+	public function login(){
+		if(isset($_POST['userType']) && isset($_POST['username']) && isset($_POST['password'])){
 			$userType = $_POST['userType'];
-			$email = $_POST['email'];
 			$username = $_POST['username'];
 			$password = $_POST['password'];
-			if($this->db->signup($userType, $username, $email, $password))
-				$this->view(true, "Login");
+			if($this->db->login($userType, $username, $password)){
+				session_start();
+				$_SESSION["username"] = $username;
+			}
 			else $this->view(true);
 		}
 		else $this->view(true);
 	}
 
-	public function view($redirect = false, $location = "Signup"){
+	public function view($redirect = false, $location = "login"){
 		if($redirect){
 			header("Location:" . $location . "Controller.php");
 		}
-		else require_once("../views/signup/signUp.php");
+		else require_once("../views/login/logIn.php");
 	}
 
 }
 
 
-$signupController = new SignupController();
+$loginController = new loginController();
 
 if(isset($_REQUEST['op'])){
 	$op = $_REQUEST['op'];
-	$signupController->select($op);
+	$loginController->select($op);
 }
 else 
-	$signupController->select('First');
+	$loginController->select('First');
 
 ?>
