@@ -6,28 +6,15 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/general.css">
-        <link rel="stylesheet" href="./css/NavigationBar.css">
         <link rel="stylesheet" href="./css/login_page.css">
-        <link rel="stylesheet" href="./css/footer.css">
     </head>
 
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <div class="topnav" id="navbar">
-                    <a class="topnav1" href="./index.html">Acasă</a>
-                    <a class="active" href="./login_page.html">Logare</a>
-                    <a class="topnav2" href="./game_page.html">Joacă!</a>
-                    <a class="topnav3" href="./gallery_page.html">Galerie</a>
-                    <a class="topnav4" href="./ranking_page.html">Clasament</a>
-                    <a class="topnav5" href="./profile_page.html">Profil</a>
-                    <a class="topnav6" href="./contact_page.html">Contact</a>
-                    <a class="topnav7" href="./about_page.html">Despre</a>
-                    <a class="topnav8" href="./rules_page.html">Reguli</a>
-                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                    </a>
-                    <script src="./scripts/game_page.js"></script>
-                </div>
+                <?php
+                    include_once 'navbar.php';
+                ?>
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -40,7 +27,7 @@
                         <h1 class="description1">Înregistrați-vă și alăturați-vă supereroilor!</h1>
                         <div class="login_form">
                             <h2>Logare</h2>
-                            <form action="index.html" method="post">
+                            <form action="includes/login.inc.php" method="post">
                                 <label class="description2" for="username">Nume de utilizator:</label>
                                 <br>
                                 <input id="username" name="username" type="text">
@@ -49,12 +36,25 @@
                                 <br>
                                 <input id="password" name="password" type="password" required minlength="8">
                                 <br>
-                                <input id="submit" type="submit" value="LogIn">
+                                <button type="submit" name="submit">LogIn</button>
                             </form>
                         </div>
 
+                        <?php
+                            if(isset($_GET["error"]))
+                                if($_GET["error"] == "emptyinput") {
+                                    echo "<p class=\"signuperror\">Fill in all fields!</p>";
+                                }
+                                else if($_GET["error"] == "usernameinexistent") {
+                                    echo "<p class=\"signuperror\">Wrong username!</p>";
+                                }
+                                else if($_GET["error"] == "wrongPassword") {
+                                    echo "<p class=\"signuperror\">Wrong password!</p>";
+                                }
+                        ?>
+                        
                         <div class="login_register" style="color: gold">
-                            <a class="description4" id="login_register_create" href="signup_page.html">Creează un cont</a>
+                            <a class="description4" id="login_register_create" href="signup_page.php">Creează un cont</a>
                             <a class="description5" id="login_register_forgot" href="forgot_password.html">Ați uitat parola?</a>
                         </div>
                         <br>
@@ -163,37 +163,9 @@
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
-            <footer>
-                <div class="footer_container">
-                    <div id="footer_image" class="image_quick_links"></div>
-                    <div class="footer_browse">
-                        <h1 class="footer_headers">Linkuri rapide</h1>
-                        <a href="./index.html">Acasă </a>
-                        <br>
-                        <a href="./gallery_page.html">Galerie</a>
-                        <br>
-                        <a href="./ranking_page.html">Clasament</a>
-                        <br>
-                        <a href="./contact_page.html">Contact</a>
-                        <br>
-                        <a href="./about_page.html">Despre</a>
-                    </div>
-                    <div id="footer_image" class="image_find_us"></div>
-                    <div class="footer_find_us">
-                        <h2 class="footer_headers"> Unde ne găsești </h2>
-                        <p>user@address.com</p>
-                        <p>Număr de telefon</p>
-                        <p>Pagina de facebook</p>
-                    </div>
-                    <div id="footer_image" class="image_misc"></div>
-                    <div class="footer_misc">
-                        <h3 class="footer_headers"> Copyright © 2021, Facultatea de Informatică Iasi</h3>
-                        <p>Tehnologii Web - SuH</p>
-                        <p>Facultatea de Informatică - Iasi</p>
-
-                    </div>
-                </div>
-            </footer>
+            <?php
+                include_once 'footer.php';
+            ?>
         </div>
     </body>
 </html>

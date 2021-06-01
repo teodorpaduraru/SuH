@@ -44,12 +44,12 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .topnav a{
+    .topnav a {
         font-size: 12px;
         /* display: block; */
     }
 
-    .topnav{
+    .topnav {
         height:50px;
     }
 }

@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/general.css">
         <link rel="stylesheet" href="./css/NavigationBar.css">
-        <link rel="stylesheet" href="./css/signin_page.css">
+        <link rel="stylesheet" href="./css/signup_page.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <link href="./HTML/signup_page.html">
+        <link href="./HTML/signup_page.php">
     </head>
 
     <body>
@@ -17,7 +17,7 @@
             <div class="page_wrapper">
                 <div class="topnav" id="navbar">
                     <a class="topnav1" href="./index.html">Acasă</a>
-                    <a class="active" href="./signup_page.html">Înscriere</a>
+                    <a class="active" href="./signup_page.php">Înscriere</a>
                     <a class="topnav2" href="./game_page.html">Joacă!</a>
                     <a class="topnav3" href="./gallery_page.html">Galerie</a>
                     <a class="topnav4" href="./ranking_page.html">Clasament</a>
@@ -36,17 +36,15 @@
                     </center>
                 </div>
 
-
                 <main class="signin_container" style="color: gold">
                     <div class="root_signin">
-
                         <h1 class="description1">Înregistrați-vă și alăturați-vă supereroilor!</h1>
                         <div class="signin_form">
                             <h2 class="description2">Înscrie-te</h2>
-                            <form action="index.html" method="post">
+                            <form action="includes/signup.inc.php" method="post">
                                 <label for="email">E-mail:</label>
                                 <br>
-                                <input id="email" name="email" type="email">
+                                <input id="email" name="email" type="text">
                                 <br>
                                 <label class="description3" for="username">Nume de utilizator:</label>
                                 <br>
@@ -54,14 +52,40 @@
                                 <br>
                                 <label class="description4" for="password">Parola:</label>
                                 <br>
-                                <input id="password" name="password" type="password" required minlength="8">
+                                <input id="password" name="password" type="password">
                                 <br>
-                                <input id="submit" type="submit" value="SignUp">
+                                <label class="description5" for="passwordRepeat">Idem Parola:</label>
+                                <br>
+                                <input id="passwordRepeat" name="passwordRepeat" type="password">
+                                <br>
+                                <button type="submit" name="submit">SignUp</button>
                             </form>
                         </div>
 
+                        <?php
+                            if(isset($_GET["error"]))
+                                if($_GET["error"] == "emptyinput") {
+                                    echo "<p class=\"signuperror\">Fill in all fields! </p>";
+                                }
+                                else if($_GET["error"] == "invalidEmail") {
+                                    echo "<p class=\"signuperror\">Email is invalid! </p>";
+                                }
+                                else if($_GET["error"] == "invalidUsername") {
+                                    echo "<p class=\"signuperror\">Fill the username field! </p>";
+                                }
+                                else if($_GET["error"] == "passwordsDontMatch") {
+                                    echo "<p class=\"signuperror\">Passwords don't match! </p>";
+                                }
+                                else if($_GET["error"] == "userNameExists") {
+                                    echo "<p class=\"signuperror\">Username already exists! </p>";
+                                }
+                                else if($_GET["error"] == "none") {
+                                    echo "<p class=\"signuperror\">Registration succesfull!</p>";
+                                }
+                        ?>
+                        
                         <div class="login_register" style="color: gold">
-                            <a class="description5" id="login_register_create" href="login_page.html">Ai deja un cont</a>
+                            <a class="description5" id="login_register_create" href="login_page.php">Ai deja un cont</a>
                             <a class="description6" id="login_register_forgot" href="forgot_password.html">Ați uitat parola?</a>
                         </div>
                         <br>
@@ -75,6 +99,7 @@
 
                     <div class="login_info_display"> </div>
                 </main>
+
             </div>
             <script>
                 const langEl = document.querySelector('.langWrap');
@@ -166,7 +191,6 @@
                 }
             </script>
             <div class="international">
-                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {

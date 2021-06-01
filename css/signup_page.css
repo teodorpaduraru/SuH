@@ -8,7 +8,7 @@
     background: no-repeat center url("../Images/login_Spidey.jpg");
     background-size: cover;
     background-position: right;
-    height: 500px
+    height: auto;
 }
 
 .signin_image {
@@ -21,6 +21,7 @@
     /* border: 1px solid red; */
     margin: auto;
     background-color: rgb(0, 0, 0, 0.2);
+    border-radius: inherit;
 }
 
 .international {
@@ -43,9 +44,13 @@
     display: block;
 }
 
-    .signin_register a {
-        color: orangered;
-    }
+.signin_register a {
+    color: orangered;
+}
+
+.signuperror{
+    color: red;
+}
 
 #signin_register_forgot {
     float: right;

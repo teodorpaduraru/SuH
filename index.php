@@ -4,9 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/general.css">
-        <link rel="stylesheet" href="./css/NavigationBar.css">
         <link rel="stylesheet" href="./css/home_page.css">
-        <link rel="stylesheet" href="./css/footer.css">
 	    <link rel="stylesheet" href="language.css">
         <title>Home | SuH</title>
     </head>
@@ -35,25 +33,10 @@
         </div>
             -->
         <div id="root">
-
             <div class="page_wrapper">
-                <div class="topnav" id="navbar">
-                    <a class="active" href="./index.html">Acasă</a>
-                    <a class="topnav2" href="./login_page.html">Logare</a>
-                    <a class="topnav3" href="./game_page.html">Joacă!</a>
-                    <a class="topnav4" href="./gallery_page.html">Galerie</a>
-                    <a class="topnav5" href="./ranking_page.html">Clasament</a>
-                    <a class="topnav6" href="./profile_page.html">Profil</a>
-                    <a class="topnav7" href="./contact_page.html">Contact</a>
-                    <a class="topnav8" href="./about_page.html">Despre</a>
-                    <a class="topnav9" href="./rules_page.html">Reguli</a>
-                    <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <script src="./scripts/game_page.js"></script>
-                    <script src="./scripts/keyboard.js"></script>
-                </div>
-
+                <?php
+                    include_once 'navbar.php';
+                ?>
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -62,11 +45,15 @@
                     </center>
                 </div>
                 <main>
-                        <p class="description1" style="color: gold">SuperHeroes Web Game: joc Web educativ destinat adolescenților.</p>
-                        <p class="description2" style="color: gold">Scenariul, miza și condițiile de victorie/înfrângere sunt deja prestabilite.</p>
-                        <p class="description3" style="color: gold">Toate partidele se vor desfășura în sistem trivia (conquistador).</p>
-                        <p class="description4" style="color: gold">Mulțumim și succes tuturor!</p>
-
+                    <?php
+                    if (isset($_SESSION["uid"])) {
+                        echo "<p class=\"description1\" style=\"color: gold\">Welcome ".$_SESSION["userName"].".</p>";
+                        }
+                    ?>
+                    <p class="description1" style="color: gold">SuperHeroes Web Game: joc Web educativ destinat adolescenților.</p>
+                    <p class="description2" style="color: gold">Scenariul, miza și condițiile de victorie/înfrângere sunt deja prestabilite.</p>
+                    <p class="description3" style="color: gold">Toate partidele se vor desfășura în sistem trivia (conquistador).</p>
+                    <p class="description4" style="color: gold">Mulțumim și succes tuturor!</p>
                 </main>
             </div>
             <script>
@@ -157,39 +144,9 @@
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
 
-            <footer>
-                <div class="footer_container">
-                    <div id="footer_image" class="image_quick_links"></div>
-                    <div class="footer_browser">
-                        <h1 class="footer_headers">Linkuri rapide</h1>
-                        <a href="./index.html">Acasă </a>
-                        <br>
-                        <a href="./gallery_page.html">Galerie</a>
-                        <br>
-                        <a href="./ranking_page.html">Clasament</a>
-                        <br>
-                        <a href="./contact_page.html">Contact</a>
-                        <br>
-                        <a href="./about_page.html">Despre</a>
-                        <br>
-                        <a href="./cpanel.html">Administrare</a>
-                    </div>
-                    <div id="footer_image" class="image_find_us"></div>
-                    <div class="footer_find_us">
-                        <h2 class="footer_headers"> Unde ne găsești </h2>
-                        <p>user@address.com</p>
-                        <p>Număr de telefon</p>
-                        <p>Pagina de facebook</p>
-                    </div>
-                    <div id="footer_image" class="image_misc"></div>
-                    <div class="footer_misc">
-                        <h3 class="footer_headers"> Copyright © 2021, Facultatea de Informatică Iasi</h3>
-                        <p>Tehnologii Web - SuH</p>
-                        <p>Facultatea de Informatică - Iasi</p>
-
-                    </div>
-                </div>
-            </footer>
+            <?php
+                include_once 'footer.php';
+            ?>
         </div>
     </body>
 </html>
