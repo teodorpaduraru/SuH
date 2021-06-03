@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da|Lato');
+
+body {
+    background-color: #ded;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.quiz {
+    &__header {
+        font-family: 'Baloo Da', cursive;
+        padding-bottom: 32px;
+        text-align: center;
+
+        &--block {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: blueviolet;
+            margin-bottom: 32px;
+            width: 32%;
+        }
+
+        &--title {
+            color: #611BBD;
+            font-size: 64px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &__body{
+        background: #f5f5f5;
+        box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        margin: 48px auto;
+        padding: 32px;
+        max-width: 800px;
+    }
+
+    &__button {
+        background-color: crimson;
+        border: 1px solid #130269;
+        border-radius: 4px;
+        box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+        font-family: 'Baloo Da', cursive;
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0 auto;
+        padding: 12px;
+        transition: background-color .1s ease-out;
+        width: 250px;
+
+        &:hover {
+            background-color: coral;
+            transition: background-color .15s ease-in;
+        }
+
+        &--container {
+            text-align: center;
+        }
+    }
+
+    &__question {
+        font-size: 32px;
+        color: lightseagreen;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__options {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        color: cadetblue;
+        cursor: pointer;
+        margin-left: 8px;
+        margin-bottom: 16px;
+        padding: 12px;
+        width: 32%;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__response {
+        text-align: center;
+    }
+
+    &__result {
+        color: #fff;
+        margin: 8px auto 0;
+        text-align: center;
+        width: 80%;
+    }
+
+    &__info {
+        font-family: 'Baloo Da', cursive;
+        font-size: 24px;
+        color: brown;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+}
+
+.correct {
+    background-color: #0c0;
+    font-family: 'Baloo Da', cursive;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    width: 80%;
+}
+
+.wrong {
+    background-color: #c00;
+    font-family: 'Baloo Da', cursive;
+    font-size: 24px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    width: 80%;
+}

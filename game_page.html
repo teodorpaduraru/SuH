@@ -37,70 +37,16 @@
                 </div>
 
                 <main class="quiz_container" style="color: gold">
-                    <div class="quiz_title">
-                        <h1 class="quiz_title_header"> Cât de multe știi despre SuperHeroes? </h1>
-                    </div>
-                    <p id="question_text"> Ce culoare are costumul lui Spider Man? </p>
-                    <form action="submission.html" method="POST">
-                        <section class="answers">
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer1">Roșu</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
-                                <label id="label" for="answer2">Gri</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer1">Galben</label>
-                            </div>
-                        </section>
-                    </form>
-                    <p id="question_text"> Ce oraș este apărat de Batman? </p>
-                    <form action="submission.html" method="POST">
-                        <section class="answers">
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer1">New York</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
-                                <label id="label" for="answer2">Las Vegas</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer1">Gotham City</label>
-                            </div>
-                        </section>
-                    </form>
-                    <p id="question_text"> Cu cine se aseamănă Venom? </p>
-                    <form action="submission.html" method="POST">
-                        <section class="answers">
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer1">Thor</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer2" value="answer1" class="radio_button">
-                                <label id="label" for="answer2">Spider Man</label><br>
-                            </div>
-                            <div class="options">
-                                <input type=radio name="option" id="answer1" value="answer1" class="radio_button">
-                                <label id="label" for="answer3">Capitan America</label>
-                            </div>
-                        </section>
-
+                        <p class="quiz_title">Alege un nivel de experiență:</p>
                         <section class="buttons">
                             <p>&nbsp;</p>
-                            <a href="under_construction.html"><input type="button" value="Prev"></a>
+                            <a class="buton1" style="color: floralwhite" href="beginner.html"><input type="button" value="Începător"></a>
                             &nbsp;
-                            <a href="under_construction.html"><input type="submit" value="Submit"></a>
+                            <a class="buton2" style="color: floralwhite" href="intermediate.html"><input type="button" value="Intermediar"></a>
                             &nbsp;
-                            <a href="under_construction.html"><input type="button" value="Next"></a>
+                            <a class="buton3" style="color: floralwhite" href="expert.html"><input type="button" value="Avansat"></a>
                             <p>&nbsp;</p>
                         </section>
-                    </form>
                 </main>
             </div>
             <script>
@@ -115,6 +61,10 @@
                 const descrEl7 = document.querySelector('.topnav6');
                 const descrEl8 = document.querySelector('.topnav7');
                 const descrEl9 = document.querySelector('.topnav8');
+                const descrEl10 = document.querySelector('.quiz_title');
+                const descrEl11 = document.querySelector('.buton1');
+                const descrEl12 = document.querySelector('.buton2');
+                const descrEl13 = document.querySelector('.buton3');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -134,6 +84,10 @@
                         descrEl7.textContent = data[attr].topnav6;
                         descrEl8.textContent = data[attr].topnav7;
                         descrEl9.textContent = data[attr].topnav8;
+                        descrEl10.textContent = data[attr].quiz_title;
+                        descrEl11.textContent = data[attr].buton1;
+                        descrEl12.textContent = data[attr].buton2;
+                        descrEl13.textContent = data[attr].buton3;
                     });
                 });
 
@@ -150,6 +104,10 @@
                         "topnav6": "Contact",
                         "topnav7": "Despre",
                         "topnav8": "Reguli",
+                        "quiz_title": "Alege un nivel de experiență:",
+                        "buton1": "Începător",
+                        "buton2": "Intermediar",
+                        "buton3": "Avansat",
                     },
                     "english":
                     {
@@ -162,6 +120,10 @@
                         "topnav6": "Contact",
                         "topnav7": "About",
                         "topnav8": "Rules",
+                        "quiz_title": "Choose experience level:",
+                        "buton1": "Beginner",
+                        "buton2": "Intermediate",
+                        "buton3": "Advanced",
                     }
                 }
             </script>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+    <title>Play! | SuH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/game_page.css">
+    <link rel="stylesheet" href="./css/NavigationBar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="page_wrapper">
+            <div class="topnav" id="navbar">
+                <a class="topnav1" href="./index.html">Acasă</a>
+                <a class="topnav2" href="./login_page.html">Logare</a>
+                <a class="active" href="./game_page.html">Joacă!</a>
+                <a class="topnav3" href="./gallery_page.html">Galerie</a>
+                <a class="topnav4" href="./ranking_page.html">Clasament</a>
+                <a class="topnav5" href="./profile_page.html">Profil</a>
+                <a class="topnav6" href="./contact_page.html">Contact</a>
+                <a class="topnav7" href="./about_page.html">Despre</a>
+                <a class="topnav8" href="./rules_page.html">Reguli</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
+                </a>
+                <script src="./scripts/game_page.js"></script>
+            </div>
+            <div class="langWrap">
+                <center>
+                    <p style="color:ghostwhite">Language option</p>
+                    <a href="#" language='romanian' style="color:greenyellow" class="active">RO</a>
+                    <a href="#" language='english' style="color:greenyellow">EN</a>
+                </center>
+            </div>
+
+            <main class="quiz_container" style="color: gold">
+                <div class="quiz__body">
+                    <header class="quiz__header">
+                        <div id="timer" class="quiz__header--block"> Time: <strong>60</strong> </div>
+                        <div id="score" class="quiz__header--block"> Score: <strong>0</strong> </div>
+                        <div id="hiScore" class="quiz__header--block"> High Score: <strong>0</strong> </div>
+                        <h1 class="quiz__header--title"> Heroes Quiz! </h1>
+                    </header>
+                    <div id="question" class="quiz__question"></div>
+                    <div id="response" class="quiz__response"></div>
+                    <div id="result" class="quiz__result"></div>
+                    <div id="info" class="quiz__info"></div>
+                    <div class="quiz__button--container">
+                        <a href="./index.html"><input type="button" id="home" value="Home" class="quiz__button"></a>
+                        <button id="start" class="quiz__button"> Start new quiz </button>
+                    </div>
+                </div>
+            </main>
+            <script src="./dist/expert.js"></script>
+        </div>
+        <script>
+            const langEl = document.querySelector('.langWrap');
+            const link = document.querySelectorAll('a');
+            const descrEl1 = document.querySelector('.topnav1');
+            const descrEl2 = document.querySelector('.topnav2');
+            const descrEl3 = document.querySelector('.active');
+            const descrEl4 = document.querySelector('.topnav3');
+            const descrEl5 = document.querySelector('.topnav4');
+            const descrEl6 = document.querySelector('.topnav5');
+            const descrEl7 = document.querySelector('.topnav6');
+            const descrEl8 = document.querySelector('.topnav7');
+            const descrEl9 = document.querySelector('.topnav8');
+
+            link.forEach(el => {
+                el.addEventListener('click', () => {
+                    langEl.querySelector('.active').classList.remove('active');
+                    el.classList.add('active');
+
+                    const attr = el.getAttribute('language');
+
+
+
+                    descrEl1.textContent = data[attr].topnav1;
+                    descrEl2.textContent = data[attr].topnav2;
+                    descrEl3.textContent = data[attr].active;
+                    descrEl4.textContent = data[attr].topnav3;
+                    descrEl5.textContent = data[attr].topnav4;
+                    descrEl6.textContent = data[attr].topnav5;
+                    descrEl7.textContent = data[attr].topnav6;
+                    descrEl8.textContent = data[attr].topnav7;
+                    descrEl9.textContent = data[attr].topnav8;
+                });
+            });
+
+            var data = {
+
+                "romanian":
+                {
+                    "topnav1": "Acasă",
+                    "topnav2": "Logare",
+                    "active": "Joacă!",
+                    "topnav3": "Galerie",
+                    "topnav4": "Clasament",
+                    "topnav5": "Profil",
+                    "topnav6": "Contact",
+                    "topnav7": "Despre",
+                    "topnav8": "Reguli",
+                },
+                "english":
+                {
+                    "topnav1": "Home",
+                    "topnav2": "LogIn",
+                    "active": "Play!",
+                    "topnav3": "Gallery",
+                    "topnav4": "Ranking",
+                    "topnav5": "Profile",
+                    "topnav6": "Contact",
+                    "topnav7": "About",
+                    "topnav8": "Rules",
+                }
+            }
+        </script>
+        <div class="international">
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'auto', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element');
+                }
+            </script>
+
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+        <footer>
+            <div class="footer_container">
+                <div id="footer_image" class="image_quick_links"></div>
+                <div class="footer_browse">
+                    <h1 class="footer_headers">Linkuri rapide</h1>
+                    <a href="./index.html">Acasă </a>
+                    <br>
+                    <a href="./gallery_page.html">Galerie</a>
+                    <br>
+                    <a href="./ranking_page.html">Clasament</a>
+                    <br>
+                    <a href="./contact_page.html">Contact</a>
+                    <br>
+                    <a href="./about_page.html">Despre</a>
+                </div>
+                <div id="footer_image" class="image_find_us"></div>
+                <div class="footer_find_us">
+                    <h2 class="footer_headers"> Unde ne găsești </h2>
+                    <p>user@address.com</p>
+                    <p>Număr de telefon</p>
+                    <p>Pagina de facebook</p>
+                </div>
+                <div id="footer_image" class="image_misc"></div>
+                <div class="footer_misc">
+                    <h3 class="footer_headers"> Copyright © 2021, Facultatea de Informatică Iasi</h3>
+                    <p>Tehnologii Web - SuH</p>
+                    <p>Facultatea de Informatică - Iasi</p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
