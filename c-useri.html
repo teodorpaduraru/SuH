@@ -8,9 +8,10 @@
 </head>
 <body>
 
-
+    <!--div folosit pentru selectarea userilor din bara laterala-->
     <div class="navigare">
         <div class="text-bara">
+            <!--Titlul sectiunii apelate-->
             <span class="text_bara">Useri</span>
         </div>
         <ul class="nav-links">
@@ -19,6 +20,7 @@
             <li></li>
             <li>
                 <a href="./cpanel.html">
+                    <!--Linkul afiseaza pagina principala din Control Panel cu administratorii-->
                     <span class="text_bara">Administratori</span>
                 </a>
             </li>
@@ -26,7 +28,8 @@
             <li></li>
             <li></li>
             <li>
-                <a href="SuperHeroes.db" class="active">
+                <a href="#useri.sql" class="active">
+                    <!--Linkul va afisa userii din baza de date-->
                     <span class="text_bara">Useri</span>
                 </a>
             </li>
@@ -35,6 +38,7 @@
             <li></li>
             <li>
                 <a href="./c-supereroi.html">
+                    <!--Linkul va afisa supereroii din baza de date-->
                     <span class="text_bara">Supereroi</span>
                 </a>
             </li>
@@ -43,6 +47,7 @@
             <li></li>
             <li>
                 <a href="./c-clasament.html">
+                    <!--Linkul va afisa clasamentul din baza de date-->
                     <span class="text_bara">Clasament</span>
                 </a>
             </li>
@@ -53,21 +58,22 @@
             <li></li>
             <li></li>
             <li class="log_out">
-                <a href="./index.html">
+                <a href="./index.php">
+                    <!--Linkul duce la pagina principala a jocului-->
                     <span class="text_bara">Iesire</span>
                 </a>
             </li>
         </ul>
     </div>
 
-
+    <!--Afisarea administratorilor-->
     <section class="home">
         <nav>
             <div class="navigare-buton">
                 <span class="casete">Administratori</span>
             </div>
             <div class="cautare">
-                <input type="text" placeholder="Cautare..." href="SuperHeroes.db">
+                <input type="text" placeholder="Cautare...">
             </div>
             <div class="profil">
                 <img src="./images/Teodor.jpg" alt="">
@@ -80,16 +86,18 @@
 
         </nav>
 
+        <!--Setarea drepturilor administratorilor-->
         <div class="setari">
             <div class="casete">
                 <div class="box">
                     <div class="titlu">
                         <div class="drepturi">
-                            <a href="#SuperHeroes.db">
+                            <a href="#useri.sql">
                                 <input type="text" placeholder="Afisare user">
                             </a>
                             <br />
                             <div class="titlu">User1 </div>
+                            <p><div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox"></p>
                             <p><div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox"></p>
                             <p><div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox"></p>
                         </div>
@@ -109,6 +117,7 @@
                             </a>
                             <br />
                             <div class="titlu">User2</div>
+                            <p><div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox"></p>
                             <p><div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox"></p>
                             <p><div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox"></p>
                         </div>
@@ -123,15 +132,16 @@
 
 
     <script>
-          let navigare = document.querySelector(".navigare");
-          let navigareBtn = document.querySelector(".navigareBtn");
-          navigareBtn.onclick = function () {
-              navigare.classList.toggle("active");
-              if (navigare.classList.contains("active")) {
-                  navigareBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-              } else
-                  navigareBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-          }
+    //script folosit navigarea prin meniul de administrare
+        let navigare = document.querySelector(".navigare");
+        let navigareBtn = document.querySelector(".navigareBtn");
+        navigareBtn.onclick = function () {
+            navigare.classList.toggle("active");
+            if (navigare.classList.contains("active")) {
+                navigareBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                navigareBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
     </script>
 
 </body>

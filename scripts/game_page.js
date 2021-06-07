@@ -1,8 +1,8 @@
 function hamburgerNav() {
     var x = document.getElementById("navbar");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}

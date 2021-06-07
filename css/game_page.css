@@ -7,10 +7,10 @@
     display: grid;
 }
 
-.quiz_title{
+.quiz_title {
     border-bottom: 3px solid rgb(255, 69, 2, 0.6);
-    text-align:center;
-    font-size:30px;
+    text-align: center;
+    font-size: 30px;
 }
 
 .quiz_title_header {
@@ -23,7 +23,6 @@
 
 .answers {
     font-size: 20px;
-
 }
 
 .options {
@@ -51,9 +50,10 @@
     height: 2%;
     text-align: center;
 }
+
 @media screen and (max-width: 1050px) {
     .quiz_title_header {
-        font-size:25px;
+        font-size: 25px;
     }
 
     #question_text {
@@ -62,7 +62,6 @@
 
     .answers {
         font-size: 14px;
-    
     }
 }
 
@@ -74,7 +73,7 @@
 
 @media screen and (max-width: 400px) {
     .quiz_title_header {
-        font-size:18px;
+        font-size: 18px;
     }
 
     #question_text {
@@ -83,6 +82,5 @@
 
     .answers {
         font-size: 8px;
-    
     }
 }

@@ -1,4 +1,4 @@
-const url = './heroes-quiz-questions.json';
+const url = './heroes-quiz-questions-intermediate.json';
 
 fetch(url)
     .then(res => res.json())

@@ -1,4 +1,5 @@
 var transliterationControl;
+
 function onLoad() {
     var options = {
         sourceLanguage: 'ro',
@@ -57,7 +58,7 @@ function onLoad() {
             } catch (ex) {
                 languageSelect.add(opt);
             }
-        }//End of if
+        } //End of if
     }
 }
 

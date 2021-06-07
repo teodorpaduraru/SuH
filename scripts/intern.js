@@ -1,5 +1,4 @@
-﻿
-var intern = {
+﻿var intern = {
 
     'topnav': {
         'en': '<p>Home<\p><p>LogIn<\p><p>Play!<\p><p>Gallery<\p><p>Ranking<\p><p>Profile<\p><p>Contact<\p><p>About<\p><p>Rules<\p>',
@@ -25,8 +24,6 @@ var intern = {
 
 
 
-
-
     'content': {
         'en': '<p>SuperHeroes Web Game (short: SuH) is an educational web game for teens.<\p><p>The game contains a scenario, a stake and the default victory / defeat conditions for each round.<\p>For a more pleasant and much more attractive interaction, all the games played will be of the trivia type (conquistador).<\p><p>Thank you for choosing our game and we wish you a unique experience!<\p><p>Team: Teodor Păduraru and Eugen Gavrilovici<\p>',
         'ro': '<p>SuperHeroes Web Game (pe scurt: SuH) este un joc Web educativ destinat adolescenților.<\p><p>Jocul conține un scenariu, o miză și condițiile de victorie/ înfrângere prestabilite pentru fiecare rundă.<\p>Pentru o interacțiune mai plăcută și mult mai atractivă, toate partidele jucate vor fi de tipul trivia(conquistador).<\p><p>Vă mulțumim că ați ales jocul nostru și vă dorim o experiență inedită!<\p><p>Echipa: Teodor Păduraru și Eugen Gavrilovici<\p>',
@@ -37,7 +34,7 @@ var intern = {
         'ro': '<p>Reguli<\p><p>Regulamentul complet și ghidul de utilizare îl puteți citi aici: PDF sau HTML.<\p>',
     },
 
-   'rules_container': {
+    'rules_container': {
         'en': '<p>All quiz questions are required.<\p><p>Each correct answer is worth 5 points.<\p><p>Wrong answers are penalized with -3 points.<\p><p>After sending the answers, it is NOT possible to return to the respective quiz.<\p><p>The "Prev" / "Next" buttons are used to switch from one question to another.<\p>The result of the quiz is displayed after "Submit".<\p>',
         'ro': '<p>Toate întrebările quiz-urilor sunt obligatorii.<\p>Fiecare răspuns corect valorează 5 puncte.<\p>Răspunsurile greșite sunt penalizate cu -3 puncte.<\p>După trimiterea răspunsurilor NU se mai poate reveni la quiz-ul respectiv.<\p>Butoanele "Prev" / "Next" sunt folosite pentru a trece de la o întrebare la alta.<\p>Rezultatul quiz-ului este afișat după "Submit".<\p>',
     },
@@ -62,12 +59,12 @@ var intern = {
         'ro': '<p>Rang<\p>Nume<\p>Puncte<\p>',
     },
 
-    'signin_container':{
+    'signin_container': {
         'en': '<p>Register and join your Superheroes!<\p>',
         'ro': '<p>Înregistrați-vă și alăturați-vă supereroilor!<\p>',
     },
 
-    'signin_form':{
+    'signin_form': {
         'en': '<p>Email:<\p><p>Username:<\p><p>Password<\p>',
         'ro': '<p>Email:<\p><p>Nume utilizator:<\p><p>Parolă:<\p>',
     },

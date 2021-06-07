@@ -2,18 +2,6 @@ main {
     font-size: 25px;
 }
 
-/*h1 {
-    font-family: 'Brush Script MT';
-    color: white;
-    font-weight: 100;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1.4;
-    font-size: 40px;
-}*/
-/*css pentru elementele de nivel h1*/
-
 .international {
     justify-content: center;
     display: flex;
@@ -23,15 +11,7 @@ main {
     height: 2%;
     text-align: center;
 }
-/*p {
-    display: flex;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    height: 10px;
-    text-align: left;
-    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}*/
+
 
 .content > h2 {
     /* display: flex; */
@@ -45,6 +25,7 @@ main {
     margin: 0;
     height: auto;
 }
+
 .content > h1 {
     font-family: 'Brush Script MT';
     color: white;
@@ -54,10 +35,16 @@ main {
     margin-top: 0;
     line-height: 1.4;
     font-size: 40px;
-} /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
+}
+
+/*Stil de rezerva pentru un eventual nivel 2 de titlu*/
 
 
-.content, .description1, .description2, .description3, .description4 {
+.content,
+.description1,
+.description2,
+.description3,
+.description4 {
     justify-content: center;
     display: flex;
     color: white;
@@ -81,7 +68,6 @@ main {
         font-size: 16px;
         padding-left: 5%;
     }
-
 }
 
 @media screen and (max-width: 800px) {
@@ -94,6 +80,7 @@ main {
     .content > h1 {
         font-size: 20px
     }
+
     .content > h2 {
         font-size: 16px;
     }
