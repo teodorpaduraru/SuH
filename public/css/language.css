@@ -1,0 +1,40 @@
+body {
+    font-family: cursive;
+    /* display: flex; */
+    margin-bottom: 0;
+}
+.en:before {
+    background-image: url(./Images/32.png);
+}
+.ro:before {
+    background-image: url(./Images/64.png);
+}
+
+#language .tooltip {
+    display: none;
+    bottom: 30px;
+    left: 0px;
+    width: 200px;
+    padding: 1em;
+    z-index: 80;
+}
+
+    #language .tooltip:after {
+        top: auto;
+        bottom: -12px;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid #2c3e50;
+        border-bottom: none;
+    }
+
+    #language .tooltip a {
+        padding: 0 2px;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.7);
+        white-space: nowrap;
+    }
+
+        #language .tooltip a:hover {
+            color: #fff;
+        }

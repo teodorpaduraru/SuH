@@ -1,0 +1,56 @@
+/* h1 {
+    font-family: 'Brush Script MT'; 
+    color: coral; 
+    font-weight: 200; 
+    text-align: center; 
+    margin-bottom: 0; 
+    margin-top: 0; 
+    line-height: 1.4;
+    font-size: 40px;
+ } css pentru elementele de nivel h1 */
+
+/* main {
+    margin: 100px 250px;
+    font-size: 25px;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    border: 10px solid rgb(255, 69, 2);
+    border-radius:30px;
+    background-color: rgb(0, 0, 0, .8);
+    color: white;
+} */
+
+/* main {
+    font-size: 25px;
+    text-align: center;
+    margin: 10%;
+} */
+
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
+.content, .description1, .description2, .description3, .description4 {
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 2%;
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .content{
+        font-size:16px;
+    }
+}

@@ -1,0 +1,93 @@
+main {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.international {
+    justify-content: center;
+    display: flex;
+    position: static;
+    color: white;
+    font-size: 25px;
+    height: 2%;
+    text-align: center;
+}
+h1 {
+    font-family: 'Brush Script MT';
+    color: coral;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 40px;
+}
+/*css pentru elementele de nivel h1*/
+
+.page_wrapper > p {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 200px;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.column > p
+{
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img{
+    height:150px;
+    width:150px;
+    display: inline-flex;
+}
+
+/* @media only screen and (max-width: 1180px) {
+    .column {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    p{
+        width: 100%;
+        height: 100%;
+    }
+
+    .abstract > img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+} */
