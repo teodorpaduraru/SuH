@@ -8,7 +8,6 @@ h1 {
     line-height: 1.4;
     font-size: 40px;
 }
-
 /*css pentru elementele de nivel h1*/
 
 main {
@@ -26,21 +25,60 @@ main {
     height: 2%;
     text-align: center;
 }
-
 p {
     color: white;
     font-size: 25px;
     height: 20px;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
     text-align: center;
-    position: relative;
-    /*Pozitioneaza textul peste imagine in mod responsive*/
+    position: relative; /*Pozitioneaza textul peste imagine in mod responsive*/
 }
 
-.flex-container > table,
-th,
-td {
+.flex-container > table, th, td {
     justify-content: center;
     display: block;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
+
+
+
+/* @media only screen and (max-width: 1180px) {
+    .flex-container {
+        width: 100%;
+        height: 100%;
+    }
+    main {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .flex-container {
+        width: 200%;
+        height: fit-content();
+        max-height:fit-content();
+    }
+    body {
+        width: 200%;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    content {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+    }
+} */

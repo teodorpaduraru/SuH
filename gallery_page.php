@@ -113,14 +113,13 @@
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
                 const descrEl1 = document.querySelector('.topnav1');
-                const descrEl2 = document.querySelector('.topnav2');
-                const descrEl3 = document.querySelector('.topnav3');
+                const descrEl2 = document.querySelector('.topnav9');
+                const descrEl3 = document.querySelector('.topnav2');
                 const descrEl4 = document.querySelector('.active');
                 const descrEl5 = document.querySelector('.topnav4');
                 const descrEl6 = document.querySelector('.topnav5');
                 const descrEl7 = document.querySelector('.topnav6');
                 const descrEl8 = document.querySelector('.topnav7');
-                const descrEl9 = document.querySelector('.topnav8');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -129,17 +128,14 @@
 
                         const attr = el.getAttribute('language');
 
-
-
                         descrEl1.textContent = data[attr].topnav1;
-                        descrEl2.textContent = data[attr].topnav2;
-                        descrEl3.textContent = data[attr].topnav3;
+                        descrEl2.textContent = data[attr].topnav9;
+                        descrEl3.textContent = data[attr].topnav2;
                         descrEl4.textContent = data[attr].active;
                         descrEl5.textContent = data[attr].topnav4;
                         descrEl6.textContent = data[attr].topnav5;
                         descrEl7.textContent = data[attr].topnav6;
                         descrEl8.textContent = data[attr].topnav7;
-                        descrEl9.textContent = data[attr].topnav8;
                     });
                 });
 
@@ -148,8 +144,8 @@
                     "romanian":
                     {
                         "topnav1": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
+                        "topnav9": "Logare",
+                        "topnav2": "Joacă!",
                         "active": "Galerie",
                         "topnav4": "Clasament",
                         "topnav5": "Profil",
@@ -161,8 +157,8 @@
                     "english":
                     {
                         "topnav1": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
+                        "topnav9": "LogIn",
+                        "topnav2": "Play!",
                         "active": "Gallery",
                         "topnav4": "Ranking",
                         "topnav5": "Profile",
@@ -178,7 +174,7 @@
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
                     }
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -193,6 +189,13 @@
         
                     <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
         <script type= "text/javascript" src= "./keyboard.js" > </script>
-
+        <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
+       
     </body>
 </html>

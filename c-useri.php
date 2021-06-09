@@ -1,28 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="ro">
-
 <head>
+    <title>Cpanel | Utilizatori</title> <!--titlu pagina-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/cpanel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
 
-
+    <!--div folosit pentru selectarea userilor din bara laterala-->
     <div class="navigare">
         <div class="text-bara">
             <!--Titlul sectiunii apelate-->
-            <span class="text_bara">Administrare site</span>
+            <span class="text_bara">Useri</span>
         </div>
         <ul class="nav-links">
             <li></li>
             <li></li>
             <li></li>
             <li>
-                <a href="#admin.sql" class="active">
-                    <!--Linkul afiseaza administratorii-->
+                <a href="./cpanel.php">
+                    <!--Linkul afiseaza pagina principala din Control Panel cu administratorii-->
                     <span class="text_bara">Administratori</span>
                 </a>
             </li>
@@ -30,7 +29,7 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-useri.html">
+                <a href="#example.sql" class="active">
                     <!--Linkul va afisa userii din baza de date-->
                     <span class="text_bara">Useri</span>
                 </a>
@@ -39,7 +38,7 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-supereroi.html">
+                <a href="./c-supereroi.php">
                     <!--Linkul va afisa supereroii din baza de date-->
                     <span class="text_bara">Supereroi</span>
                 </a>
@@ -48,7 +47,7 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-clasament.html">
+                <a href="./c-clasament.php">
                     <!--Linkul va afisa clasamentul din baza de date-->
                     <span class="text_bara">Clasament</span>
                 </a>
@@ -92,42 +91,31 @@
         <div class="setari">
             <div class="casete">
                 <div class="box">
-                    <div class="titlu">
-                        <div class="drepturi">
-                            <div class="titlu">Teodor Paduraru (drepturi)</div>
-                            <p>
-                                <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Adauga</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="setari2">
-            <div class="casete">
-                <div class="box">
-                    <div class="titlu">
-                        <div class="drepturi">
-                            <div class="titlu">Eugen Gavrilovici (drepturi)</div>
-                            <p>
-                                <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Adauga</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
-                            </p>
-                        </div>
-                    </div>
+                   <table>
+                    <tr>
+                        <th class="description3" style="color: gold">Nume de utilizator</th>>
+                    </tr>
+                    <?php
+                        $conn = mysqli_connect("localhost", "root", "", "suh");
+                        
+                        // Verificarea conexiunii la baza de date
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+                        $sql = "SELECT DISTINCT userName FROM users";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                        
+                        // Afisarea punctajelor in ordinea alfabetica a tarilor si descrescatoare a punctelor
+                            while($row = $result->fetch_assoc()) {
+                            echo "<tr><td>" . $row["userName"]. "</td><td> <div class='text-drepturi'>Sterge</div>&nbsp;<input type='checkbox'>" ;
+                        }
+                        echo "</table>";
+                        } 
+                        else { echo "</table>";}
+                        $conn->close();
+                    ?>
+                </table>
                 </div>
             </div>
         </div>
@@ -138,7 +126,7 @@
 
 
     <script>
-        //script folosit navigarea prin meniul de administrare
+    //script folosit navigarea prin meniul de administrare
         let navigare = document.querySelector(".navigare");
         let navigareBtn = document.querySelector(".navigareBtn");
         navigareBtn.onclick = function () {
@@ -151,5 +139,5 @@
     </script>
 
 </body>
-
 </html>
+

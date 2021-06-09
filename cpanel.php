@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="ro">
 
 <head>
+    <title>Cpanel</title> <!--titlu pagina-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/cpanel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,19 +11,19 @@
 
 <body>
 
-    <!--div folosit pentru selectarea supereroilor din bara laterala-->
+
     <div class="navigare">
         <div class="text-bara">
             <!--Titlul sectiunii apelate-->
-            <span class="text_bara">Supereroi</span>
+            <span class="text_bara">Administrare site</span>
         </div>
         <ul class="nav-links">
             <li></li>
             <li></li>
             <li></li>
             <li>
-                <a href="./cpanel.html">
-                    <!--Linkul afiseaza pagina principala din Control Panel cu administratorii-->
+                <a href="#example.sql" class="active">
+                    <!--Linkul afiseaza administratorii-->
                     <span class="text_bara">Administratori</span>
                 </a>
             </li>
@@ -30,16 +31,16 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-useri.html">
-                    <span class="text_bara">Useri</span>
+                <a href="./c-useri.php">
                     <!--Linkul va afisa userii din baza de date-->
+                    <span class="text_bara">Useri</span>
                 </a>
             </li>
             <li></li>
             <li></li>
             <li></li>
             <li>
-                <a href="./c-supereroi.html" class="active">
+                <a href="./c-supereroi.php">
                     <!--Linkul va afisa supereroii din baza de date-->
                     <span class="text_bara">Supereroi</span>
                 </a>
@@ -48,7 +49,7 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-clasament.html">
+                <a href="./c-clasament.php">
                     <!--Linkul va afisa clasamentul din baza de date-->
                     <span class="text_bara">Clasament</span>
                 </a>
@@ -61,11 +62,19 @@
             <li></li>
             <li class="log_out">
                 <a href="./index.php">
-                    <!--Linkul duce la pagina principala-->
+                    <!--Linkul duce la pagina principala a jocului-->
                     <span class="text_bara">Iesire</span>
                 </a>
             </li>
+
         </ul>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss"
+                     alt="CSS valid!" />
+            </a>
+        </p>
     </div>
 
     <!--Afisarea administratorilor-->
@@ -94,19 +103,18 @@
                 <div class="box">
                     <div class="titlu">
                         <div class="drepturi">
-                            <div class="titlu">Superman </div>
-                            <p>
-                                <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
-                            </p>
+                            <div class="titlu">Teodor Paduraru (drepturi)</div>
+                            <p></p>
+                            <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
+                            <p></p>
+                            <div class="text-drepturi">Adauga</div>&nbsp;<input type="checkbox">
+                            <p></p>
+                            <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -116,21 +124,20 @@
                 <div class="box">
                     <div class="titlu">
                         <div class="drepturi">
-                            <div class="titlu">Hulk</div>
-                            <p>
-                                <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Blocheaza</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
-                            </p>
+                            <div class="titlu">Eugen Gavrilovici (drepturi)</div>
+                            <p></p>
+                            <div class="text-drepturi">Sterge</div>&nbsp;<input type="checkbox">
+                            <p></p>
+                            <div class="text-drepturi">Adauga</div>&nbsp;<input type="checkbox">
+                            <p></p>
+                            <div class="text-drepturi">Modifica</div>&nbsp;<input type="checkbox">
+                            <p></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 

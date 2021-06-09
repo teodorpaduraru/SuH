@@ -1,4 +1,5 @@
 /*javascript pentru nivel intermediar al jocului*/
+
 const e = "./data/heroes-quiz-questions-intermediate.json";
 
 function t(e, t = 1) {

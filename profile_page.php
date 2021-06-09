@@ -43,11 +43,39 @@
                 <div class="row" style="color: gold">
                     <div class="column">
                         <h2 class="description2" style="text-align:center">Detalii profil</h2>
-                        <p class="description3">
+                        <p class="description3"><center>
                             Nivel: 1
+
                         </p>
-                        <p class="description4">Experiență: 0/2000</p>
-                        <p class="description5">Victorii/Înfrângeri: 0/0</p>
+                         <?php
+                    
+                        $serverName = "localhost";
+                        $dBUsername = "root";
+                        $dBPassword = "";
+                        $dbName = "suh";
+
+                        $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dbName);
+
+                        if (!$conn) {
+                            die("Connection failed: ". mysqli_connect_error());
+                        }
+
+                        $count="SELECT DISTINCT Points FROM standings where uid= $_SESSION[uid]";
+
+                        if($stmt = $conn->query($count)){
+                            echo "<table>";
+
+                            while ($row = $stmt->fetch_assoc()) {
+                            echo "<tr><td>Experiență: $row[Points]/999</td></tr>";
+                        }
+
+                            echo "</table>";
+                        }else
+                        {
+                            echo $conn->error;
+                        }
+                    ?>
+                        <p></p>
                            
                         <!--Afisarea tarii utilizatorului din baza de date-->
                         <?php
@@ -63,7 +91,7 @@
                             die("Connection failed: ". mysqli_connect_error());
                         }
 
-                        $count="SELECT a.userName, b.userName, a.userCountry, b.userCountry FROM users a, users b where a.userName=b.userName";
+                        $count="SELECT userCountry FROM users where uid= $_SESSION[uid]";
 
                         if($stmt = $conn->query($count)){
                             echo "<table>";
@@ -79,21 +107,11 @@
                         }
                     ?>
                     
-                        <p class="description7">Localitate: Iași</p>
+                        <p class="description7">Localitate: <cite contenteditable="true">Iași</cite></p></center>
      </div>
     </form>
                 </div>
             </main>
-        </div>
-        <div class="international">
-            <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
-            <div id="google_translate_element"></div>
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
-                }
-            </script>
-            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
 
         <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
@@ -187,6 +205,17 @@
                 }
             }
         </script>
+        
+        <div class="international">
+            <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
 
         <!--PHP pentru afisarea footerului-->
         <?php
@@ -196,6 +225,13 @@
 
                         <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
         <script type= "text/javascript" src= "./keyboard.js" > </script>
-
+        <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
+       
 </body>
 </html>

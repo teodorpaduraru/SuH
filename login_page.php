@@ -99,7 +99,6 @@
                 const descrEl12 = document.querySelector('.topnav5');
                 const descrEl13 = document.querySelector('.topnav6');
                 const descrEl14 = document.querySelector('.topnav7');
-                const descrEl15 = document.querySelector('.topnav8');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -123,7 +122,6 @@
                         descrEl12.textContent = data[attr].topnav5;
                         descrEl13.textContent = data[attr].topnav6;
                         descrEl14.textContent = data[attr].topnav7;
-                        descrEl15.textContent = data[attr].topnav8;
                     });
                 });
 
@@ -138,14 +136,14 @@
                         "description5": "Ați uitat parola?",
                         "description6": "Sau înregistrați-vă și conectați-vă cu:",
                         "topnav1": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
-                        "topnav4": "Galerie",
-                        "topnav5": "Clasament",
-                        "topnav6": "Profil",
-                        "topnav7": "Contact",
-                        "active": "Despre",
-                        "topnav8": "Reguli",
+                        "active": "Logare",
+                        "topnav2": "Joacă!",
+                        "topnav3": "Galerie",
+                        "topnav4": "Clasament",
+                        "topnav8": "Profil",
+                        "topnav5": "Contact",
+                        "topnav6": "Despre",
+                        "topnav7": "Reguli",
                     },
 
                     "english":
@@ -157,14 +155,14 @@
                         "description5": "Forgot your password?",
                         "description6": "Or register and log in with:",
                         "topnav1": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
-                        "topnav4": "Gallery",
-                        "topnav5": "Ranking",
-                        "topnav6": "Profile",
-                        "topnav7": "Contact",
-                        "active": "About",
-                        "topnav8": "Rules",
+                        "active": "LogIn",
+                        "topnav2": "Play!",
+                        "topnav3": "Gallery",
+                        "topnav4": "Ranking",
+                        "topnav7": "Profile",
+                        "topnav5": "Contact",
+                        "topnav6": "About",
+                        "topnav7": "Rules",
                     }
                 }
             </script>
@@ -174,7 +172,7 @@
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
                     }
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -184,6 +182,13 @@
             <?php
                 include_once 'footer.php';
             ?>
+            <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
 
         </div>
 

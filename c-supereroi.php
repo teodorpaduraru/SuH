@@ -3,6 +3,7 @@
 <html lang="ro">
 
 <head>
+    <title>Cpanel | Supereroi</title> <!--titlu pagina-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/cpanel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,19 +11,19 @@
 
 <body>
 
-
+    <!--div folosit pentru selectarea supereroilor din bara laterala-->
     <div class="navigare">
         <div class="text-bara">
             <!--Titlul sectiunii apelate-->
-            <span class="text_bara">Clasament</span>
+            <span class="text_bara">Supereroi</span>
         </div>
         <ul class="nav-links">
             <li></li>
             <li></li>
             <li></li>
             <li>
-                <a href="./cpanel.html">
-                    <!--Linkul afiseaza administratorii-->
+                <a href="./cpanel.php">
+                    <!--Linkul afiseaza pagina principala din Control Panel cu administratorii-->
                     <span class="text_bara">Administratori</span>
                 </a>
             </li>
@@ -30,16 +31,16 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-useri.html">
-                    <!--Linkul va afisa userii din baza de date-->
+                <a href="./c-useri.php">
                     <span class="text_bara">Useri</span>
+                    <!--Linkul va afisa userii din baza de date-->
                 </a>
             </li>
             <li></li>
             <li></li>
             <li></li>
             <li>
-                <a href="./c-supereroi.html">
+                <a href="./c-supereroi.php" class="active">
                     <!--Linkul va afisa supereroii din baza de date-->
                     <span class="text_bara">Supereroi</span>
                 </a>
@@ -48,7 +49,7 @@
             <li></li>
             <li></li>
             <li>
-                <a href="./c-clasament.html" class="active">
+                <a href="./c-clasament.php">
                     <!--Linkul va afisa clasamentul din baza de date-->
                     <span class="text_bara">Clasament</span>
                 </a>
@@ -61,7 +62,7 @@
             <li></li>
             <li class="log_out">
                 <a href="./index.php">
-                    <!--Linkul duce la pagina principala a jocului-->
+                    <!--Linkul duce la pagina principala-->
                     <span class="text_bara">Iesire</span>
                 </a>
             </li>
@@ -85,36 +86,45 @@
                 <img src="./images/Eugen.jpg" alt="">
                 <span class="administrator">Eugen Gavrilovici</span>
             </div>
+
         </nav>
 
-        <!--Modificarea/stergerea rezultatelor din clasamente-->
+        <!--Setarea drepturilor administratorilor-->
         <div class="setari">
             <div class="casete">
                 <div class="box">
-                    <div class="titlu">
-                        <div class="drepturi">
-                            <div class="titlu">Clasament user</div>
-                            <div class="cautare">
-                                <a href="#useri.sql">
-                                    <input type="text" placeholder="Cautare user in baza">
-                                </a>
-                            </div>
-                            <p>
-                                <div class="text-drepturi">Sterge rezultat</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica rezultat</div>&nbsp;<input type="checkbox">
-                            </p>
-                            <p>
-                                <div class="text-drepturi">Modifica rank</div>&nbsp;<input type="checkbox">
-                            </p>
-                        </div>
-                    </div>
+                    <table>
+                    <tr>
+                        <th class="description3" style="color: gold">Nume supererou</th>
+                    </tr>
+                    <?php
+                        $conn = mysqli_connect("localhost", "root", "", "suh");
+                        
+                        // Verificarea conexiunii la baza de date
+                        if ($conn->connect_error) {
+                            die("Connection failed: " . $conn->connect_error);
+                        }
+                        $sql = "SELECT DISTINCT seroi FROM supereroi";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                        
+                        // Afisarea punctajelor in ordinea alfabetica a tarilor si descrescatoare a punctelor
+                            while($row = $result->fetch_assoc()) {
+                            echo "<tr><td>" . $row["seroi"]. "</td><td> <div class='text-drepturi'>Sterge</div>&nbsp;<input type='checkbox'>";
+                        }
+                        echo "</table>";
+                        } 
+                        else { echo "</table>";}
+                        $conn->close();
+                    ?>
+                </table>
                 </div>
             </div>
         </div>
 
     </section>
+
+
 
 
 

@@ -1,4 +1,4 @@
-/*javascript pentru nivel intermediar al jocului*/
+/*javascript pentru nivel incepator al jocului*/
 
 const e = "./data/heroes-quiz-questions.json";
 
@@ -96,7 +96,7 @@ const o = {
         },
         gameOver() {
             console.log("gameOver() invoked"),
-                o.render(o.info, `Game Over, you scored ${this.score} point${1 !== this.score ? "s" : ""}`),
+                o.render(o.info, `Game Over, you scored ${this.score} point${1 !== this.score ? "s" : ""}`),            
                 o.show(o.info),
                 o.teardown(),
                 clearInterval(this.timer)

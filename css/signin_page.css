@@ -125,8 +125,7 @@
         font-size: 10px;
     }
 
-    .signin_form #username,
-    #password {
+    .signin_form #username, #password {
         width: 120px;
         height: 20px;
     }

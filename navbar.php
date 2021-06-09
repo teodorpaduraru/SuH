@@ -21,6 +21,21 @@
                 else
                     echo "<a class=\"topnav1\" href=\"./index.php\">Acasă</a>";
 
+                
+                // Pagina daca userul este logat sau nu
+                if (isset($_SESSION["uid"])) {
+                    if(basename($_SERVER['PHP_SELF']) === "profile_page.php")
+                        echo "<a class=\"topnav8 active\" href=\"./profile_page.php\">Profil</a>";
+                    else
+                        echo "<a class=\"topnav8\" href=\"./profile_page.php\">Profil</a>";
+                    echo "<a class=\"topnav8\" href=\"./includes/logout.inc.php\">Log Out</a>";
+                }
+                else {
+                    if(basename($_SERVER['PHP_SELF']) === "login_page.php")
+                        echo "<a class=\"topnav9 active\" href=\"./login_page.php\">Logare</a>";
+                    else
+                        echo "<a class=\"topnav9\" href=\"./login_page.php\">Logare</a>";
+                }    
                 // Pagina jocului
                 if(basename($_SERVER['PHP_SELF']) === "game_page.php")
                     echo "<a class=\"topnav2\" href=\"./game_page.php\">Joacă!</a>";
@@ -57,24 +72,12 @@
                 else
                     echo "<a class=\"topnav7\" href=\"./rules_page.php\">Regulament</a>";
 
-                // Pagina daca userul este logat sau nu
-                if (isset($_SESSION["uid"])) {
-                    if(basename($_SERVER['PHP_SELF']) === "profile_page.php")
-                        echo "<a class=\"topnav8 active\" href=\"./profile_page.php\">Profil</a>";
-                    else
-                        echo "<a class=\"topnav8\" href=\"./profile_page.php\">Profil</a>";
-                    echo "<a class=\"topnav8\" href=\"./includes/logout.inc.php\">Log Out</a>";
-                }
-                else {
-                    if(basename($_SERVER['PHP_SELF']) === "login_page.php")
-                        echo "<a class=\"topnav9 active\" href=\"./login_page.php\">Logare</a>";
-                    else
-                        echo "<a class=\"topnav9\" href=\"./login_page.php\">Logare</a>";
-                }
+                
             ?>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
             </a>
             <script src="./scripts/game_page.js"></script>
         </div>
+                  
     </body>
 </html>

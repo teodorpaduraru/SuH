@@ -8,7 +8,7 @@
                 <!--stiluri css folosite in pagina-->
         <link rel="stylesheet" href="./css/general.css">
         <link rel="stylesheet" href="./css/NavigationBar.css">
-        <link rel="stylesheet" href="./css/signup_page.css">
+        <link rel="stylesheet" href="./css/signin_page.css">
         <link rel="stylesheet" href="./css/footer.css">
 
     </head>
@@ -218,6 +218,13 @@
 
                                 <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
             <script type= "text/javascript" src= "./keyboard.js" > </script>
+            <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
 
         </div>
     </body>

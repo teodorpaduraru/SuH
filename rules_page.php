@@ -40,8 +40,8 @@
                         <h2 class="subtitlu_regula" style="color: gold">
                             Regulamentul complet și ghidul de utilizare îl puteți citi aici:
                         </h2>
-
-                        <a href="under_construction.html" style="color: gold" ;>PDF</a> / <a href="under_construction.html" style="color: gold" ;>HTML</a>
+                        <!--Legaturi catre Ghidul de utilizare si Regulament in format PDF si HTML-->
+                        <a href="./Documentatie/Regulament_manual_utilizare.pdf" style="color: gold" ;>PDF</a> / <a href="./Documentatie/Regulament_manual_utilizare.html" style="color: gold" ;>HTML</a>
                     </center>                    
 
                                     <!--Continutul regulilor-->
@@ -49,10 +49,10 @@
                         <ol style="color: gold">
                             <li class="regula1">Toate întrebările quiz-urilor sunt obligatorii.</li>
                             <li class="regula2">Fiecare răspuns corect valorează: 3 puncte (începator), 4 puncte (intermediar), 5 puncte (avansat).</li>
-                            <li class="regula3">Răspunsurile greșite sunt penalizate cu -3 puncte.</li>
-                            <li class="regula4">După trimiterea răspunsurilor NU se mai poate reveni la quiz-ul respectiv.</li>
-                            <li class="regula5">Butoanele "Prev" / "Next" sunt folosite pentru a trece de la o întrebare la alta.</li>
-                            <li class="regula6">Rezultatul quiz-ului este afișat după "Submit".</li>
+                            <li class="regula3">Răspunsurile greșite nu primesc nici un punct.</li>
+                            <li class="regula4">După expirarea timpului NU se mai poate reveni la quiz-ul respectiv.</li>
+                            <li class="regula5">Alegerea răspunsului comută automat la următoarea întrebare.</li>
+                            <li class="regula6">Rezultatul fiecărei întrebări din quiz este afișat imediat după alegerea răspunsului.</li>
                         </ol>
                     </div>
                 </div>
@@ -73,14 +73,15 @@
             const descrEl7 = document.querySelector('.regula5');
             const descrEl8 = document.querySelector('.regula6');
             const descrEl9 = document.querySelector('.topnav1');
+            
             const descrEl10 = document.querySelector('.topnav2');
             const descrEl11 = document.querySelector('.topnav3');
             const descrEl12 = document.querySelector('.topnav4');
             const descrEl13 = document.querySelector('.topnav5');
             const descrEl14 = document.querySelector('.topnav6');
-            const descrEl15 = document.querySelector('.topnav7');
+            const descrEl15 = document.querySelector('.active');
             const descrEl16 = document.querySelector('.topnav8');
-            const descrEl17 = document.querySelector('.active');
+            const descrEl17 = document.querySelector('.topnav9');
 
             link.forEach(el => {
                 el.addEventListener('click', () => {
@@ -98,14 +99,15 @@
                     descrEl7.textContent = data[attr].regula5;
                     descrEl8.textContent = data[attr].regula6;
                     descrEl9.textContent = data[attr].topnav1;
+                    
                     descrEl10.textContent = data[attr].topnav2;
                     descrEl11.textContent = data[attr].topnav3;
                     descrEl12.textContent = data[attr].topnav4;
                     descrEl13.textContent = data[attr].topnav5;
                     descrEl14.textContent = data[attr].topnav6;
-                    descrEl15.textContent = data[attr].topnav7;
+                    descrEl15.textContent = data[attr].active;
                     descrEl16.textContent = data[attr].topnav8;
-                    descrEl17.textContent = data[attr].active;
+                    descrEl17.textContent = data[attr].topnav9;
                 });
             });
 
@@ -117,18 +119,18 @@
                     "subtitlu_regula": "Regulamentul complet și ghidul de utilizare îl puteți citi aici:",
                     "regula1": "Toate întrebările quiz- urilor sunt obligatorii.",
                     "regula2": "Fiecare răspuns corect valorează: 3 puncte (începator), 4 puncte (intermediar), 5 puncte (avansat).",
-                    "regula3": "Răspunsurile greșite sunt penalizate cu -3 puncte.",
-                    "regula4": "După trimiterea răspunsurilor NU se mai poate reveni la quiz-ul respectiv.",
-                    "regula5": "Butoanele PREV / NEXT sunt folosite pentru a trece de la o întrebare la alta.",
-                    "regula6": "Rezultatul quiz-ului este afișat după SUBMIT.",
+                    "regula3": "Răspunsurile greșite nu primesc nici un punct.",
+                    "regula4": "După expirarea timpului NU se mai poate reveni la quiz-ul respectiv.",
+                    "regula5": "Alegerea răspunsului comută automat la următoarea întrebare.",
+                    "regula6": "Rezultatul fiecărei întrebări din quiz este afișat imediat după alegerea răspunsului.",
                     "topnav1": "Acasă",
-                    "topnav2": "Logare",
-                    "topnav3": "Joacă!",
-                    "topnav4": "Galerie",
-                    "topnav5": "Clasament",
-                    "topnav6": "Profil",
-                    "topnav7": "Contact",
-                    "topnav8": "Despre",
+                    "topnav8": "Profil",
+                    "topnav9": "Logare",
+                    "topnav2": "Joacă!",
+                    "topnav3": "Galerie",
+                    "topnav4": "Clasament",
+                    "topnav5": "Contact",
+                    "topnav6": "Despre",
                     "active": "Reguli",
                 },
 
@@ -138,18 +140,18 @@
                     "subtitlu_regula": "The complete regulations and the user guide can be read here:",
                     "regula1": "All quiz questions are required.",
                     "regula2": "Each correct answer is worth: 3 points (beginner), 4 points (intermediate), 5 points (advanced).",
-                    "regula3": "Wrong answers are penalized with -3 points.",
-                    "regula4": "After sending the answers, it is NOT possible to return to the respective quiz.",
-                    "regula5": "The PREV / NEXT buttons are used to switch from one question to another.",
-                    "regula6": "The quiz result is displayed after SUBMIT.",
+                    "regula3": "Wrong answers get no points.",
+                    "regula4": "After the time expires, it is NOT possible to return to the respective quiz.",
+                    "regula5": "Choosing the answer automatically switches to the next question.",
+                    "regula6": "The result of each question in the quiz is displayed immediately after choosing the answer.",
                     "topnav1": "Home",
-                    "topnav2": "LogIn",
-                    "topnav3": "Play!",
-                    "topnav4": "Gallery",
-                    "topnav5": "Ranking",
-                    "topnav6": "Profile",
-                    "topnav7": "Contact",
-                    "topnav8": "About",
+                    "topnav8": "Profile",
+                    "topnav9": "LogIn",
+                    "topnav2": "Play!",
+                    "topnav3": "Gallery",
+                    "topnav4": "Ranking",
+                    "topnav5": "Contact",
+                    "topnav6": "About",
                     "active": "Rules",
                 }
             }
@@ -160,7 +162,7 @@
             <div id="google_translate_element"></div>
             <script type="text/javascript">
                 function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
                 }
             </script>
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -173,7 +175,13 @@
 
                             <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
         <script type= "text/javascript" src= "./keyboard.js" > </script>
-
+        <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
     </div>
 </body>
 </html>

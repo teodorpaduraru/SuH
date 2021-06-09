@@ -56,14 +56,13 @@
                 const descrEl4 = document.querySelector('.description4');
                 const descrEl5 = document.querySelector('.content');
                 const descrEl6 = document.querySelector('.active');
-                const descrEl7 = document.querySelector('.topnav2');
-                const descrEl8 = document.querySelector('.topnav3');
-                const descrEl9 = document.querySelector('.topnav4');
-                const descrEl10 = document.querySelector('.topnav5');
-                const descrEl11 = document.querySelector('.topnav6');
-                const descrEl12 = document.querySelector('.topnav7');
-                const descrEl13 = document.querySelector('.topnav8');
-                const descrEl14 = document.querySelector('.topnav9');
+                const descrEl7 = document.querySelector('.topnav9');
+                const descrEl8 = document.querySelector('.topnav2');
+                const descrEl9 = document.querySelector('.topnav3');
+                const descrEl10 = document.querySelector('.topnav4');
+                const descrEl11 = document.querySelector('.topnav5');
+                const descrEl12 = document.querySelector('.topnav6');
+                const descrEl13 = document.querySelector('.topnav7');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -78,14 +77,13 @@
                         descrEl4.textContent = data[attr].description4;
                         descrEl5.textContent = data[attr].content;
                         descrEl6.textContent = data[attr].active;
-                        descrEl7.textContent = data[attr].topnav2;
-                        descrEl8.textContent = data[attr].topnav3;
-                        descrEl9.textContent = data[attr].topnav4;
-                        descrEl10.textContent = data[attr].topnav5;
-                        descrEl11.textContent = data[attr].topnav6;
-                        descrEl12.textContent = data[attr].topnav7;
-                        descrEl13.textContent = data[attr].topnav8;
-                        descrEl14.textContent = data[attr].topnav9;
+                        descrEl7.textContent = data[attr].topnav9;
+                        descrEl8.textContent = data[attr].topnav2;
+                        descrEl9.textContent = data[attr].topnav3;
+                        descrEl10.textContent = data[attr].topnav4;
+                        descrEl11.textContent = data[attr].topnav5;
+                        descrEl12.textContent = data[attr].topnav6;
+                        descrEl13.textContent = data[attr].topnav7;
                     });
                 });
 
@@ -99,14 +97,14 @@
                         "description4": "Mulțumim și succes tuturor!",
                         "content": "Bun venit,",
                         "active": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
-                        "topnav4": "Galerie",
-                        "topnav5": "Clasament",
-                        "topnav6": "Profil",
-                        "topnav7": "Contact",
-                        "topnav8": "Despre",
-                        "topnav9": "Reguli",
+                        "topnav9": "Logare",
+                        "topnav2": "Joacă!",
+                        "topnav3": "Galerie",
+                        "topnav4": "Clasament",
+                        "topnav8": "Profil",
+                        "topnav5": "Contact",
+                        "topnav6": "Despre",
+                        "topnav7": "Reguli",
                     },
 
                     "english":
@@ -117,14 +115,14 @@
                         "description4": "Thanks and good luck to all!",
                         "content": "Welcome,",
                         "active": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
-                        "topnav4": "Gallery",
-                        "topnav5": "Ranking",
-                        "topnav6": "Profile",
-                        "topnav7": "Contact",
-                        "topnav8": "About",
-                        "topnav9": "Rules",
+                        "topnav9": "LogIn",
+                        "topnav2": "Play!",
+                        "topnav3": "Gallery",
+                        "topnav4": "Ranking",
+                        "topnav7": "Profile",
+                        "topnav5": "Contact",
+                        "topnav6": "About",
+                        "topnav7": "Rules",
                     }
                 }
             </script>
@@ -134,7 +132,7 @@
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
                     }
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

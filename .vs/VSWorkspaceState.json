@@ -3,8 +3,11 @@
     "",
     "\\css",
     "\\db",
+    "\\dist",
+    "\\Documentatie",
+    "\\includes",
     "\\scripts"
   ],
-  "SelectedNode": "\\scripts\\tts.js",
+  "SelectedNode": "\\under_construction.html",
   "PreviewInSolutionExplorer": false
 }

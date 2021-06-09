@@ -34,6 +34,7 @@
 
                                    <!--PHP folosit pentru preluarea datelor din tabelul standings din SQL si afisarea clasamentelor-->
                 <table>
+                <caption style="color: gold">Clasament general</caption>
                 <tr>
                     <th class="description1" style="color: gold">Nume utilizator</th>
                     <th class="description2" style="color: gold">Punctaj</th>
@@ -63,6 +64,7 @@
 
 
                 <table>
+                <caption style="color: gold">Clasament pe tari</caption>
                     <tr>
                         <th class="description3" style="color: gold">Nume de utilizator</th>
                         <th class="description4" style="color: gold">Punctaje</th>
@@ -182,7 +184,7 @@
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,it,es' }, 'google_translate_element');
                     }
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -196,6 +198,12 @@
 
                             <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
         <script type= "text/javascript" src= "./keyboard.js" > </script>
-
+        <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS valid!" />
+    </a>
+</p>
     </body>
 </html>
