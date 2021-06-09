@@ -14,10 +14,11 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <!--Div folosit pentru afisarea barii de navigare-->
+                            <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
+                                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -25,6 +26,7 @@
                         <a href="#" language='english' style="color:greenyellow">EN</a>
                     </center>
                 </div>
+                                <!--Afisarea galeriei unora dintre eroii din joc-->
                 <main style="color: gold">
                     <div class="flex-container" style="color: gold">
                         <table>
@@ -32,7 +34,7 @@
                                 <tr>
                                     <td>
                                         <p style="color: gold">Aquamen</p>
-                                        <img src="<?php echo URLROOT;?>/public/Images/aquamen.jpg" width="150" height="150" alt="Aquamen">
+                                        <img src="<?php echo URLROOT;?>/public/Images/aquamen.jpg" width="150" height="150" alt="Aquamen">   <!--alt este folosit pentru accesibilitate ca sa apara numele cand nu se vede imaginea-->
                                     </td>
                                 </tr>
                                 <tr>
@@ -98,6 +100,7 @@
                     </div>
                 </main>
             </div>
+                        <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -146,6 +149,7 @@
                         "topnav7": "Despre",
                         "topnav8": "Reguli",
                     },
+
                     "english":
                     {
                         "topnav1": "Home",
@@ -161,7 +165,7 @@
                 }
             </script>
             <div class="international">
-                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <!-- API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
@@ -170,9 +174,12 @@
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
+                        <!--PHP folosit pentru afisarea footerului-->
             <?php
                     require APPROOT . '/views/includes/footer.php'; 
             ?>
         </div>
+                    <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
     </body>
 </html>

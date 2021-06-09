@@ -2,7 +2,7 @@
 
 <html lang="ro">
     <head>
-        <title>LogIn | SuH</title>
+        <title>LogIn | SuH</title> <!--titlul paginii-->
         <meta charset="utf-8"/>
          <!--stiluri css folosite in pagina-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,17 +13,20 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <!--Div folosit pentru afisarea barii de navigare-->
+
+            <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
                 <div class="langWrap">
+                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                     <center>
                         <p style="color:ghostwhite">Language option</p>
                         <a href="#" language='romanian' style="color:greenyellow" class="active">RO</a>
                         <a href="#" language='english' style="color:greenyellow">EN</a>
                     </center>
                 </div>
+                <!--Div folosit pentru introducerea datelor la logare-->
                 <main class="login_container" style="color: gold">
                     <div class="root_login">
                         <h1 class="description1">Înregistrați-vă și alăturați-vă supereroilor!</h1>
@@ -33,7 +36,7 @@
                                 <label class="description2" for="username">Nume de utilizator:</label>
                                 <br>
                                 <input id="username" name="userName" type="text">
-                                <span class="signuperror">
+                                <span class="loginerror">
                                     <br>
                                     <?php echo $data['userNameError']; ?>
                                 </span>
@@ -41,7 +44,7 @@
                                 <label class="description3" for="password">Parola:</label>
                                 <br>
                                 <input id="password" name="userPassword" type="password" required minlength="8">
-                                <span class="signuperror">
+                                <span class="loginerror">
                                     <br>
                                     <?php echo $data['userPasswordError']; ?>
                                 </span>
@@ -50,11 +53,13 @@
                             </form>
                         </div>
                         
+                        <!--Div pentru variantele de creare a fontului sau reamintire parola-->
                         <div class="login_register" style="color: gold">
                             <a class="description4" id="login_register_create" href="<?php echo URLROOT; ?>/users/register">Creează un cont</a>
                             <a class="description5" id="login_register_forgot" href="<?php echo URLROOT; ?>/users/forgot_password">Ați uitat parola?</a>
                         </div>
                         <br>
+                        <!--Div pentru conectarea alternativa cu cont Google sau Facebook-->
                         <div class="alternative_register" style="color: gold">
                             <p class="description6">Sau înregistrați-vă și conectați-vă cu:</p>
                             <a label="facebook_login" class="icon" href="https://www.facebook.com/"><img src="<?php echo URLROOT;?>/public/Images/LogIn_Facebook_icon.png"></a>
@@ -65,6 +70,7 @@
                     <div class="login_info_display"> </div>
                 </main>
             </div>
+            <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -130,6 +136,7 @@
                         "active": "Despre",
                         "topnav8": "Reguli",
                     },
+
                     "english":
                     {
                         "description1": "Register and join the superheroes!",
@@ -150,6 +157,7 @@
                     }
                 }
             </script>
+
             <div class="international">
                 <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
                 <div id="google_translate_element"></div>
@@ -160,9 +168,15 @@
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
+            <!--PHP folosit pentru afisarea footerului-->
             <?php
                 require APPROOT . '/views/includes/footer.php'; 
             ?>
+
         </div>
+
+                            <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
+
     </body>
 </html>

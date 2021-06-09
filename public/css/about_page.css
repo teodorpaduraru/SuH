@@ -1,18 +1,3 @@
-
-/* h1 {
-    font-family: 'Brush Script MT';
-    color: coral;
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1.4;
-    font-size: 40px;
-} */
-
-/*css pentru elementele de nivel h1*/
-
-
 .international {
     justify-content: center;
     display: flex;
@@ -22,7 +7,13 @@
     height: 2%;
     text-align: center;
 }
-.content, .description1, .description2, .description3, .description4, .description5 {
+
+.content,
+.description1,
+.description2,
+.description3,
+.description4,
+.description5 {
     justify-content: center;
     display: flex;
     color: white;
@@ -32,27 +23,6 @@
     text-align: center;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
-/*.content > h2 {
-    display: flex;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    height: 200px;
-    text-align: center;
-    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}*/ /*Stil de rezerva pentru un eventual nivel 2 de titlu*/
-
-/* @media only screen and (max-width: 1180px) {
-    content {
-        width: 100%;
-        height: 100%;
-    }
-
-    main {
-        width: 100%;
-        height: 100%;
-    }
-} */
 
 @media screen and (max-width: 1000px) {
     .content > p {
@@ -72,4 +42,3 @@
         margin: 3%;
     }
 }
-

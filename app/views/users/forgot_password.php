@@ -14,11 +14,12 @@
 <body>
     <div id="root">
         <div class="page_wrapper">
-            <!--Div folosit pentru afisarea barii de navigare-->
+                        <!--PHP folosit pentru afisarea barii de navigare-->
             <?php
                 require APPROOT . '/views/includes/navbar.php'; 
             ?>
 
+                            <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <div class="langWrap">
                 <center>
                     <p style="color:ghostwhite">Language option</p>
@@ -30,6 +31,7 @@
             <main class="login_container" style="color: gold">
                 <div class="root_login">
 
+                                            <!--Div folosit pentru recuperarea contului-->
                     <h1 class="description1">Recuperează-ți contul de supererou!</h1>
                     <div class="login_form">
                         <form action="index.html" method="post">
@@ -41,6 +43,7 @@
                         </form>
                     </div>
 
+                                                <!--Div folosit daca are deja un cont-->
                     <div class="login_register" style="color: gold">
                         <a class="description3" id="login_register_create" href="<?php echo URLROOT; ?>/users/login">Ai deja un cont</a>
                     </div>
@@ -58,6 +61,7 @@
 
         </div>
 
+                    <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
         <script>
             const langEl = document.querySelector('.langWrap');
             const link = document.querySelectorAll('a');
@@ -117,6 +121,7 @@
                     "topnav7": "Despre",
                     "topnav8": "Reguli",
                 },
+
                 "english":
                 {
                     "description1": "Recover your superhero account!",
@@ -137,7 +142,7 @@
         </script>
 
         <div class="international">
-            <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+            <!-- API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
             <div id="google_translate_element"></div>
             <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -147,9 +152,15 @@
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
 
+                    <!--PHP folosit pentru afisarea footerului-->
         <?php
             require APPROOT . '/views/includes/footer.php'; 
         ?>
+
     </div>
+
+                        <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
+
 </body>
 </html>

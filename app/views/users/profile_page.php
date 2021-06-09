@@ -61,6 +61,7 @@
             </script>
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
+        <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
         <script>
             const langEl = document.querySelector('.langWrap');
             const link = document.querySelectorAll('a');
@@ -129,6 +130,7 @@
                     "topnav7": "Despre",
                     "topnav8": "Reguli",
                 },
+                
                 "english":
                 {
                     "description1": "Username:",
@@ -150,10 +152,14 @@
                 }
             }
         </script>
+
+        <!--PHP pentru afisarea footerului-->
         <?php
             require APPROOT . '/views/includes/footer.php'; 
         ?>
     </div>
+                        <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
 
 </body>
 </html>

@@ -14,11 +14,12 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-            <!--Div folosit pentru afisarea barii de navigare-->
+                <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
                 
+                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -91,6 +92,7 @@
                     </div>
                 </main>
             </div>
+                            <!--Script folosit pentru traducerea paginii in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -103,6 +105,11 @@
                 const descrEl7 = document.querySelector('.topnav6');
                 const descrEl8 = document.querySelector('.topnav7');
                 const descrEl9 = document.querySelector('.topnav8');
+                const descrEl10 = document.querySelector('.description1');
+                const descrEl11 = document.querySelector('.description2');
+                const descrEl12 = document.querySelector('.description3');
+                const descrEl13 = document.querySelector('.description4');
+                const descrEl14 = document.querySelector('.description5');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -122,6 +129,11 @@
                         descrEl7.textContent = data[attr].topnav6;
                         descrEl8.textContent = data[attr].topnav7;
                         descrEl9.textContent = data[attr].topnav8;
+                        descrEl10.textContent = data[attr].description1;
+                        descrEl11.textContent = data[attr].description2;
+                        descrEl12.textContent = data[attr].description3;
+                        descrEl13.textContent = data[attr].description4;
+                        descrEl14.textContent = data[attr].description5;
                     });
                 });
 
@@ -138,7 +150,13 @@
                         "topnav6": "Contact",
                         "topnav7": "Despre",
                         "topnav8": "Reguli",
+                        "description1": "Nume utilizator",
+                        "description2": "Punctaje",
+                        "description3": "Nume utilizator",
+                        "description4": "Punctaje",
+                        "description5": "Țara",
                     },
+
                     "english":
                     {
                         "topnav1": "Home",
@@ -150,11 +168,16 @@
                         "topnav6": "Contact",
                         "topnav7": "About",
                         "topnav8": "Rules",
+                        "description1": "Username",
+                        "description2": "Points",
+                        "description3": "Username",
+                        "description4": "Points",
+                        "description5": "Country",
                     }
                 }
             </script>
             <div class="international">
-                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <!-- API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
@@ -163,9 +186,12 @@
                 </script>
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
+                            <!--PHP folosit pentru afisarea footerului-->
             <?php
                     require APPROOT . '/views/includes/footer.php'; 
             ?>
         </div>
+                            <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
     </body>
 </html>

@@ -7,6 +7,7 @@
     </head> 
     <body>
         <footer>
+                    <!--PHP folosit pentru afisarea footerului-->
                 <div class="footer_container">
                     <div id="footer_image" class="image_quick_links"></div>
                     <div class="footer_browse">

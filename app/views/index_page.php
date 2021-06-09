@@ -13,10 +13,11 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <!--Div folosit pentru afisarea barii de navigare-->
+                <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
+                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -27,7 +28,7 @@
                 <main>
                     <?php
                     if (isset($_SESSION["uid"])) {
-                        echo "<p class=\"description1\" style=\"color: gold\">Welcome ".$_SESSION["userName"].".</p>";
+                        echo "<p class=\"content\" style=\"color: gold\">Bun venit, ".$_SESSION["userName"]."!</p>";
                         }
                     ?>
                     <p class="description1" style="color: gold">SuperHeroes Web Game: joc Web educativ destinat adolescenților.</p>
@@ -37,6 +38,7 @@
                 </main>
             </div>
 
+            <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -44,15 +46,16 @@
                 const descrEl2 = document.querySelector('.description2');
                 const descrEl3 = document.querySelector('.description3');
                 const descrEl4 = document.querySelector('.description4');
-                const descrEl5 = document.querySelector('.active');
-                const descrEl6 = document.querySelector('.topnav2');
-                const descrEl7 = document.querySelector('.topnav3');
-                const descrEl8 = document.querySelector('.topnav4');
-                const descrEl9 = document.querySelector('.topnav5');
-                const descrEl10 = document.querySelector('.topnav6');
-                const descrEl11 = document.querySelector('.topnav7');
-                const descrEl12 = document.querySelector('.topnav8');
-                const descrEl13 = document.querySelector('.topnav9');
+                const descrEl5 = document.querySelector('.content');
+                const descrEl6 = document.querySelector('.active');
+                const descrEl7 = document.querySelector('.topnav2');
+                const descrEl8 = document.querySelector('.topnav3');
+                const descrEl9 = document.querySelector('.topnav4');
+                const descrEl10 = document.querySelector('.topnav5');
+                const descrEl11 = document.querySelector('.topnav6');
+                const descrEl12 = document.querySelector('.topnav7');
+                const descrEl13 = document.querySelector('.topnav8');
+                const descrEl14 = document.querySelector('.topnav9');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -65,15 +68,16 @@
                         descrEl2.textContent = data[attr].description2;
                         descrEl3.textContent = data[attr].description3;
                         descrEl4.textContent = data[attr].description4;
-                        descrEl5.textContent = data[attr].active;
-                        descrEl6.textContent = data[attr].topnav2;
-                        descrEl7.textContent = data[attr].topnav3;
-                        descrEl8.textContent = data[attr].topnav4;
-                        descrEl9.textContent = data[attr].topnav5;
-                        descrEl10.textContent = data[attr].topnav6;
-                        descrEl11.textContent = data[attr].topnav7;
-                        descrEl12.textContent = data[attr].topnav8;
-                        descrEl13.textContent = data[attr].topnav9;
+                        descrEl5.textContent = data[attr].content;
+                        descrEl6.textContent = data[attr].active;
+                        descrEl7.textContent = data[attr].topnav2;
+                        descrEl8.textContent = data[attr].topnav3;
+                        descrEl9.textContent = data[attr].topnav4;
+                        descrEl10.textContent = data[attr].topnav5;
+                        descrEl11.textContent = data[attr].topnav6;
+                        descrEl12.textContent = data[attr].topnav7;
+                        descrEl13.textContent = data[attr].topnav8;
+                        descrEl14.textContent = data[attr].topnav9;
                     });
                 });
 
@@ -85,6 +89,7 @@
                         "description2": "Scenariul, miza și condițiile de victorie/înfrângere sunt deja prestabilite.",
                         "description3": "Toate partidele se vor desfășura în sistem trivia (conquistador).",
                         "description4": "Mulțumim și succes tuturor!",
+                        "content": "Bun venit,",
                         "active": "Acasă",
                         "topnav2": "Logare",
                         "topnav3": "Joacă!",
@@ -101,6 +106,7 @@
                         "description2": "The scenario, stake and conditions of victory / defeat are already predetermined.",
                         "description3": "All games will take place in a trivia system (conquistador).",
                         "description4": "Thanks and good luck to all!",
+                        "content": "Welcome,",
                         "active": "Home",
                         "topnav2": "LogIn",
                         "topnav3": "Play!",
@@ -115,7 +121,7 @@
             </script>
 
             <div class="international">
-                <!--Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <!--API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
                 <div id="google_translate_element"></div>
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
@@ -125,9 +131,16 @@
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
 
+            <!--PHP folosit pentru afisarea footerului-->
             <?php
                 include_once 'includes/footer.php';
             ?>
+                    <!--Legatura pentru Control Panel de administrare-->
+                    <center>
+                        <a href="./cpanel.html" style="color:gold">Control Panel<br>(administrator only)</a>
+                    </center>
         </div>
+                    <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
     </body>
 </html>

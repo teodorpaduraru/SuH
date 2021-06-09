@@ -13,11 +13,12 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <!--Div folosit pentru afisarea barii de navigare-->
+                <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
 
+                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -26,6 +27,7 @@
                     </center>
                 </div>
 
+                        <!--Div pentru inregistrarea utilizatorilor noi-->
                 <main class="signin_container" style="color: gold">
                     <div class="root_signin">
                         <h1 class="description1">Înregistrați-vă și alăturați-vă supereroilor!</h1>
@@ -68,13 +70,14 @@
                             </form>
                         </div>
                         
+                                <!--Div folosit pentru optiunile cont existent sau uitarea parolei-->
                         <div class="login_register" style="color: gold">
                             <a class="description5" id="login_register_create" href="<?php echo URLROOT; ?>/users/login">Ai deja un cont</a>
                             <a class="description6" id="login_register_forgot" href="<?php echo URLROOT; ?>/users/forgot_password">Ați uitat parola?</a>
                         </div>
                         <br>
+                        <!-- Conectare alternativa pe pagina jocului cu contul Google sau Facebook-->
                         <div class="alternative_register" style="color: gold">
-                            <!-- Conectare alternativa pe pagina jocului-->
                             <p class="description7">Sau înregistrați-vă și conectați-vă cu:</p>
                             <a label="facebook_login" class="icon" href="https://www.facebook.com/"><img src="<?php echo URLROOT;?>/public/Images/LogIn_Facebook_icon.png"></a>
                             <a class="icon" href="https://accounts.google.com/ServiceLogin/identifier?hl=ro&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="<?php echo URLROOT;?>/public/Images/LogIn_Google_icon.png"></a>
@@ -85,6 +88,8 @@
                 </main>
 
             </div>
+
+                    <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -153,6 +158,7 @@
                         "topnav7": "Despre",
                         "topnav8": "Reguli",
                     },
+                    
                     "english":
                     {
                         "description1": "Register and join the superheroes!",
@@ -174,19 +180,29 @@
                     }
                 }
             </script>
+
+            <!--API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
             <div class="international">
                 <div id="google_translate_element"></div>
+
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
                         new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
                     }
                 </script>
+
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
             </div>
 
+            <!--PHP folosit pentru afisarea footerului-->
             <?php
                     require APPROOT . '/views/includes/footer.php'; 
             ?>
+
+                                <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+            <script type= "text/javascript" src= "./keyboard.js" > </script>
+
         </div>
     </body>
 </html>

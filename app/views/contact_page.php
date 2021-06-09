@@ -14,11 +14,12 @@
     <body>
         <div id="root">
             <div class="page_wrapper">
-                <!--Div folosit pentru afisarea barii de navigare-->
+                            <!--PHP folosit pentru afisarea barii de navigare-->
                 <?php
                     require APPROOT . '/views/includes/navbar.php'; 
                 ?>
                 
+                                <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
                 <div class="langWrap">
                     <center>
                         <p style="color:ghostwhite">Language option</p>
@@ -28,7 +29,8 @@
                 </div>
 
                 <main>
-                    <!-- Afisare locatie pe harta-->
+                    
+                <!-- API folosit pentru afisarea locatiei pe harta-->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
                     <div style='width:90%;'>
                         <div id='gmap_canvas' style='height:100%;width:100%;border-radius: 20px;'></div>
@@ -43,7 +45,7 @@
                         </p>
                         <p class="description2" style="color: gold">Trimiteți un e-mail la: &nbsp;<a href="mailto:our-mail@mail.com" style="color: gold"> our-mail@mail.com</a></p>
                         <p class="description3" style="color: gold">
-                            Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e&#8209;mail la adresa de mai sus.
+                            Dacă aveți probleme cu jocul, vă rugăm să trimiteți un e-mail la adresa de mai sus.
                         </p>
                         <p class="description4" style="color: gold">
                             În cazul în care nu primiți un răspuns rapid, vă rugăm să sunați la numărul afișat pentru a fi ajutat de unul dintre colegii noștri.
@@ -65,17 +67,7 @@
                 </main>
             </div>
 
-            <div class="international">
-                <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
-                <div id="google_translate_element"></div>
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de,ro' }, 'google_translate_element');
-                    }
-                </script>
-                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
-
+                        <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
@@ -170,9 +162,24 @@
                 }
             </script>
 
+            <div class="international">
+                <!-- API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+                <div id="google_translate_element"></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'ro', includedLanguages: 'en,fr,de' }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+
+
+             <!--PHP folosit pentru afisarea footerului-->
             <?php
                 require APPROOT . '/views/includes/footer.php'; 
             ?>
         </div>
+        <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
     </body>
 </html>

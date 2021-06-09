@@ -14,11 +14,13 @@
 <body>
     <div id="root">
         <div class="page_wrapper">
-        <!--Div folosit pentru afisarea barii de navigare-->
+
+                        <!--PHP folosit pentru afisarea barii de navigare-->
             <?php
                 require APPROOT . '/views/includes/navbar.php'; 
             ?>
 
+            <!--Div folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
             <div class="langWrap">
                 <center>
                     <p style="color:ghostwhite">Language option</p>
@@ -28,6 +30,7 @@
             </div>
 
             <main>
+            <!--Div folosit pentru afisarea regulilor jocului-->
                 <div class="rules_content">
                     <center>
                         <h1 class="titlu_regula" style="color: gold">Reguli</h1>
@@ -37,10 +40,11 @@
 
                         <a href="under_construction.html" style="color: gold" ;>PDF</a> / <a href="under_construction.html" style="color: gold" ;>HTML</a>
                     </center>                    
+                                    <!--Continutul regulilor-->
                     <div class="rules_container">
                         <ol style="color: gold">
                             <li class="regula1">Toate întrebările quiz-urilor sunt obligatorii.</li>
-                            <li class="regula2">Fiecare răspuns corect valorează 5 puncte.</li>
+                            <li class="regula2">Fiecare răspuns corect valorează: 3 puncte (începator), 4 puncte (intermediar), 5 puncte (avansat).</li>
                             <li class="regula3">Răspunsurile greșite sunt penalizate cu -3 puncte.</li>
                             <li class="regula4">După trimiterea răspunsurilor NU se mai poate reveni la quiz-ul respectiv.</li>
                             <li class="regula5">Butoanele "Prev" / "Next" sunt folosite pentru a trece de la o întrebare la alta.</li>
@@ -52,6 +56,7 @@
 
         </div>
 
+        <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
         <script>
             const langEl = document.querySelector('.langWrap');
             const link = document.querySelectorAll('a');
@@ -107,7 +112,7 @@
                     "titlu_regula": "Reguli",
                     "subtitlu_regula": "Regulamentul complet și ghidul de utilizare îl puteți citi aici:",
                     "regula1": "Toate întrebările quiz- urilor sunt obligatorii.",
-                    "regula2": "Fiecare răspuns corect valorează 5 puncte.",
+                    "regula2": "Fiecare răspuns corect valorează: 3 puncte (începator), 4 puncte (intermediar), 5 puncte (avansat).",
                     "regula3": "Răspunsurile greșite sunt penalizate cu -3 puncte.",
                     "regula4": "După trimiterea răspunsurilor NU se mai poate reveni la quiz-ul respectiv.",
                     "regula5": "Butoanele PREV / NEXT sunt folosite pentru a trece de la o întrebare la alta.",
@@ -122,12 +127,13 @@
                     "topnav8": "Despre",
                     "active": "Reguli",
                 },
+
                 "english":
                 {
                     "titlu_regula": "Rules",
                     "subtitlu_regula": "The complete regulations and the user guide can be read here:",
                     "regula1": "All quiz questions are required.",
-                    "regula2": "Each correct answer is worth 5 points.",
+                    "regula2": "Each correct answer is worth: 3 points (beginner), 4 points (intermediate), 5 points (advanced).",
                     "regula3": "Wrong answers are penalized with -3 points.",
                     "regula4": "After sending the answers, it is NOT possible to return to the respective quiz.",
                     "regula5": "The PREV / NEXT buttons are used to switch from one question to another.",
@@ -146,7 +152,7 @@
         </script>
         
         <div class="international">
-            <!-- Div folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
+            <!-- API folosit pentru traducerea (internationalizarea) site-ului in alte limbi-->
             <div id="google_translate_element"></div>
             <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -156,9 +162,14 @@
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
 
+        <!-- PHP folosit pentru afisarea footerului-->
         <?php
             require APPROOT . '/views/includes/footer.php'; 
         ?>
+
+                            <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src= "./keyboard.js" > </script>
+
     </div>
 </body>
 </html>
