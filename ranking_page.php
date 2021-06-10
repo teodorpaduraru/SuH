@@ -99,19 +99,18 @@
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
                 const descrEl1 = document.querySelector('.topnav1');
-                const descrEl2 = document.querySelector('.topnav2');
-                const descrEl3 = document.querySelector('.topnav3');
-                const descrEl4 = document.querySelector('.topnav4');
+                const descrEl2 = document.querySelector('.topnav9');
+                const descrEl3 = document.querySelector('.topnav2');
+                const descrEl4 = document.querySelector('.topnav3');
                 const descrEl5 = document.querySelector('.active');
                 const descrEl6 = document.querySelector('.topnav5');
                 const descrEl7 = document.querySelector('.topnav6');
                 const descrEl8 = document.querySelector('.topnav7');
-                const descrEl9 = document.querySelector('.topnav8');
-                const descrEl10 = document.querySelector('.description1');
-                const descrEl11 = document.querySelector('.description2');
-                const descrEl12 = document.querySelector('.description3');
-                const descrEl13 = document.querySelector('.description4');
-                const descrEl14 = document.querySelector('.description5');
+                const descrEl9 = document.querySelector('.description1');
+                const descrEl10 = document.querySelector('.description2');
+                const descrEl11 = document.querySelector('.description3');
+                const descrEl12 = document.querySelector('.description4');
+                const descrEl13 = document.querySelector('.description5');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -123,19 +122,18 @@
 
 
                         descrEl1.textContent = data[attr].topnav1;
-                        descrEl2.textContent = data[attr].topnav2;
-                        descrEl3.textContent = data[attr].topnav3;
-                        descrEl4.textContent = data[attr].topnav4;
+                        descrEl2.textContent = data[attr].topnav9;
+                        descrEl3.textContent = data[attr].topnav2;
+                        descrEl4.textContent = data[attr].topnav3;
                         descrEl5.textContent = data[attr].active;
                         descrEl6.textContent = data[attr].topnav5;
                         descrEl7.textContent = data[attr].topnav6;
                         descrEl8.textContent = data[attr].topnav7;
-                        descrEl9.textContent = data[attr].topnav8;
-                        descrEl10.textContent = data[attr].description1;
-                        descrEl11.textContent = data[attr].description2;
-                        descrEl12.textContent = data[attr].description3;
-                        descrEl13.textContent = data[attr].description4;
-                        descrEl14.textContent = data[attr].description5;
+                        descrEl19.textContent = data[attr].description1;
+                        descrEl10.textContent = data[attr].description2;
+                        descrEl11.textContent = data[attr].description3;
+                        descrEl12.textContent = data[attr].description4;
+                        descrEl13.textContent = data[attr].description5;
                     });
                 });
 
@@ -144,14 +142,14 @@
                     "romanian":
                     {
                         "topnav1": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
-                        "topnav4": "Galerie",
+                        "topnav9": "Logare",
+                        "topnav2": "Joacă!",
+                        "topnav3": "Galerie",
                         "active": "Clasament",
-                        "topnav5": "Profil",
-                        "topnav6": "Contact",
-                        "topnav7": "Despre",
-                        "topnav8": "Reguli",
+                        "topnav8": "Profil",
+                        "topnav5": "Contact",
+                        "topnav6": "Despre",
+                        "topnav7": "Reguli",
                         "description1": "Nume utilizator",
                         "description2": "Punctaje",
                         "description3": "Nume utilizator",
@@ -162,14 +160,14 @@
                     "english":
                     {
                         "topnav1": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
-                        "topnav4": "Gallery",
+                        "topnav9": "LogIn",
+                        "topnav2": "Play!",
+                        "topnav3": "Gallery",
                         "active": "Ranking",
-                        "topnav5": "Profile",
-                        "topnav6": "Contact",
-                        "topnav7": "About",
-                        "topnav8": "Rules",
+                        "topnav8": "Profile",
+                        "topnav5": "Contact",
+                        "topnav6": "About",
+                        "topnav7": "Rules",
                         "description1": "Username",
                         "description2": "Points",
                         "description3": "Username",

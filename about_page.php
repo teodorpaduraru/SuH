@@ -60,15 +60,14 @@
                 const descrEl3 = document.querySelector('.description3');
                 const descrEl4 = document.querySelector('.description4');
                 const descrEl5 = document.querySelector('.description5');
-                const descrEl6 = document.querySelector('.a');
-                const descrEl7 = document.querySelector('.topnav2');
-                const descrEl8 = document.querySelector('.topnav3');
-                const descrEl9 = document.querySelector('.topnav4');
-                const descrEl10 = document.querySelector('.topnav5');
-                const descrEl11 = document.querySelector('.topnav6');
-                const descrEl12 = document.querySelector('.topnav7');
-                const descrEl13 = document.querySelector('.active');
-                const descrEl14 = document.querySelector('.topnav8');
+                const descrEl6 = document.querySelector('.topnav1');
+                const descrEl7 = document.querySelector('.topnav9');
+                const descrEl8 = document.querySelector('.topnav2');
+                const descrEl9 = document.querySelector('.topnav3');
+                const descrEl10 = document.querySelector('.topnav4');
+                const descrEl11 = document.querySelector('.topnav5');
+                const descrEl12 = document.querySelector('.active');
+                const descrEl13 = document.querySelector('.topnav7');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -84,14 +83,13 @@
                         descrEl4.textContent = data[attr].description4;
                         descrEl5.textContent = data[attr].description5;
                         descrEl6.textContent = data[attr].topnav1;
-                        descrEl7.textContent = data[attr].topnav2;
-                        descrEl8.textContent = data[attr].topnav3;
-                        descrEl9.textContent = data[attr].topnav4;
-                        descrEl10.textContent = data[attr].topnav5;
-                        descrEl11.textContent = data[attr].topnav6;
-                        descrEl12.textContent = data[attr].topnav7;
-                        descrEl13.textContent = data[attr].active;
-                        descrEl14.textContent = data[attr].topnav8;
+                        descrEl7.textContent = data[attr].topnav9;
+                        descrEl8.textContent = data[attr].topnav2;
+                        descrEl9.textContent = data[attr].topnav3;
+                        descrEl10.textContent = data[attr].topnav4;
+                        descrEl11.textContent = data[attr].topnav5;
+                        descrEl12.textContent = data[attr].active;
+                        descrEl13.textContent = data[attr].topnav7;
                     });
                 });
 
@@ -105,14 +103,14 @@
                         "description4": "Vă mulțumim că ați ales jocul nostru și vă dorim o experiență inedită!",
                         "description5": "Echipa: Teodor Păduraru și Eugen Gavrilovici",
                         "topnav1": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
-                        "topnav4": "Galerie",
-                        "topnav5": "Clasament",
-                        "topnav6": "Profil",
-                        "topnav7": "Contact",
+                        "topnav9": "Logare",
+                        "topnav2": "Joacă!",
+                        "topnav3": "Galerie",
+                        "topnav4": "Clasament",
+                        "topnav8": "Profil",
+                        "topnav5": "Contact",
                         "active": "Despre",
-                        "topnav8": "Reguli",
+                        "topnav7": "Reguli",
                     },
 
                     "english":
@@ -123,14 +121,14 @@
                         "description4": "Thank you for choosing our game and we wish you a unique experience!",
                         "description5": "Team: Teodor Păduraru and Eugen Gavrilovici",
                         "topnav1": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
-                        "topnav4": "Gallery",
-                        "topnav5": "Ranking",
-                        "topnav6": "Profile",
-                        "topnav7": "Contact",
+                        "topnav9": "LogIn",
+                        "topnav2": "Play!",
+                        "topnav3": "Gallery",
+                        "topnav4": "Ranking",
+                        "topnav8": "Profile",
+                        "topnav5": "Contact",
                         "active": "About",
-                        "topnav8": "Rules",
+                        "topnav7": "Rules",
                     }
                 }
             </script>

@@ -50,19 +50,19 @@
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
-                const descrEl1 = document.querySelector('.topnav1');
-                const descrEl2 = document.querySelector('.active');
-                const descrEl3 = document.querySelector('.topnav3');
-                const descrEl4 = document.querySelector('.topnav4');
-                const descrEl5 = document.querySelector('.topnav5');
-                const descrEl6 = document.querySelector('.topnav6');
-                const descrEl7 = document.querySelector('.topnav7');
-                const descrEl8 = document.querySelector('.topnav8');
-                const descrEl9 = document.querySelector('.topnav9');
-                const descrEl10 = document.querySelector('.quiz_title');
-                const descrEl11 = document.querySelector('.buton1');
-                const descrEl12 = document.querySelector('.buton2');
-                const descrEl13 = document.querySelector('.buton3');
+                const descrEl9 = document.querySelector('.topnav1');
+            const descrEl1 = document.querySelector('.topnav9');    
+            const descrEl2 = document.querySelector('.active');
+            const descrEl3 = document.querySelector('.topnav3');
+            const descrEl4 = document.querySelector('.topnav4');
+            const descrEl5 = document.querySelector('.topnav5');
+            const descrEl6 = document.querySelector('.topnav6');
+            const descrEl7 = document.querySelector('.topnav7');
+            const descrEl8 = document.querySelector('.topnav8');
+                const descrEl9 = document.querySelector('.quiz_title');
+                const descrEl10 = document.querySelector('.buton1');
+                const descrEl11 = document.querySelector('.buton2');
+                const descrEl12 = document.querySelector('.buton3');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -74,18 +74,17 @@
 
                        
                         descrEl1.textContent = data[attr].topnav1;
-                        descrEl2.textContent = data[attr].active;
-                        descrEl3.textContent = data[attr].topnav3;
+                        descrEl2.textContent = data[attr].topnav9;
+                        descrEl3.textContent = data[attr].active;
                         descrEl4.textContent = data[attr].topnav4;
                         descrEl5.textContent = data[attr].topnav5;
                         descrEl6.textContent = data[attr].topnav6;
                         descrEl7.textContent = data[attr].topnav7;
                         descrEl8.textContent = data[attr].topnav8;
-                        descrEl9.textContent = data[attr].topnav9;
-                        descrEl10.textContent = data[attr].quiz_title;
-                        descrEl11.textContent = data[attr].buton1;
-                        descrEl12.textContent = data[attr].buton2;
-                        descrEl13.textContent = data[attr].buton3;
+                        descrEl9.textContent = data[attr].quiz_title;
+                        descrEl10.textContent = data[attr].buton1;
+                        descrEl11.textContent = data[attr].buton2;
+                        descrEl12.textContent = data[attr].buton3;
                     });
                 });
 
@@ -94,6 +93,7 @@
                     "romanian":
                     {
                         "topnav1": "Acasă",
+                        "topnav9": "Logare",
                         "active": "Joacă!",
                         "topnav3": "Galerie",
                         "topnav4": "Clasament",
@@ -101,7 +101,6 @@
                         "topnav6": "Despre",
                         "topnav7": "Reguli",
                         "topnav8": "Profil",
-                        "topnav9": "Logare",
                         "quiz_title": "Alege un nivel de experiență:",
                         "buton1": "Începător",
                         "buton2": "Intermediar",

@@ -73,15 +73,14 @@
             const descrEl7 = document.querySelector('.regula5');
             const descrEl8 = document.querySelector('.regula6');
             const descrEl9 = document.querySelector('.topnav1');
-            
-            const descrEl10 = document.querySelector('.topnav2');
-            const descrEl11 = document.querySelector('.topnav3');
-            const descrEl12 = document.querySelector('.topnav4');
-            const descrEl13 = document.querySelector('.topnav5');
-            const descrEl14 = document.querySelector('.topnav6');
-            const descrEl15 = document.querySelector('.active');
-            const descrEl16 = document.querySelector('.topnav8');
-            const descrEl17 = document.querySelector('.topnav9');
+            const descrEl10 = document.querySelector('.topnav9');    
+            const descrEl11 = document.querySelector('.topnav2');
+            const descrEl12 = document.querySelector('.topnav3');
+            const descrEl13 = document.querySelector('.topnav4');
+            const descrEl14 = document.querySelector('.topnav5');
+            const descrEl15 = document.querySelector('.topnav6');
+            const descrEl16 = document.querySelector('.active');
+            const descrEl17 = document.querySelector('.topnav8');
 
             link.forEach(el => {
                 el.addEventListener('click', () => {
@@ -99,15 +98,14 @@
                     descrEl7.textContent = data[attr].regula5;
                     descrEl8.textContent = data[attr].regula6;
                     descrEl9.textContent = data[attr].topnav1;
-                    
-                    descrEl10.textContent = data[attr].topnav2;
-                    descrEl11.textContent = data[attr].topnav3;
-                    descrEl12.textContent = data[attr].topnav4;
-                    descrEl13.textContent = data[attr].topnav5;
-                    descrEl14.textContent = data[attr].topnav6;
-                    descrEl15.textContent = data[attr].active;
-                    descrEl16.textContent = data[attr].topnav8;
-                    descrEl17.textContent = data[attr].topnav9;
+                    descrEl10.textContent = data[attr].topnav9;
+                    descrEl11.textContent = data[attr].topnav2;
+                    descrEl12.textContent = data[attr].topnav3;
+                    descrEl13.textContent = data[attr].topnav4;
+                    descrEl14.textContent = data[attr].topnav5;
+                    descrEl15.textContent = data[attr].topnav6;
+                    descrEl16.textContent = data[attr].active;
+                    descrEl17.textContent = data[attr].topnav8;
                 });
             });
 
@@ -128,10 +126,10 @@
                     "topnav9": "Logare",
                     "topnav2": "Joacă!",
                     "topnav3": "Galerie",
-                    "topnav4": "Clasament",
+                    "active": "Clasament",
                     "topnav5": "Contact",
                     "topnav6": "Despre",
-                    "active": "Reguli",
+                    "topnav7": "Reguli",
                 },
 
                 "english":
@@ -149,10 +147,10 @@
                     "topnav9": "LogIn",
                     "topnav2": "Play!",
                     "topnav3": "Gallery",
-                    "topnav4": "Ranking",
+                    "active": "Ranking",
                     "topnav5": "Contact",
                     "topnav6": "About",
-                    "active": "Rules",
+                    "topnav7": "Rules",
                 }
             }
         </script>

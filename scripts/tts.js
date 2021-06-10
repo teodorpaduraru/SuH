@@ -1,3 +1,5 @@
+//Js pentru text-to-speech care va fi folosit la dezvoltarea ulterioara
+
 onload = function () {
     if ('speechSynthesis' in window) with (speechSynthesis) {
 
@@ -25,7 +27,6 @@ onload = function () {
                 speak(utterance);
             }
             if (paused) {
-                /* unpause/resume narration */
                 playEle.className = 'played';
                 pauseEle.className = '';
                 resume();
@@ -34,7 +35,6 @@ onload = function () {
 
         function onClickPause() {
             if (speaking && !paused) {
-                /* pause narration */
                 pauseEle.className = 'paused';
                 playEle.className = '';
                 pause();
@@ -43,8 +43,6 @@ onload = function () {
 
         function onClickStop() {
             if (speaking) {
-                /* stop narration */
-                /* for safari */
                 stopEle.className = 'stopped';
                 playEle.className = pauseEle.className = '';
                 flag = false;
@@ -56,7 +54,6 @@ onload = function () {
     }
 
     else {
-        /* speech synthesis not supported */
         msg = document.createElement('h5');
         msg.textContent = "Detected no support for Speech Synthesis";
         msg.style.textAlign = 'center';
@@ -67,6 +64,3 @@ onload = function () {
     }
 
 }
-
-
-Resources

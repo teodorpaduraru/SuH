@@ -50,40 +50,42 @@
             <script>
                 const langEl = document.querySelector('.langWrap');
                 const link = document.querySelectorAll('a');
-                const descrEl1 = document.querySelector('.description1');
-                const descrEl2 = document.querySelector('.description2');
-                const descrEl3 = document.querySelector('.description3');
-                const descrEl4 = document.querySelector('.description4');
-                const descrEl5 = document.querySelector('.content');
-                const descrEl6 = document.querySelector('.active');
-                const descrEl7 = document.querySelector('.topnav9');
-                const descrEl8 = document.querySelector('.topnav2');
-                const descrEl9 = document.querySelector('.topnav3');
-                const descrEl10 = document.querySelector('.topnav4');
-                const descrEl11 = document.querySelector('.topnav5');
-                const descrEl12 = document.querySelector('.topnav6');
-                const descrEl13 = document.querySelector('.topnav7');
-
+                const descrEl1 = document.querySelector('.active');
+                const descrEl2 = document.querySelector('.topnav9');    
+                const descrEl3 = document.querySelector('.topnav2');
+                const descrEl4 = document.querySelector('.topnav3');
+                const descrEl5 = document.querySelector('.topnav4');
+                const descrEl6 = document.querySelector('.topnav5');
+                const descrEl7 = document.querySelector('.topnav6');
+                const descrEl8 = document.querySelector('.topnav7');
+                const descrEl9 = document.querySelector('.description1');
+                const descrEl10 = document.querySelector('.description2');
+                const descrEl11 = document.querySelector('.description3');
+                const descrEl12 = document.querySelector('.description4');
+                const descrEl13 = document.querySelector('.content');
+                
+                
                 link.forEach(el => {
                     el.addEventListener('click', () => {
                         langEl.querySelector('.active').classList.remove('active');
                         el.classList.add('active');
                         const attr = el.getAttribute('language');
 
-
-                        descrEl1.textContent = data[attr].description1;
-                        descrEl2.textContent = data[attr].description2;
-                        descrEl3.textContent = data[attr].description3;
-                        descrEl4.textContent = data[attr].description4;
-                        descrEl5.textContent = data[attr].content;
-                        descrEl6.textContent = data[attr].active;
-                        descrEl7.textContent = data[attr].topnav9;
-                        descrEl8.textContent = data[attr].topnav2;
-                        descrEl9.textContent = data[attr].topnav3;
-                        descrEl10.textContent = data[attr].topnav4;
-                        descrEl11.textContent = data[attr].topnav5;
-                        descrEl12.textContent = data[attr].topnav6;
-                        descrEl13.textContent = data[attr].topnav7;
+                        
+                        descrEl1.textContent = data[attr].active;
+                        descrEl2.textContent = data[attr].topnav9;
+                        descrEl3.textContent = data[attr].topnav2;
+                        descrEl4.textContent = data[attr].topnav3;
+                        descrEl5.textContent = data[attr].topnav4;
+                        descrEl6.textContent = data[attr].topnav5;
+                        descrEl7.textContent = data[attr].topnav6;
+                        descrEl8.textContent = data[attr].topnav7;
+                        descrEl9.textContent = data[attr].description1;
+                        descrEl10.textContent = data[attr].description2;
+                        descrEl11.textContent = data[attr].description3;
+                        descrEl12.textContent = data[attr].description4;
+                        descrEl13.textContent = data[attr].content;
+                        
                     });
                 });
 
@@ -97,11 +99,11 @@
                         "description4": "Mulțumim și succes tuturor!",
                         "content": "Bun venit,",
                         "active": "Acasă",
+                        "topnav8": "Profil",
                         "topnav9": "Logare",
                         "topnav2": "Joacă!",
                         "topnav3": "Galerie",
                         "topnav4": "Clasament",
-                        "topnav8": "Profil",
                         "topnav5": "Contact",
                         "topnav6": "Despre",
                         "topnav7": "Reguli",
@@ -115,11 +117,11 @@
                         "description4": "Thanks and good luck to all!",
                         "content": "Welcome,",
                         "active": "Home",
+                        "topnav7": "Profile",
                         "topnav9": "LogIn",
                         "topnav2": "Play!",
                         "topnav3": "Gallery",
                         "topnav4": "Ranking",
-                        "topnav7": "Profile",
                         "topnav5": "Contact",
                         "topnav6": "About",
                         "topnav7": "Rules",
@@ -144,7 +146,7 @@
             ?>
                     <!--Legatura pentru Control Panel de administrare-->
                     <center>
-                        <a href="./cpanel.html" style="color:gold">Control Panel<br>(administrator only)</a>
+                        <a href="./cpanel.php" style="color:gold">Control Panel<br>(administrator only)</a>
                     </center>
         </div>
 

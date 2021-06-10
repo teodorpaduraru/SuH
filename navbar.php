@@ -17,7 +17,7 @@
             <?php
                 // Pagina principala
                 if(basename($_SERVER['PHP_SELF']) === "index.php")
-                    echo "<a class=\"topnav1\" href=\"./index.php\">Acasă</a>";
+                    echo "<a class=\"topnav1 active\" href=\"./index.php\">Acasă</a>";
                 else
                     echo "<a class=\"topnav1\" href=\"./index.php\">Acasă</a>";
 
@@ -38,7 +38,7 @@
                 }    
                 // Pagina jocului
                 if(basename($_SERVER['PHP_SELF']) === "game_page.php")
-                    echo "<a class=\"topnav2\" href=\"./game_page.php\">Joacă!</a>";
+                    echo "<a class=\"topnav2 active\" href=\"./game_page.php\">Joacă!</a>";
                 else
                     echo "<a class=\"topnav2\" href=\"./game_page.php\">Joacă!</a>";
 

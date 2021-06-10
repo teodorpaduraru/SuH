@@ -85,14 +85,13 @@
                 const descrEl7 = document.querySelector('.description7');
                 const descrEl8 = document.querySelector('.description8');
                 const descrEl9 = document.querySelector('.topnav1');
-                const descrEl10 = document.querySelector('.topnav2');
-                const descrEl11 = document.querySelector('.topnav3');
-                const descrEl12 = document.querySelector('.topnav4');
-                const descrEl13 = document.querySelector('.topnav5');
-                const descrEl14 = document.querySelector('.topnav6');
-                const descrEl15 = document.querySelector('.active');
+                const descrEl10 = document.querySelector('.topnav9');
+                const descrEl11 = document.querySelector('.topnav2');
+                const descrEl12 = document.querySelector('.topnav3');
+                const descrEl13 = document.querySelector('.topnav4');
+                const descrEl14 = document.querySelector('.active');
+                const descrEl15 = document.querySelector('.topnav6');
                 const descrEl16 = document.querySelector('.topnav7');
-                const descrEl17 = document.querySelector('.topnav8');
 
                 link.forEach(el => {
                     el.addEventListener('click', () => {
@@ -111,14 +110,14 @@
                         descrEl7.textContent = data[attr].description7;
                         descrEl8.textContent = data[attr].description8;
                         descrEl9.textContent = data[attr].topnav1;
-                        descrEl10.textContent = data[attr].topnav2;
-                        descrEl11.textContent = data[attr].topnav3;
-                        descrEl12.textContent = data[attr].topnav4;
-                        descrEl13.textContent = data[attr].topnav5;
-                        descrEl14.textContent = data[attr].topnav6;
-                        descrEl15.textContent = data[attr].active;
+                        descrEl10.textContent = data[attr].topnav9;
+                        descrEl11.textContent = data[attr].topnav2;
+                        descrEl12.textContent = data[attr].topnav3;
+                        descrEl13.textContent = data[attr].topnav4;
+                        descrEl14.textContent = data[attr].active;
+                        descrEl15.textContent = data[attr].topnav6;
                         descrEl16.textContent = data[attr].topnav7;
-                        descrEl17.textContent = data[attr].topnav8;
+                        
                     });
                 });
 
@@ -135,14 +134,14 @@
                         "description7": "Sâmbătă: 10 AM - 2 PM",
                         "description8": "Duminică: Închis",
                         "topnav1": "Acasă",
-                        "topnav2": "Logare",
-                        "topnav3": "Joacă!",
-                        "topnav4": "Galerie",
-                        "topnav5": "Clasament",
-                        "topnav6": "Profil",
+                        "topnav9": "Logare",
+                        "topnav2": "Joacă!",
+                        "topnav3": "Galerie",
+                        "topnav4": "Clasament",
+                        "topnav8": "Profil",
                         "active": "Contact",
-                        "topnav7": "Despre",
-                        "topnav8": "Reguli",
+                        "topnav6": "Despre",
+                        "topnav7": "Reguli",
                     },
 
                     "english":
@@ -156,14 +155,14 @@
                         "description7": "Saturday: 10 AM - 2 PM",
                         "description8": "Sunday: Closed",
                         "topnav1": "Home",
-                        "topnav2": "LogIn",
-                        "topnav3": "Play!",
-                        "topnav4": "Gallery",
-                        "topnav5": "Ranking",
-                        "topnav6": "Profile",
+                        "topnav9": "LogIn",
+                        "topnav2": "Play!",
+                        "topnav3": "Gallery",
+                        "topnav4": "Ranking",
+                        "topnav8": "Profile",
                         "active": "Contact",
-                        "topnav7": "About",
-                        "topnav8": "Rules",
+                        "topnav6": "About",
+                        "topnav7": "Rules",
                     }
                 }
             </script>
