@@ -70,3 +70,7 @@ img {
     width: 150px;
     display: inline-flex;
 }
+
+#button {
+    font-size: 20px;
+}

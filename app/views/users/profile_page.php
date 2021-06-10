@@ -28,7 +28,7 @@
             <main class="abstract" style="color: gold">
                 <div class="row">
                     <div class="column">
-                        <h1><a class="icon"><img src="./Images/red1.png"></a> </h1>
+                        <h1><a class="icon"><img src="<?php echo URLROOT; ?>/public/Images/red1.png"></a> </h1>
                         <p class="description1">
                             Username:
                             <br>               
@@ -41,6 +41,13 @@
                 <div class="row" style="color: gold">
                     <div class="column">
                         <h2 class="description2" style="text-align:center">Profile details</h2>
+                        <?php
+                        if(isset($_SESSION['admin'])) {
+                            if($_SESSION['admin']) {
+                                echo "<a href=\"".URLROOT . "/admins/c_panel\" id=\"button\">To Admin</a>";
+                            }
+                        }
+                        ?>
                         <p class="description3">
                             Nivel: <?php echo $data['userLevel']; ?>
                         </p>

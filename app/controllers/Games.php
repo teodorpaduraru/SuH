@@ -1,7 +1,7 @@
 <?php
 class Games extends Controller {
     public function __construct() {
-        //$this->userModel = $this->model('User');
+        //$this->userModel = $this->model('Game');
     }
 
     public function game_page() {
@@ -18,6 +18,10 @@ class Games extends Controller {
 
     public function expert() {
         $this->view('game/expert');
+    }
+
+    public function index_page() {
+        $this->view('404');
     }
 
 }

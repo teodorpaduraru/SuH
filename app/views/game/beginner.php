@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </main>
-            <script src="c:\xampp\htdocs\SuH\app\scripts\beginner.js"></script>   <!--scriptul folosit pentru nivelul incepator-->
+            <script src="c:/xampp/htdocs/SuH/app/scripts/beginner.js"></script>   <!--scriptul folosit pentru nivelul incepator-->
         </div>
 
         <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->

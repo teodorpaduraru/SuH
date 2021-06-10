@@ -151,6 +151,10 @@ class Users extends Controller {
         $_SESSION['uid'] = $user->uid;
         $_SESSION['userName'] = $user->userName;
         $_SESSION['userEmail'] = $user->userEmail;
+        if(!empty($user->admin)){
+            $_SESSION['admin'] = $user->admin;
+        }
+
         header('location:' . URLROOT . '/pages/index_page');
     }
 
@@ -158,6 +162,7 @@ class Users extends Controller {
         unset($_SESSION['uid']);
         unset($_SESSION['userName']);
         unset($_SESSION['userEmail']);
+        unset($_SESSION['admin']);
         header('location:' . URLROOT . '/users/login');
     }
 
@@ -190,5 +195,9 @@ class Users extends Controller {
 
     public function forgot_password() {
         $this->view('/users/forgot_password');
+    }
+
+    public function index_page() {
+        $this->view('404');
     }
 }
