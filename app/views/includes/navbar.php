@@ -71,7 +71,7 @@
             ?>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerNav()">
             </a>
-            <script src="<?php echo APPROOT; ?>/scripts/game_page.js"></script>
+            <script src="<?php echo URLROOT;?>/public/scripts/game_page.js"></script>
         </div>
     </body>
 </html>

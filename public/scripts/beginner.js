@@ -1,6 +1,6 @@
 /*javascript pentru nivel intermediar al jocului*/
 
-const e = "./data/heroes-quiz-questions-expert.json";
+const e = "http://localhost/SuH/public/scripts/data/heroes-quiz-questions.json";
 
 function t(e, t = 1) {
     return 1 === t && ([e, t] = [t, e]), Math.floor((t - e + 1) * Math.random()) + e
@@ -72,23 +72,25 @@ const o = {
             if (console.log("ask() invoked"), this.questions.length > 2) {
                 s(this.questions),
                     this.question = this.questions.pop();
-                const e = [this.questions[0].eyeColour, this.questions[1].eyeColour, this.question.eyeColour];
+                const e = [this.questions[0].realName, this.questions[1].realName, this.question.realName];
                 s(e);
-                const t = `What is ${this.question.name}'s eye colour?`;
+                const t = `What is ${this.question.name}'s real name?`;
                 o.render(o.question, t), o.render(o.response, o.buttons(e))
             } else this.gameOver()
         },
         check(e) {
             console.log("check(event) invoked");
             const t = e.target.textContent,
-                s = this.question.eyeColour;
+                s = this.question.realName;
             t === s ? (console.log("correct"),
                 o.render(o.result, "Correct!", {
                     class: "correct"
                 }),
-                this.score = this.score + 5, o.render(o.score, this.score)) : (console.log("wrong"), o.render(o.result, `Wrong! The correct answer was ${s}`, {
-                    class: "wrong"
-                })),
+                this.score = this.score + 3,
+                o.render(o.score, this.score)) : (console.log("wrong"),
+                    o.render(o.result, `Wrong! The correct answer was ${s}`, {
+                        class: "wrong"
+                    })),
                 o.show(o.result),
                 this.ask()
         },

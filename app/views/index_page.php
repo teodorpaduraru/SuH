@@ -135,12 +135,8 @@
             <?php
                 include_once 'includes/footer.php';
             ?>
-                    <!--Legatura pentru Control Panel de administrare-->
-                    <center>
-                        <a href="./cpanel.html" style="color:gold">Control Panel<br>(administrator only)</a>
-                    </center>
         </div>
-                    <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
-        <script type= "text/javascript" src= "./keyboard.js" > </script>
+        <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+        <script type= "text/javascript" src="<?php echo URLROOT;?>/public/scripts/keyboard.js" > </script>
     </body>
 </html>

@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </main>
-            <script src="./dist/intermediate.js"></script>  <!--scriptul folosit pentru nivelul intermediar-->
+            <script src="<?php echo URLROOT;?>/public/scripts/intermediate.js"></script>  <!--scriptul folosit pentru nivelul intermediar-->
         </div>
 
         <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
@@ -132,7 +132,7 @@
         ?>
         </div>
 
-        <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
-        <script type= "text/javascript" src= "./keyboard.js" > </script>
+    <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+    <script type= "text/javascript" src="<?php echo URLROOT;?>/public/scripts/keyboard.js" > </script>
 </body>
 </html>

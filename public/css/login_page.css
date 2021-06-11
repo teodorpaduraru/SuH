@@ -21,6 +21,7 @@
     /* border: 1px solid red; */
     margin: auto;
     background-color: rgb(0, 0, 0, 0.2);
+    border-radius: inherit;
 }
 
 .international {

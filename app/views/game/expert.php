@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </main>
-            <script src="<?php echo URLROOT; ?>/app/scripts/expert.js"></script>  <!--scriptul folosit pentru nivelul expert-->
+            <script src="<?php echo URLROOT;?>/public/scripts/expert.js"></script>  <!--scriptul folosit pentru nivelul expert-->
         </div>
 
         <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
@@ -134,7 +134,7 @@
 
         </div>
 
-                            <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
-        <script type= "text/javascript" src= "./keyboard.js" > </script>
+    <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
+    <script type= "text/javascript" src="<?php echo URLROOT;?>/public/scripts/keyboard.js" > </script>
 </body>
 </html>

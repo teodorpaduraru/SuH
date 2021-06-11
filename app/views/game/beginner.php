@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </main>
-            <script src="c:/xampp/htdocs/SuH/app/scripts/beginner.js"></script>   <!--scriptul folosit pentru nivelul incepator-->
+            <script src="<?php echo URLROOT;?>/public/scripts/beginner.js"></script>   <!--scriptul folosit pentru nivelul incepator-->
         </div>
 
         <!--Script folosit pentru traducerea (internationalizarea) site-ului in romana si engleza-->
@@ -137,6 +137,6 @@
     </div>
 
     <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
-    <script type= "text/javascript" src= "<?php echo APPROOT; ?>/scripts/keyboard.js" > </script>
+    <script type= "text/javascript" src="<?php echo URLROOT;?>/public/scripts/keyboard.js" > </script>
 </body>
 </html>

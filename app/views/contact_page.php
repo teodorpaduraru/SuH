@@ -180,6 +180,6 @@
             ?>
         </div>
         <!--Script folosit pentru accesibilitate folosind tastatura in locul mouseului-->
-        <script type= "text/javascript" src= "./keyboard.js" > </script>
+        <script type= "text/javascript" src="<?php echo URLROOT;?>/public/scripts/keyboard.js" > </script>
     </body>
 </html>

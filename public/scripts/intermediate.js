@@ -1,5 +1,5 @@
 /*javascript pentru nivel intermediar al jocului*/
-const e = "./data/heroes-quiz-questions-intermediate.json";
+const e = "http://localhost/SuH/public/scripts/data/heroes-quiz-questions-intermediate.json";
 
 function t(e, t = 1) {
     return 1 === t && ([e, t] = [t, e]), Math.floor((t - e + 1) * Math.random()) + e
